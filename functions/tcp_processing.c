@@ -84,6 +84,9 @@ void process_packet(u_char *args, const struct pcap_pkthdr *header, const u_char
         return;
     }
     fprintf(FileLog,"\n\n");
+    fprintf(FileLog, "\n");
+    fprintf(FileLog, "####################################################### New Packet ###################################################\n");
+   
     fprintf(FileLog, "IP address  From: %s\n", inet_ntoa(ip->ip_src));
     fprintf(FileLog, "IP address  To: %s\n", inet_ntoa(ip->ip_dst));
     tcp = (struct sniff_tcp*)(packet + SIZE_ETHERNET + size_ip);

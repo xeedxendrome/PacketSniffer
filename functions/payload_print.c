@@ -48,6 +48,7 @@ void print_payload(const u_char *payload, int len,FILE* FileLog) {
     int line_len;
     int offset = 0;
     const u_char *ch = payload;
+
     if (len <= 0)
         return;
     if (len <= line_width) {
@@ -65,5 +66,6 @@ void print_payload(const u_char *payload, int len,FILE* FileLog) {
             break;
         }
     }
+   
     return;
 }
