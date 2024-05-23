@@ -1,8 +1,6 @@
 #ifndef SESS
 #define SESS
-#include <netinet/in.h> 
-#include <stdio.h> 
-#include <pcap.h> 
+
 
 void filtercompilerandsetter(pcap_t *handle, char *filter_exp, bpf_u_int32 net);
 
