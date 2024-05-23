@@ -30,7 +30,7 @@ pcap_t* session_create(char *devname,char *filter_exp) {
         net = 0;
         mask = 0;
     }
-    handle = pcap_open_live(devname,  65536 , 0, 1000, errbuf);
+    handle = pcap_open_live(devname,  65536 , 1, 1000, errbuf);
     
     filtercompilerandsetter(handle, filter_exp, net);
     return handle;
@@ -58,4 +58,13 @@ char *get_device_name() {
     scanf("%d" , &n);
     devname = devs[n];
     return devname;
+}
+int get_filter() {
+    int filtervalue;
+    printf("Enter the  number for filter expression : \n");
+    printf("0. TCP\n");
+    printf("1. UDP\n");
+    
+    scanf("%d", &filtervalue);
+    return filtervalue;
 }
