@@ -23,13 +23,17 @@ void filtercompilerandsetter(pcap_t *handle, char *filter_exp, bpf_u_int32 net) 
 pcap_t* session_create(char *devname,char *filter_exp) {
     pcap_t *handle;
     char errbuf[PCAP_ERRBUF_SIZE];
+
     bpf_u_int32 mask;
     bpf_u_int32 net;
+    // net is required for filtercompilerandsetter
+
     
     if (pcap_lookupnet(devname, &net, &mask, errbuf) == -1) {
         net = 0;
         mask = 0;
     }
+    // starting the session
     handle = pcap_open_live(devname,  65536 , 1, 1000, errbuf);
     
     filtercompilerandsetter(handle, filter_exp, net);
@@ -38,7 +42,7 @@ pcap_t* session_create(char *devname,char *filter_exp) {
 char *get_device_name() {
     pcap_if_t *alldevsp , *device;
     char *devname , devs[100][100];
-    int count = 1 , n;
+    int count = 1 , device_no ;
     char errbuf[PCAP_ERRBUF_SIZE];
     printf("Finding available devices ... ");
     if( pcap_findalldevs( &alldevsp , errbuf) ) {
@@ -47,6 +51,7 @@ char *get_device_name() {
     }
     printf("Done");
     printf("\nAvailable Devices are :\n");
+    //Display available devices
     for(device = alldevsp ; device != NULL ; device = device->next) {
         printf("%d. %s - %s\n" , count , device->name , device->description);
         if(device->name != NULL) {
@@ -55,8 +60,8 @@ char *get_device_name() {
         count++;
     }
     printf("Enter the number of the device you want to sniff : ");
-    scanf("%d" , &n);
-    devname = devs[n];
+    scanf("%d" , &device_no);
+    devname = devs[device_no];
     return devname;
 }
 int get_filter() {
@@ -64,7 +69,6 @@ int get_filter() {
     printf("Enter the  number for filter expression : \n");
     printf("0. TCP\n");
     printf("1. UDP\n");
-    
     scanf("%d", &filtervalue);
     return filtervalue;
 }

@@ -2,47 +2,30 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <errno.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include <netinet/in.h>//for in_addr
+#include <arpa/inet.h>//for ntohs and inet_ntoa
 #include "../headers/payload_print.h"
 
-
-#define SNAP_LEN 1518
 #define SIZE_ETHERNET 14
 #define ETHER_ADDR_LEN 6
-#define IP_HL(ip) (((ip)->ip_vhl) & 0x0f)
-#define IP_V(ip) (((ip)->ip_vhl) >> 4)
-#define TH_OFF(th) (((th)->data_offset & 0xf0) >> 4)
-#define TH_FIN 0x01
-#define TH_SYN 0x02
-#define TH_RST 0x04
-#define TH_PUSH 0x08
-#define TH_ACK 0x10
-#define TH_URG 0x20
-#define TH_ECE 0x40
-#define TH_CWR 0x80
-#define TH_FLAGS (TH_FIN|TH_SYN|TH_RST|TH_ACK|TH_URG|TH_ECE|TH_CWR)
-#define IP_RF 0x8000 
-#define IP_DF 0x4000 
-#define IP_MF 0x2000 
-#define IP_OFFMASK 0x1fff 
+#define IP_HL(ip) (((ip)->ip_vhl) & 0x0f)// to extract the header length
+#define TH_OFF(th) (((th)->data_offset & 0xf0) >> 4)// to extract the header length of tcp the using mask 11110000 and then shifting it to right by 4 bits
+
 
 
 struct sniff_ethernet {
     u_char dest_mac[ETHER_ADDR_LEN]; 
     u_char src_mac[ETHER_ADDR_LEN]; 
-    u_short ether_type; 
+    u_short ether_type; //type of protocol like ip4 or ip6
 };
 struct sniff_ip {
-    u_char ip_vhl;
+    u_char ip_vhl;//version is first 4 bits and header length is last 4 bits
     u_char ip_tos; 
-    u_short ip_len; 
+    u_short ip_len; //datagram size
     u_short ip_id; 
-    u_short ip_off; 
+    u_short ip_off; //tells whether the packet is fragmented or not
     u_char ip_ttl; 
     u_char ip_protocol; 
     u_short ip_checksum; 
@@ -56,12 +39,12 @@ struct sniff_tcp {
     u_short dest_port; 
     tcp_sequence sequence_number; 
     tcp_sequence ack_number; 
-    u_char data_offset; 
-    u_char flags;
+    u_char data_offset; //size of tcp header
+    u_char flags;//flags like syn,ack,fin
   
     u_short window_size; 
     u_short checksum; 
-    u_short urgent_pointer; 
+    u_short urgent_pointer; //if some data needs to be processed early
 };
 
 
@@ -83,12 +66,14 @@ void process_packet_tcp(u_char *args, const struct pcap_pkthdr *header, const u_
     if (size_ip < 20) {
         return;
     }
+    // writing tcp header to the logfile
     fprintf(FileLog,"\n\n");
     fprintf(FileLog, "\n");
     fprintf(FileLog, "####################################################### New Packet ###################################################\n");
    
     fprintf(FileLog, "IP address  From: %s\n", inet_ntoa(ip->ip_src));
     fprintf(FileLog, "IP address  To: %s\n", inet_ntoa(ip->ip_dst));
+
     tcp = (struct sniff_tcp*)(packet + SIZE_ETHERNET + size_ip);
     size_tcp = TH_OFF(tcp)*4;
     if (size_tcp < 20) {
@@ -106,14 +91,15 @@ void process_packet_tcp(u_char *args, const struct pcap_pkthdr *header, const u_
     fprintf(FileLog, "   |-Checksum       : %d\n", ntohs(tcp->checksum));
     fprintf(FileLog, "   |-Urgent Pointer : %d\n", tcp->urgent_pointer);
     fprintf(FileLog, "\n");
-    fprintf(FileLog, "                        DATA Dump                         ");
-    fprintf(FileLog, "\n");
+    fprintf(FileLog, "                        DATA                        ");
+    fprintf(FileLog, "\n\n");
 
     
-    payload = (u_char *)(packet + SIZE_ETHERNET + size_ip + size_tcp);
+    payload = (u_char *)(packet + SIZE_ETHERNET + size_ip + size_tcp); //printing the payload
     size_payload = ntohs(ip->ip_len) - (size_ip + size_tcp);
     if (size_payload > 0) {
-        fprintf(FileLog," Payload (%d bytes):\n", size_payload);
+        fprintf(FileLog,"Payload (%d bytes):\n", size_payload);
+        fprintf(FileLog, "\n");
         print_payload(payload, size_payload, FileLog);
     }
     return;

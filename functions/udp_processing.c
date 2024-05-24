@@ -2,49 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <errno.h>
 #include <sys/types.h>
-#include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include "../headers/payload_print.h"
+#include "../headers/tcp_processing.h"
 
 
-#define SNAP_LEN 1518
-#define SIZE_ETHERNET 14
-#define ETHER_ADDR_LEN 6
-#define IP_HL(ip) (((ip)->ip_vhl) & 0x0f)
-#define IP_V(ip) (((ip)->ip_vhl) >> 4)
-
-
-
-struct sniff_ethernet {
-    u_char dest_mac[ETHER_ADDR_LEN]; 
-    u_char src_mac[ETHER_ADDR_LEN]; 
-    u_short ether_type; 
-};
-struct sniff_ip {
-    u_char ip_vhl;
-    u_char ip_tos; 
-    u_short ip_len; 
-    u_short ip_id; 
-    u_short ip_off; 
-    u_char ip_ttl; 
-    u_char ip_protocol; 
-    u_short ip_checksum; 
-    struct in_addr ip_src,ip_dst; 
-};
-
-
-struct sniff_udp {
-    
-    u_short src_port; 
-    u_short dest_port; 
-    u_short length;
-    u_short checksum; 
-   
-};
 
 
 void process_packet_udp(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
@@ -65,7 +29,8 @@ void process_packet_udp(u_char *args, const struct pcap_pkthdr *header, const u_
     if (size_ip < 20) {
         return;
     }
-    fprintf(FileLog,"\n\n");
+    
+    fprintf(FileLog,"\n\n"); //udp headers being logged to a file
     fprintf(FileLog, "\n");
     fprintf(FileLog, "####################################################### New Packet ###################################################\n");
    
@@ -83,8 +48,7 @@ void process_packet_udp(u_char *args, const struct pcap_pkthdr *header, const u_
     fprintf(FileLog, "                        DATA Dump                         ");
     fprintf(FileLog, "\n");
 
-    
-    payload = (u_char *)(packet + SIZE_ETHERNET + size_ip + size_udp);
+    payload = (u_char *)(packet + SIZE_ETHERNET + size_ip + size_udp);   //packets being logged to a file    
     size_payload = ntohs(ip->ip_len) - (size_ip + size_udp);
     if (size_payload > 0) {
         fprintf(FileLog," Payload (%d bytes):\n", size_payload);
