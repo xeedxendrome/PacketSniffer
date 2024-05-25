@@ -1,155 +1,2877 @@
+Packet number 1:
 
 
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
 
-####################################################### New Packet ###################################################
-IP address  From: 172.18.18.156
-IP address  To: 142.250.207.211
+UDP Header
+   |-Source Port      : 54434
+   |-Destination Port : 53
+   |-Checksum       : 25729
+   |-length : 40
 
-TCP Header
-   |-Source Port      : 50233
-   |-Destination Port : 80
-   |-Sequence Number    : 190581039
-   |-Acknowledge Number : 0
-   |-Header Length      : 176 DWORDS or 704 BYTES
-   |-Window         : 65535
-   |-Checksum       : 55378
-   |-Urgent Pointer : 0
-
-                        DATA                        
+                        DATA Dump                         
+ Payload (32 bytes):
+b3 e2 01 00 00 01 00 00  00 00 00 00 03 77 77 77    .............www
+06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 01 00 01    .google.com.....
 
 
+####################################################### ------ ###################################################
+
+Packet number 2:
 
 
-####################################################### New Packet ###################################################
-IP address  From: 142.250.207.211
-IP address  To: 172.18.18.156
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
 
-TCP Header
-   |-Source Port      : 80
-   |-Destination Port : 50233
-   |-Sequence Number    : 2686425463
-   |-Acknowledge Number : 190581040
-   |-Header Length      : 160 DWORDS or 640 BYTES
-   |-Window         : 65535
-   |-Checksum       : 12105
-   |-Urgent Pointer : 0
+UDP Header
+   |-Source Port      : 8025
+   |-Destination Port : 53
+   |-Checksum       : 47168
+   |-length : 40
 
-                        DATA                        
+                        DATA Dump                         
+ Payload (32 bytes):
+15 2d 01 00 00 01 00 00  00 00 00 00 03 77 77 77    .-...........www
+06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 41 00 01    .google.com..A..
 
 
+####################################################### ------ ###################################################
+
+Packet number 3:
 
 
-####################################################### New Packet ###################################################
-IP address  From: 172.18.18.156
-IP address  To: 142.250.207.211
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
 
-TCP Header
-   |-Source Port      : 50233
-   |-Destination Port : 80
-   |-Sequence Number    : 190581040
-   |-Acknowledge Number : 2686425464
-   |-Header Length      : 128 DWORDS or 512 BYTES
-   |-Window         : 2056
-   |-Checksum       : 21976
-   |-Urgent Pointer : 0
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 54434
+   |-Checksum       : 50547
+   |-length : 56
 
-                        DATA                        
-
+                        DATA Dump                         
+ Payload (48 bytes):
+b3 e2 81 80 00 01 00 01  00 00 00 00 03 77 77 77    .............www
+06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 01 00 01    .google.com.....
+c0 0c 00 01 00 01 00 00  00 da 00 04 8e fa ce 84    ................
 
 
+####################################################### ------ ###################################################
 
-####################################################### New Packet ###################################################
-IP address  From: 172.18.18.156
-IP address  To: 142.250.207.211
-
-TCP Header
-   |-Source Port      : 50233
-   |-Destination Port : 80
-   |-Sequence Number    : 190581040
-   |-Acknowledge Number : 2686425464
-   |-Header Length      : 128 DWORDS or 512 BYTES
-   |-Window         : 2056
-   |-Checksum       : 18245
-   |-Urgent Pointer : 0
-
-                        DATA                        
-
-Payload (97 bytes):
-
-GET /key/value/one/two HTTP/1.1
-Host: echo.jsontest.com
-User-Agent: curl/8.4.0
-Accept: */*
+Packet number 4:
 
 
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 8025
+   |-Checksum       : 51194
+   |-length : 65
+
+                        DATA Dump                         
+ Payload (57 bytes):
+15 2d 81 80 00 01 00 01  00 00 00 00 03 77 77 77    .-...........www
+06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 41 00 01    .google.com..A..
+c0 0c 00 41 00 01 00 00  0a 99 00 0d 00 01 00 00    ...A............
+01 00 06 02 68 32 02 68  33                         ....h2.h3
 
 
-####################################################### New Packet ###################################################
-IP address  From: 142.250.207.211
-IP address  To: 172.18.18.156
+####################################################### ------ ###################################################
 
-TCP Header
-   |-Source Port      : 80
-   |-Destination Port : 50233
-   |-Sequence Number    : 2686425464
-   |-Acknowledge Number : 190581137
-   |-Header Length      : 128 DWORDS or 512 BYTES
-   |-Window         : 256
-   |-Checksum       : 23667
-   |-Urgent Pointer : 0
-
-                        DATA                        
+Packet number 5:
 
 
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 63501
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c3 00 00 00 01 08 b8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 76 bb 7d 50 e6 32 a5    ...~.Z.Dyv.}P.2.
+95 a3 af 2b 3d 34 58 fd  b6 9d 85 57 98 12 e6 63    ...+=4X....W...c
+b1 6a 69 86 72 6c 66 d2  f8 0c 53 71 c5 d2 03 24    .ji.rlf...Sq...$
+3e a1 2c 8a 23 65 00 9c  4a 78 c8 41 ad 1f a5 35    >.,.#e..Jx.A...5
+a9 68 da 3d cb 3e 50 ea  54 8d 6c d1 3a a2 39 1e    .h.=.>P.T.l.:.9.
+77 92 93 a8 80 1d 39 af  6b 8d 59 1a af e8 a4 f0    w.....9.k.Y.....
+df c1 2c 52 44 6e 83 b2  af c4 df 31 a4 73 f3 2f    ..,RDn.....1.s./
+9d 66 60 b4 22 2e 56 fa  21 76 db 65 fd ee 91 7d    .f`.".V.!v.e...}
+61 4b 72 3c 5b 39 08 63  53 2a f3 f0 9e 56 69 f6    aKr<[9.cS*...Vi.
+1c 60 b0 ec f5 91 6e c9  54 01 34 08 10 9c 38 39    .`....n.T.4...89
+d7 74 71 22 fb fe df 0b  2b f9 49 0c 16 04 84 e8    .tq"....+.I.....
+c2 2a 6f fa 20 47 bd f8  f9 f2 47 37 eb c5 6a af    .*o. G....G7..j.
+6c ef d0 75 f1 81 5d 9d  4e 2a 9d ab d5 22 6c 0c    l..u..].N*..."l.
+63 b7 1d 21 14 85 29 4d  5e e9 9b 65 93 c3 27 1b    c..!..)M^..e..'.
+83 94 c2 45 67 87 97 9f  93 f3 1f 49 5b fb 9e 85    ...Eg......I[...
+89 4e 80 b1 01 fb 1f cc  cc 6d 65 a6 97 40 7d 3a    .N.......me..@}:
+ff 1b 39 6d dc 0b 6b 0a  ad a3 59 32 43 c3 28 97    ..9m..k...Y2C.(.
+7b 18 20 ea b1 13 a0 95  5a 6f 57 de 1a ac 26 b2    {. .....ZoW...&.
+5f 6f bb 6b ee 22 43 d9  2c 82 53 95 5e c5 43 d6    _o.k."C.,.S.^.C.
+2d 0d 11 f0 9a 13 21 13  51 66 66 48 ef f8 e1 f5    -.....!.QffH....
+44 94 8c c6 92 6e 76 d2  35 4f a8 33 9b 73 7c 9e    D....nv.5O.3.s|.
+54 c0 53 eb e5 e7 ff 19  90 94 c4 68 e5 6d 21 32    T.S........h.m!2
+40 a1 74 aa 43 4c f1 39  59 42 a3 75 51 4b 7e 15    @.t.CL.9YB.uQK~.
+5f 9a cf 04 9f 74 bf aa  a6 d7 f9 89 2d 4d ad 2a    _....t......-M.*
+15 e7 2c 28 0a c3 9d 48  01 57 8e 53 2a 92 ff 23    ..,(...H.W.S*..#
+03 ac 1a 4e 55 02 18 85  f2 e8 3a 33 46 ad 8e 61    ...NU.....:3F..a
+97 19 e0 ea 13 7a 81 50  32 57 72 e0 6f f2 6a cd    .....z.P2Wr.o.j.
+ef a0 a0 05 03 ee 7a 46  7d fb 08 95 39 d1 05 e0    ......zF}...9...
+9e 85 b4 ee f8 72 f4 e5  93 0f 5f f5 05 d3 88 af    .....r...._.....
+95 79 1e ce a6 51 45 a7  64 a0 c8 0b 20 9f ae 22    .y...QE.d... .."
+fb f8 37 76 64 46 97 3d  70 d6 81 e8 b6 fd e3 83    ..7vdF.=p.......
+f2 e0 aa f3 43 53 f0 d5  44 e2 30 53 2b 68 90 51    ....CS..D.0S+h.Q
+58 0e 29 64 97 db 85 e3  36 a0 95 47 94 a7 a2 cd    X.)d....6..G....
+11 c9 ec 0c 97 f7 d9 1b  af 4a e7 c3 ec 3a b1 e2    .........J...:..
+5b 8d 72 13 19 ac d8 bf  26 84 06 d8 a2 b6 2b 99    [.r.....&.....+.
+85 f4 8b 3a 84 04 74 c6  8f 78 9e 1c fc f0 4f 3d    ...:..t..x....O=
+8a 4f a2 b5 7a 41 7d e4  e2 d8 81 2b ec 97 28 dc    .O..zA}....+..(.
+41 6f 72 c2 3f 7f ce e8  de cd 8f 84 a0 d4 5c c6    Aor.?.........\.
+8d 18 f5 aa 6b db 94 01  ab aa 34 45 95 4e 4f 9e    ....k.....4E.NO.
+67 e7 bc 3c 29 a2 b3 3c  5e af cd b4 3f 93 29 01    g..<)..<^...?.).
+a8 96 83 d2 21 c9 d5 10  4f 6a 82 8a c4 7d 78 f2    ....!...Oj...}x.
+c3 ef 11 38 df f1 6f cb  cc 01 aa a3 98 51 4c df    ...8..o......QL.
+8a 3c ac 4f 81 49 fc 90  4f 52 ec 4f 63 c7 f5 64    .<.O.I..OR.Oc..d
+3f 49 d8 67 b2 89 70 cb  71 7e 30 d2 f7 0a f0 66    ?I.g..p.q~0....f
+75 a3 03 0d 5f e7 62 31  99 45 2e 42 e6 0b e3 b1    u..._.b1.E.B....
+0f 83 f0 9f b4 16 0c 4a  cb f3 56 c8 65 08 4e 61    .......J..V.e.Na
+00 ea ca 3a 5c f3 61 91  7b b7 ec 76 a8 91 43 8a    ...:\.a.{..v..C.
+9b 9b 5a fb 4b 14 e7 92  4e 3a 4f 06 f0 52 ce 64    ..Z.K...N:O..R.d
+22 cf 27 89 a7 a1 1a b4  4a 2c 0a 97 bd bc c9 a9    ".'.....J,......
+7b 7c 32 62 cd 3c 07 63  c9 61 36 ef 95 c3 9d 11    {|2b.<.c.a6.....
+db 11 31 1d 7c ba c4 a6  8e 32 4d 7e d7 e8 01 c2    ..1.|....2M~....
+8e 26 58 1a 4f 3b ed 51  12 8e bd 34 4a 60 ee 51    .&X.O;.Q...4J`.Q
+35 5a c7 31 6a 2e 45 8f  08 b5 53 2f bf cd 8d e9    5Z.1j.E...S/....
+fe 3a 7c ad e4 fc 7e 71  fb 3c e3 5f 60 9c f2 99    .:|...~q.<._`...
+48 b5 51 e3 e9 56 87 0c  7a 13 1a fc 7b 84 0e c8    H.Q..V..z...{...
+ea d0 62 a5 ae 83 44 ad  e1 17 30 4f 61 53 3c 82    ..b...D...0OaS<.
+2d b8 a7 1a 9c 0c 96 21  64 99 f4 a3 02 b0 22 b4    -......!d.....".
+5a 7e 97 e3 98 4b e2 ca  c0 48 bc 3c 2f 66 28 65    Z~...K...H.</f(e
+cd 9e 09 3f 68 53 c6 3d  89 d0 b5 b1 db 67 7f 1a    ...?hS.=.....g..
+18 85 80 56 81 cf 4b f9  b0 0c 60 be ed 6a c3 3d    ...V..K...`..j.=
+4d e9 e1 5a 06 bd 72 77  4d b9 66 81 a2 a7 48 b9    M..Z..rwM.f...H.
+76 2d 6b ba 44 2e 47 68  3c a9 0c 34 12 90 6f 72    v-k.D.Gh<..4..or
+f9 3c 80 3c 8d 70 55 fd  a2 e6 ab 03 5a 3c 3f e8    .<.<.pU.....Z<?.
+86 7c 52 94 6d 72 d4 20  86 40 8b ac 73 28 c8 b1    .|R.mr. .@..s(..
+a2 87 3a 2d 38 55 2b b7  ad 7b 2d 1c 3a 25 f1 65    ..:-8U+..{-.:%.e
+4c 51 47 4a f9 c5 fc af  f2 9e bc 4b f9 4c 8b b7    LQGJ.......K.L..
+af 0a 5d 2a ed 13 df 7e  d1 7a 2a 0a 0f 89 78 e9    ..]*...~.z*...x.
+0e 9f 6a 73 5c e5 a7 85  d0 5f e3 0b 7c d6 9f 3a    ..js\...._..|..:
+d8 1c 1d 2c 4d 75 46 28  cd d7 15 fd bd da 38 23    ...,MuF(......8#
+33 9b 2f b5 06 f9 77 01  3f 01 c4 b0 72 70 44 5f    3./...w.?...rpD_
+b3 ae c3 72 d1 97 f7 67  f2 04 d5 7d ad d6 02 5e    ...r...g...}...^
+dc e5 fe 0b 57 36 b4 28  84 07 6b 19 f2 ad c6 7a    ....W6.(..k....z
+18 80                                               ..
 
 
-####################################################### New Packet ###################################################
-IP address  From: 142.250.207.211
-IP address  To: 172.18.18.156
+####################################################### ------ ###################################################
 
-TCP Header
-   |-Source Port      : 80
-   |-Destination Port : 50233
-   |-Sequence Number    : 2686425464
-   |-Acknowledge Number : 190581137
-   |-Header Length      : 128 DWORDS or 512 BYTES
-   |-Window         : 256
-   |-Checksum       : 20244
-   |-Urgent Pointer : 0
-
-                        DATA                        
-
-Payload (261 bytes):
-
-HTTP/1.1 200 OK
-Access-Control-Allow-Origin: *
-Content-Type: application/json
-X-Cloud-Trace-Context: 2a4d6b1870751d65b58a0cf81962cbac
-Date: Fri, 24 May 2024 11:15:17 GMT
-Server: Google Frontend
-Content-Length: 39
-
-{   "one": "two",   "key": "value"}
+Packet number 6:
 
 
-####################################################### New Packet ###################################################
-IP address  From: 172.18.18.156
-IP address  To: 142.250.207.211
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
 
-TCP Header
-   |-Source Port      : 50233
-   |-Destination Port : 80
-   |-Sequence Number    : 190581137
-   |-Acknowledge Number : 2686425725
-   |-Header Length      : 128 DWORDS or 512 BYTES
-   |-Window         : 2052
-   |-Checksum       : 20157
-   |-Urgent Pointer : 0
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 52620
+   |-length : 1258
 
-                        DATA                        
+                        DATA Dump                         
+ Payload (1250 bytes):
+ca 00 00 00 01 08 b8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 38 03 e9 4c e2 32 23    ...~.Z.Dy8..L.2#
+fc 32 1d 7e 7d ea 7e e0  67 d3 f0 15 97 0b 04 d7    .2.~}.~.g.......
+3e ce ef 0f cb aa 29 b5  53 2e d0 29 f8 33 bd 77    >.....).S..).3.w
+6e f2 7c e8 1a 08 6a c4  7c 5e f1 0a 1c 72 48 3d    n.|...j.|^...rH=
+d0 a3 17 c2 7c df 78 c6  fa b2 df 16 a2 3f c6 5e    ....|.x......?.^
+f9 4e f7 4b 47 51 53 4f  4d 6f 68 30 33 39 ca 4a    .N.KGQSOMoh039.J
+10 60 a2 e9 f1 5c 11 77  a4 49 e0 f1 46 89 f0 77    .`...\.w.I..F..w
+f0 10 f9 f4 a5 82 10 4e  75 5e 41 da 48 90 b5 99    .......Nu^A.H...
+e4 28 bd 64 81 05 5c f9  2f 68 59 ea 65 d4 cf 5c    .(.d..\./hY.e..\
+60 10 10 a6 11 a3 cf 2d  55 01 52 29 66 5d b6 d3    `......-U.R)f]..
+c5 55 86 42 35 a6 11 c7  32 fd e5 36 26 4c c5 ba    .U.B5...2..6&L..
+ee 22 c5 64 08 3d 00 7e  25 ce 00 6e 43 4a 28 2f    .".d.=.~%..nCJ(/
+e0 62 bb 59 4f dd 2b d3  04 73 4f 34 ab b2 c4 9b    .b.YO.+..sO4....
+7a f2 a4 4e 36 b5 e2 bf  5b e5 76 b6 3e fa 6c 9e    z..N6...[.v.>.l.
+e0 40 a4 26 35 56 ef 7d  2e 21 62 bd b8 10 8c 94    .@.&5V.}.!b.....
+d0 c9 ca e0 9f fb f3 17  83 60 9f 89 35 9e 24 a0    .........`..5.$.
+cf e8 68 1f 96 99 23 ee  89 b5 98 76 85 39 f7 ed    ..h...#....v.9..
+d2 cc 09 ff 61 00 50 09  b9 84 c2 a1 8c e5 ef 14    ....a.P.........
+2c 5e fd d7 35 ac 91 d4  0f 3c 01 c2 3d 14 93 46    ,^..5....<..=..F
+c9 9e f4 b5 47 cc 95 26  0a fc c6 5a 03 50 89 78    ....G..&...Z.P.x
+fe 18 d5 31 59 36 81 6f  f5 3d a4 69 0a 75 ca 87    ...1Y6.o.=.i.u..
+56 87 91 bf f9 85 f0 1f  31 90 47 d3 01 15 e4 3b    V.......1.G....;
+01 1a e0 4d 52 f6 c1 02  e0 46 cf 43 59 df 82 a3    ...MR....F.CY...
+5e da 52 ae 88 45 6b 21  d7 f4 5a f2 5f d6 95 a3    ^.R..Ek!..Z._...
+d2 df 46 4c 10 cd cb 64  ae a2 57 55 d9 98 77 e9    ..FL...d..WU..w.
+e5 54 b9 fe b0 52 8e f6  99 47 f5 02 30 ca b7 0c    .T...R...G..0...
+8f 58 ff de 43 0e d9 5e  f0 17 72 95 88 8d 29 d0    .X..C..^..r...).
+2d 80 2c 2e 68 ca 9b 4f  9f ab 06 5f 93 92 50 bc    -.,.h..O..._..P.
+99 68 bd e0 9a 84 3b a1  32 91 05 db f9 1b 8b c9    .h....;.2.......
+b8 f2 70 4b 15 64 20 94  de 78 8f 0f a8 93 c5 66    ..pK.d ..x.....f
+8d ad 6e fc de e6 15 95  f3 ef 11 6b 86 f9 8d 36    ..n........k...6
+40 b4 bc 52 2b 68 d3 c6  cc c1 24 a3 5a 03 85 97    @..R+h....$.Z...
+21 90 42 4d 7d 9f 1f 2b  49 aa 91 19 a4 60 7a f6    !.BM}..+I....`z.
+2e 7c f1 28 ff 7a 62 c5  91 7b bb 3d 3a ef 39 df    .|.(.zb..{.=:.9.
+1a c3 2e b5 20 5d b6 e9  4a 5a 85 86 9e 7e 1c 36    .... ]..JZ...~.6
+5f da 96 4b ad 58 56 80  2b 2e 55 75 2b 4f c1 74    _..K.XV.+.Uu+O.t
+0c 0c 90 ee 21 c8 66 13  69 60 a0 81 9b 89 88 a2    ....!.f.i`......
+ba 01 89 6e 1c bd 5d e6  67 e9 c8 80 be 98 5b b1    ...n..].g.....[.
+c1 d7 0d 9c 62 6a 7b 6d  7e fa 0c e8 20 27 ea bc    ....bj{m~... '..
+7c 58 7d d1 f6 2f 0c 27  93 a6 f3 0d 1b 42 81 9d    |X}../.'.....B..
+ba fe 2f bc 28 d4 5f cb  86 a6 51 98 95 79 d8 5e    ../.(._...Q..y.^
+04 1e 53 a5 53 1e b1 a2  15 f5 34 2a c4 f0 56 29    ..S.S.....4*..V)
+96 89 80 1e 53 e5 1a 20  90 e0 98 5f 02 94 45 d4    ....S.. ..._..E.
+ab 22 30 62 46 ad ab d3  91 14 19 4e a3 ff 1f 38    ."0bF......N...8
+e1 03 0e a3 ad 21 0b 13  ba e6 3c 90 7e c9 37 1d    .....!....<.~.7.
+42 d9 5f 92 71 28 a2 6b  f6 f4 4e 16 d1 cf ad 19    B._.q(.k..N.....
+74 14 12 a8 52 c9 f5 df  ee c5 d0 48 16 7c c9 9a    t...R......H.|..
+de b4 04 6b 5a e3 02 46  b0 e2 5e a1 1c a8 ae 60    ...kZ..F..^....`
+16 be a9 7f 89 5f 26 08  f6 07 7a f5 6c 15 f5 a0    ....._&...z.l...
+8f c2 72 2a e7 8d bb 52  3b 07 03 be a5 73 fa f0    ..r*...R;....s..
+28 b1 71 b1 aa 3b 81 87  45 90 d7 8a 95 54 03 04    (.q..;..E....T..
+cd e1 1f 5f e8 36 4f f0  a3 bd 0e 89 6e aa 69 13    ..._.6O.....n.i.
+f6 ff 3a f8 31 54 1c ed  5e 99 6d 4a 05 11 fc cd    ..:.1T..^.mJ....
+99 e8 42 5a 65 ed ff e4  b6 c6 1b 31 d9 65 e6 3c    ..BZe......1.e.<
+5c 14 54 7d 38 9b 40 ec  c0 c1 26 5f 5f 77 54 2f    \.T}8.@...&__wT/
+b9 0f 2c 27 37 ad f7 e3  aa 14 a7 f5 fa c7 9a a7    ..,'7...........
+e0 91 90 a8 9b 1e 33 ab  23 01 e6 2f 11 8c 32 11    ......3.#../..2.
+4d da 48 5e ba f2 a5 0d  7e c7 56 0e 37 44 9a e7    M.H^....~.V.7D..
+62 90 9e 87 cb 9d 23 6b  52 15 80 93 f2 3f 0e e5    b.....#kR....?..
+9c df 43 d1 ae 3b 98 d0  60 bf 49 57 54 d7 02 00    ..C..;..`.IWT...
+30 27 2b d8 24 f9 51 15  52 be 2c ec f9 2c 3f 48    0'+.$.Q.R.,..,?H
+f8 f2 f6 56 6d d5 d4 aa  49 29 a7 6f 80 ff 1f 2a    ...Vm...I).o...*
+53 70 37 6a 17 51 f2 2d  4f 39 25 cd 0a 45 4d d5    Sp7j.Q.-O9%..EM.
+2e a4 67 b9 58 f9 41 ba  76 fe 29 6f 34 66 ba 1f    ..g.X.A.v.)o4f..
+89 c1 88 6f 6c 16 d0 ce  a5 f2 74 56 48 9e b2 48    ...ol.....tVH..H
+be e8 e9 b7 99 74 b9 22  51 b5 cb b8 ab 50 55 c2    .....t."Q....PU.
+07 fe 7e 68 e4 bf e3 2d  68 cf 7d de 0d 56 52 c5    ..~h...-h.}..VR.
+e0 1d 11 3d 87 a2 c4 5a  69 6c 80 43 e0 76 72 a4    ...=...Zil.C.vr.
+1c ac d2 71 24 c9 6f ac  58 a3 83 8c e2 49 5b de    ...q$.o.X....I[.
+7d e8 c5 d3 62 00 80 81  7c 8a 2a bc 2d b3 6c fa    }...b...|.*.-.l.
+e5 4d a2 72 ff 69 f3 48  0c 48 45 a6 1d 53 b6 69    .M.r.i.H.HE..S.i
+33 cd 4d 8f 1e e5 fc aa  ef 4b 93 50 87 4f 64 4e    3.M......K.P.OdN
+fb 9d                                               ..
 
 
+####################################################### ------ ###################################################
+
+Packet number 7:
 
 
-####################################################### New Packet ###################################################
-IP address  Fro
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 53674
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c6 00 00 00 01 08 b8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 b3 d8 4c ec 24 fc 1f    ...~.Z.Dy..L.$..
+2d b9 25 84 47 08 7f b2  e3 65 70 f2 65 1d 3e d8    -.%.G....ep.e.>.
+2a 3b 24 69 42 2c 72 d9  5a 21 57 b9 49 73 d4 c9    *;$iB,r.Z!W.Is..
+dd 3f 22 e4 5d a8 1e 48  c7 b3 e0 69 f4 a5 83 cf    .?".]..H...i....
+4a 5d 4b d2 34 75 d6 c8  d3 89 57 73 75 ae a2 04    J]K.4u....Wsu...
+36 b4 fe b3 88 e7 10 8d  d5 30 5e db 7b ed fc 39    6........0^.{..9
+95 a3 f8 14 90 08 0a 1c  46 2d 32 a7 0d fa 6b 72    ........F-2...kr
+ff f0 53 ad f4 4f cf 6c  3f 77 2a ea 0f 44 2c a5    ..S..O.l?w*..D,.
+e7 c5 47 d6 87 6b d7 e7  d7 9d 63 ec 16 a8 98 cf    ..G..k....c.....
+ab a2 bd f1 cf a4 e1 13  25 7e e5 13 7b 4c 90 4a    ........%~..{L.J
+0b e7 4c 48 d9 88 c4 85  7a f4 28 c7 04 e9 da d6    ..LH....z.(.....
+cc 71 fd a9 91 7a eb c7  52 65 5f 88 67 9b 1d 43    .q...z..Re_.g..C
+6f 7a b0 e6 4c 64 b9 59  40 6e f3 f3 55 72 2f a7    oz..Ld.Y@n..Ur/.
+b0 0b 83 5d 51 4b 70 e5  15 8a b2 36 d5 0b 36 34    ...]QKp....6..64
+3f c8 46 99 f3 e5 75 3b  e6 55 df 8e 7d 1c ff 30    ?.F...u;.U..}..0
+33 29 24 ee 65 b8 db fc  0d 35 86 48 b9 d7 c3 11    3)$.e....5.H....
+cb 94 d8 56 bb 00 cb f0  c9 67 ef f3 4c e0 89 a3    ...V.....g..L...
+b1 15 88 40 6b 9f db 43  f0 7d 6d 47 2f 75 05 a7    ...@k..C.}mG/u..
+57 76 37 9a 65 5c 4f 60  7e 8b 08 02 81 02 b2 ba    Wv7.e\O`~.......
+bf 0e 00 01 28 56 78 9f  77 fd 7d 86 ba d1 56 84    ....(Vx.w.}...V.
+60 db bf b6 7a 46 92 f0  f4 a3 20 4f 53 35 c8 84    `...zF.... OS5..
+79 9a 71 cc 33 56 3d 9d  0b 1a cf 21 49 46 31 81    y.q.3V=....!IF1.
+69 38 20 00 4f ac 6e 3b  bf 50 ca ea 94 92 68 83    i8 .O.n;.P....h.
+52 a2 55 e5 58 6d f2 7b  1b f6 b7 6d 72 03 c1 a7    R.U.Xm.{...mr...
+22 47 fd 59 8a d7 8d 89  b9 30 0a 47 8a 02 41 36    "G.Y.....0.G..A6
+dc 2f 7a 98 73 28 95 4f  0f 8c 83 ea 1b 64 8f 33    ./z.s(.O.....d.3
+1b 80 ce 85 ea 3c f8 24  33 4c de 30 80 8e d4 f7    .....<.$3L.0....
+d0 2d 72 cb eb e6 1f 7f  78 99 df 1d 50 39 23 7c    .-r.....x...P9#|
+22 6a 2c ae 24 21 74 de  3a 59 a1 fb 59 2c bd 2a    "j,.$!t.:Y..Y,.*
+94 d3 64 85 85 c1 ae a9  85 36 00 e5 5b 12 70 1d    ..d......6..[.p.
+10 50 ef f2 92 0f 0f ca  38 f3 37 58 ea 0e 9c d0    .P......8.7X....
+6f 38 cf 74 fe 2a f6 76  54 53 0c e1 75 93 78 a5    o8.t.*.vTS..u.x.
+cf 6b f1 54 8b d2 c7 f0  17 f0 79 dd e3 c1 fe 84    .k.T......y.....
+65 a5 d5 03 3c 9d 66 0b  ae 23 4a df 8f 58 18 28    e...<.f..#J..X.(
+de 84 aa c9 c3 c6 79 fc  ce 93 6e 58 60 21 90 62    ......y...nX`!.b
+6a b9 51 f1 7b 52 5d 9b  fd 4b 28 eb 90 0f a8 c7    j.Q.{R]..K(.....
+86 3d 29 61 3e d5 70 21  f2 08 1f e1 e7 0d b0 0a    .=)a>.p!........
+0a 8c c7 d5 a5 6b 89 39  67 43 72 fb ac d1 f4 12    .....k.9gCr.....
+4c ac 09 6a b8 4f 98 1d  73 e3 32 4a 8e 12 ff cf    L..j.O..s.2J....
+b6 ea 84 71 d4 70 e2 b9  14 26 f8 47 ff 51 d0 93    ...q.p...&.G.Q..
+b5 10 3a 4d 29 97 b0 9d  e0 22 8a 34 22 a0 46 01    ..:M)....".4".F.
+34 91 e4 06 4f c9 0d 51  7f 00 8b 6d bb 76 f5 3f    4...O..Q...m.v.?
+1a a5 3b 44 41 1b 06 1a  3c 80 9f 44 e7 34 1d 59    ..;DA...<..D.4.Y
+c9 0a 30 92 f7 d6 b3 26  3d 64 38 fa 37 23 b3 4c    ..0....&=d8.7#.L
+62 54 b5 74 24 fa d4 c2  25 76 e7 0c 8d 32 82 0c    bT.t$...%v...2..
+28 4a 37 ba 0a 7d 06 43  10 c9 03 f3 5b 9c d4 07    (J7..}.C....[...
+f4 a3 cf 25 26 11 9d 0b  2f 3b 21 18 c0 e3 fb 70    ...%&.../;!....p
+67 00 de ec d0 ab d2 89  7d 4d 77 8e 1c 51 57 69    g.......}Mw..QWi
+4a 41 66 8a 67 51 93 da  98 ae 4b 2c 67 da 37 28    JAf.gQ....K,g.7(
+e6 4f 5c 8e 1c 3e 08 13  df 47 fa 2f 91 a5 4a 7e    .O\..>...G./..J~
+36 37 eb a0 3d dd c6 2e  fd d1 65 7f 1a 26 74 ad    67..=.....e..&t.
+67 c1 7e 77 6f de 6c 74  f9 ca b9 a9 36 42 42 04    g.~wo.lt....6BB.
+8d fa 7c 26 19 21 0e 11  3c b2 ed 1b 94 c6 27 6c    ..|&.!..<.....'l
+f0 51 ed 0a bf 34 df 64  de a8 24 7d 20 b9 7a f3    .Q...4.d..$} .z.
+b2 a9 ec 6b 3a fd 55 08  c1 fb 0e 85 ba 7f 0f 41    ...k:.U........A
+10 5e 38 b0 68 88 74 0c  f7 b7 9a 56 b2 1f 3d fc    .^8.h.t....V..=.
+c5 aa fb 6d b6 21 59 e3  70 55 05 e0 d0 87 6b d1    ...m.!Y.pU....k.
+4b 8a ca 66 4e 0e 3d 86  62 e0 0a d4 1e 77 9c c7    K..fN.=.b....w..
+c2 68 e2 36 0d 90 f3 d7  d1 e1 1d 37 36 20 26 60    .h.6.......76 &`
+dd 54 b1 23 12 40 b7 8e  62 d8 05 43 58 f3 99 11    .T.#.@..b..CX...
+02 9f 8d 58 b1 db e4 60  b1 7b 26 2b ae e1 e1 02    ...X...`.{&+....
+a2 27 d2 eb 98 bd 47 1b  be f8 52 d0 75 c5 5c 64    .'....G...R.u.\d
+a0 f3 2c 63 4b 01 00 0e  a6 23 91 7b c2 c0 a0 49    ..,cK....#.{...I
+cf 91 ce 14 4e 2d 10 d8  76 0b e1 24 7e 7d 0c e0    ....N-..v..$~}..
+24 fe 38 5a 6d fd 76 db  15 15 8d 33 e4 19 53 40    $.8Zm.v....3..S@
+b5 80 52 66 90 19 7a 3b  d1 b5 3b cb db 50 23 d9    ..Rf..z;..;..P#.
+a5 ec 87 4e 49 f0 64 2e  7b 73 89 02 be cc e9 61    ...NI.d.{s.....a
+0f 26 75 e7 b6 7d fa 42  a3 fa 4e a0 aa 87 c9 e7    .&u..}.B..N.....
+82 7b 9b 9c 66 fe f5 53  ab 90 ca 07 ad cb c2 7d    .{..f..S.......}
+61 3f d8 9d 09 e9 a0 d7  bc 9a c2 a0 fc df f0 3f    a?.............?
+08 9d de 7d 2d 9e 03 b8  98 bd d1 6a 84 f1 e6 d7    ...}-......j....
+76 c9 4a ae 01 b1 32 f8  f5 3c 88 67 e4 1d 34 46    v.J...2..<.g..4F
+86 43                                               .C
+
+
+####################################################### ------ ###################################################
+
+Packet number 8:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 39923
+   |-length : 88
+
+                        DATA Dump                         
+ Payload (80 bytes):
+d9 00 00 00 01 08 b8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+3f f0 b6 49 ee 1f 17 20  64 67 68 d8 6b 23 79 40    ?..I... dgh.k#y@
+8b 9a a9 49 ef 06 15 cc  ef 53 55 87 2a 49 dc 69    ...I.....SU.*I.i
+6f 4b b2 3a 4b 38 58 4c  60 53 d3 25 56 f5 89 fb    oK.:K8XL`S.%V...
+d2 f0 2e 9b 46 5b ac 65  49 86 45 de a5 64 13 8f    ....F[.eI.E..d..
+
+
+####################################################### ------ ###################################################
+
+Packet number 9:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 34548
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+cc 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 00    ........ 1..Ry..
+44 d0 a8 a3 1f bf de 96  5e 68 dd e3 11 1d 3f 2e    D.......^h....?.
+9b 2f 3f ee f1 a1 3f 0c  36 98 a5 45 48 84 06 6e    ./?...?.6..EH..n
+12 ec 9e 23 3c a3 e7 2c  a1 72 e7 9f f4 a7 4c 2a    ...#<..,.r....L*
+80 a1 73 b2 9b 2b 01 10  ec 01 24 5c 9b fe 24 fb    ..s..+....$\..$.
+87 c5 8d 8b 95 92 dc a2  00 c5 bb cf 21 e1 20 fa    ............!. .
+4f c1 05 31 d0 be da 7a  f9 b9 fe d3 67 79 aa a7    O..1...z....gy..
+a1 4d 66 c0 d6 97 44 47  7c 63 f2 92 2f f3 c6 7b    .Mf...DG|c../..{
+e2 32 df 93 39 23 3c c0  25 6d 6c c7 ce 88 a6 6a    .2..9#<.%ml....j
+69 c7 06 ed 75 9f 1b 07  47 b3 ca c8 10 f1 b4 cb    i...u...G.......
+b1 88 16 92 2c a3 cc 5a  20 46 44 31 f8 cf f1 57    ....,..Z FD1...W
+ea f6 41 af 1e 6a 1f d5  d2 23 72 7d b2 bb 00 b0    ..A..j...#r}....
+61 c3 62 7c ba a1 d1 80  c4 8f e3 0e 1e d6 37 b9    a.b|..........7.
+22 5e 41 e7 40 6e 3c de  1d 83 6c 0a b8 0f 46 09    "^A.@n<...l...F.
+0d 6e 72 84 c6 1a 91 54  83 23 72 84 90 d1 be 16    .nr....T.#r.....
+eb 4a b4 00 48 48 4a f4  db 52 38 7e 2a ad 40 c6    .J..HHJ..R8~*.@.
+2b 38 b6 9c ed e9 fd d2  7e bf e2 3d 2f 28 c1 5d    +8......~..=/(.]
+88 a8 62 53 36 1e d2 12  97 33 70 4d fa b6 a0 c6    ..bS6....3pM....
+96 6e 30 ac 39 5a d0 b8  95 07 ae cd bc 2c 06 78    .n0.9Z.......,.x
+33 eb ce 84 58 b0 04 ab  e9 a6 ec c8 b2 3a 4e 63    3...X........:Nc
+4f 10 96 1b a1 e4 47 0a  a2 d4 dc fb 2e e6 dc 63    O.....G........c
+0d 0b 3b 6d a0 d3 50 c1  09 48 72 21 3f ca ca 7d    ..;m..P..Hr!?..}
+19 42 95 cd 30 f1 0f 86  71 a3 72 4d 9b db f5 11    .B..0...q.rM....
+fa f6 c9 68 fc f4 2b c0  38 68 c9 fc 20 5d 6b 27    ...h..+.8h.. ]k'
+d9 c0 22 d8 3c 01 08 a3  3e 4d fb 85 f7 93 cc 4a    ..".<...>M.....J
+3f 6a 91 40 ea 71 16 23  4c d4 cd 4e 04 ec 82 d3    ?j.@.q.#L..N....
+e4 16 ad ed 0d 38 a4 12  bd 94 02 12 51 6c f8 94    .....8......Ql..
+5c 43 77 34 e5 99 8b cc  ae bc b8 c8 12 72 bc 2d    \Cw4.........r.-
+50 12 24 ff 17 21 e2 8e  c2 22 55 69 39 4b 9a f3    P.$..!..."Ui9K..
+8a ca f6 98 97 88 58 49  50 e7 bc 15 52 6c c0 c4    ......XIP...Rl..
+69 ba 5d f3 7b 0b ed f6  a0 44 ea b1 61 7e b7 16    i.].{....D..a~..
+ce da 30 0d 92 de 9f 01  f0 49 d7 d8 54 2e 6b 2b    ..0......I..T.k+
+37 d1 48 65 ba 72 16 6b  ed 22 8c 45 1c a0 32 33    7.He.r.k.".E..23
+05 43 c6 82 64 0b e7 e6  da 30 77 ad cd ce 13 fd    .C..d....0w.....
+9e f8 53 55 92 70 3e a2  fa 93 c7 7e fe 5f 2c 5c    ..SU.p>....~._,\
+84 d7 cc 98 39 09 89 a6  bb cb 60 a5 99 09 52 ab    ....9.....`...R.
+49 d3 3e e3 0a 8a 3b 7c  15 db 10 ce 89 c2 9f 68    I.>...;|.......h
+94 15 18 7b f2 ac fa bb  18 31 b0 91 90 d6 aa 60    ...{.....1.....`
+d7 08 e5 8c dd b4 a0 f4  f1 4c 39 47 2b e2 64 49    .........L9G+.dI
+88 03 d6 c3 0f b5 67 ac  91 fc 4a 1e ed 5b 15 5e    ......g...J..[.^
+1a 7f 7a 8e d0 57 c5 6d  b8 df 88 3b e4 ba f8 b2    ..z..W.m...;....
+1a f9 42 97 34 72 e1 f4  80 a2 41 90 04 94 8b 2a    ..B.4r....A....*
+36 ab 68 c9 da 49 fb 02  df 24 41 a8 21 53 f9 95    6.h..I...$A.!S..
+89 ae c9 d9 50 d1 c4 46  e9 40 c8 38 bc 58 28 a2    ....P..F.@.8.X(.
+8f d1 8c 67 4b 8d 9f e6  74 a4 09 9f c1 05 9a e8    ...gK...t.......
+b2 60 22 61 14 3e 5f a0  66 8f 31 53 96 7b 0d 9c    .`"a.>_.f.1S.{..
+88 ff 0f 9a ec c9 c0 98  b8 e8 d6 ed 49 e6 c5 38    ............I..8
+e0 5e 6c a0 60 ad b6 5f  3b a4 14 62 69 b7 33 80    .^l.`.._;..bi.3.
+5a 2d 0f e0 4c 9c fb 25  2c 53 ae d8 36 d2 c8 d0    Z-..L..%,S..6...
+86 00 b6 55 90 75 b7 ab  c7 3c db cd 23 95 8d 63    ...U.u...<..#..c
+8c 9a f6 06 a1 62 b8 82  bb 39 19 b8 e4 89 89 fd    .....b...9......
+fd c3 d9 1d 89 ce 09 b6  64 d2 13 25 a5 44 d3 7c    ........d..%.D.|
+24 a9 51 07 45 38 36 bc  e4 60 3d e2 91 79 a1 f7    $.Q.E86..`=..y..
+29 92 d2 4b 73 4d 0e 4b  3e 7c 31 37 d7 b6 8d a1    )..KsM.K>|17....
+d6 5f 55 96 50 e4 f6 9a  28 ca ab db e1 cf 95 f3    ._U.P...(.......
+05 fb 53 13 a9 25 5d c4  5e 23 e5 2d 86 cf af b5    ..S..%].^#.-....
+74 c2 6a e3 ff b9 fa 5a  46 e6 50 25 92 43 a0 25    t.j....ZF.P%.C.%
+3e 52 e2 b8 19 38 9e 66  3a 11 fa 1a 93 51 51 ca    >R...8.f:....QQ.
+b4 9a 2c 36 33 9f 5b 14  4b 80 a0 79 39 8f 2e 12    ..,63.[.K..y9...
+b2 b0 93 68 94 00 66 ad  52 ed 8b 20 39 79 c4 21    ...h..f.R.. 9y.!
+64 2e 92 f4 ea 47 cf 78  57 cd 95 56 11 8f f5 5a    d....G.xW..V...Z
+3a 15 b0 ea 10 21 cb 4f  81 9f 23 1c 46 bc 1d c0    :....!.O..#.F...
+85 89 82 8d da 4e 33 b8  56 39 99 98 c3 aa 91 2b    .....N3.V9.....+
+f6 cc 4d e1 b8 fe f1 84  5d 4d 25 e6 38 6c 3e d7    ..M.....]M%.8l>.
+c1 65 51 23 09 60 68 4e  a0 81 b3 07 9c f5 cc 90    .eQ#.`hN........
+c1 31 74 a8 3f 75 41 dc  60 00 83 88 bd 4c d3 68    .1t.?uA.`....L.h
+bd 95 05 7d 25 36 7f a1  d2 96 ef 0b 66 52 29 ce    ...}%6......fR).
+c7 36 66 2b f0 e8 db 8b  f3 e5 2a 6a 1a 15 19 84    .6f+......*j....
+dc 35 cc cf b8 8b bc 14  7c f7 16 d6 7b 2b 8c aa    .5......|...{+..
+f7 e2 02 98 21 eb 35 26  a6 a4 7a a2 f8 7c 43 21    ....!.5&..z..|C!
+97 9c 67 b1 8e e0 70 40  0b ac 34 78 7e db 9b e3    ..g...p@..4x~...
+f9 fd 5b 9f ec 71 38 39  f0 99 48 d8 dc c5 5c ac    ..[..q89..H...\.
+b3 05 f8 c9 05 43 9d 4f  a3 dd 62 c3 e2 e5 3e 37    .....C.O..b...>7
+4e fb 83 f9 3f 8b 91 2f  03 74 b2 d6 8e 04 47 f4    N...?../.t....G.
+09 39 04 2b 80 af 33 0e  b8 7f 8a 93 56 9e 5a af    .9.+..3.....V.Z.
+95 86 02 79 81 6f 67 6c  ff 39 47 63 91 82 74 7a    ...y.ogl.9Gc..tz
+87 ba e2 8a b1 15 a3 8c  64 fc 12 73 7d 5c 40 48    ........d..s}\@H
+e0 53 d6 cf ab 31 a8 c7  3c c1 2d d4 83 5b 6d a0    .S...1..<.-..[m.
+f4 a6                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 10:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 49238
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c4 00 00 00 01 08 f8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 b7 63 c1 b4 f6 b3 77    ...~.Z.Dy.c....w
+30 d5 47 7c 95 a5 d5 3c  6a 61 55 83 f6 76 75 25    0.G|...<jaU..vu%
+20 f0 26 2c 97 22 b7 e6  be e9 d4 62 ad 30 7f 3d     .&,.".....b.0.=
+75 0c 1f 30 af d1 17 80  7f fe ae 2e f3 34 c8 bb    u..0.........4..
+eb fb 22 84 52 02 72 fa  71 54 02 44 e8 a4 72 6e    ..".R.r.qT.D..rn
+6c 4d 30 92 f3 cb 43 d7  8a b5 02 a7 6b a6 f0 b3    lM0...C.....k...
+5e 01 ad 7a 7d e3 e9 29  a7 fc f8 ee 79 ce 73 c9    ^..z}..)....y.s.
+80 26 d5 62 ae 0e 47 53  15 d8 25 c7 7e e5 50 1e    .&.b..GS..%.~.P.
+fa bf 68 d9 65 c2 9f c0  4e 9b 80 66 cf b3 4e 18    ..h.e...N..f..N.
+c9 5a f9 b0 55 9d 9e 3f  90 0f 3a c8 da 48 99 e9    .Z..U..?..:..H..
+07 1b c9 07 6d 38 4c 4d  a4 f5 14 02 19 b6 f9 f8    ....m8LM........
+f1 38 25 4c 8b 60 3a c5  ee ce 79 9f dd fc e9 bf    .8%L.`:...y.....
+66 f3 5c 2b 8e 74 90 e7  e9 30 a1 37 05 6d 52 44    f.\+.t...0.7.mRD
+b2 54 29 e7 df 74 6a 9b  a0 81 15 20 fb 49 d6 b9    .T)..tj.... .I..
+1f e7 3e 4b 36 34 0f e7  ec ca b7 15 f6 bd 7b f3    ..>K64........{.
+ff 9e 86 11 dd 8d d0 c0  72 b7 d4 3b 1c 5e a9 ed    ........r..;.^..
+b4 ae 82 02 83 f7 46 23  17 f2 d8 42 18 8c a3 17    ......F#...B....
+99 e0 23 0a d1 bd 63 61  c4 99 e2 74 54 f7 f4 d3    ..#...ca...tT...
+4a c8 b6 5c a7 a1 4e a9  df be 3e 1a de e3 e2 57    J..\..N...>....W
+3a 2f 04 9c 5c 14 d6 18  c8 34 15 1e c7 b8 df e3    :/..\....4......
+4d 69 2f fb f1 ef ed a6  10 1c 8f 59 5e de 58 fd    Mi/........Y^.X.
+39 b5 71 f9 d9 02 25 00  6a 7e 32 41 64 b9 f8 11    9.q...%.j~2Ad...
+d6 e7 42 c6 c0 b6 90 a0  83 3a fc dd 07 7e 56 11    ..B......:...~V.
+6f 59 54 19 d1 ca 01 aa  0a fb 56 6d fd d9 b1 9c    oYT.......Vm....
+31 b0 a1 4b 24 1c e7 d2  25 2c 0c d5 77 98 11 6c    1..K$...%,..w..l
+c0 54 81 f4 8a e9 b5 dc  9c 7a 3c ea 44 23 54 95    .T.......z<.D#T.
+44 ff d8 c2 77 05 5d 46  8f 5e 35 3e 73 47 a4 41    D...w.]F.^5>sG.A
+72 f1 f5 ee 39 af 91 07  2c 7e b1 66 5a f2 6e d3    r...9...,~.fZ.n.
+da bf d9 fe dc 91 84 f1  21 f3 09 6d ae ff c7 9f    ........!..m....
+14 9c 06 d4 1d 3d c4 0d  ef fd f7 18 bb 72 ca cf    .....=.......r..
+c2 6f 62 0b ca 92 f4 84  58 63 78 a1 d0 91 1c f8    .ob.....Xcx.....
+28 59 11 96 53 55 3f 7b  77 d3 1e b4 14 f6 e2 99    (Y..SU?{w.......
+eb 6f db 96 7c 52 90 ab  e4 c3 53 47 f8 5b 20 32    .o..|R....SG.[ 2
+89 f5 d9 cf 9e 80 1a ec  37 77 31 15 8c 4e 1b eb    ........7w1..N..
+9b fd e9 ca 19 f7 24 34  97 ec a5 fd aa 6c fa b7    ......$4.....l..
+82 dc 86 8f 2d 7b 0d 10  6c 31 e7 70 26 ee 17 e4    ....-{..l1.p&...
+bd f7 8a d2 3e b4 24 f7  a7 e3 60 e9 bc f5 15 a7    ....>.$...`.....
+ca 43 1d 3a df cf 1b fa  0e 44 ce 2f 13 c4 02 4d    .C.:.....D./...M
+a9 ff 8e 2e 30 db 3e 9b  d8 8a 6d 3b 0e 72 c8 16    ....0.>...m;.r..
+e1 e4 be e2 eb 7d 79 f7  86 56 a7 c5 52 2b 38 cd    .....}y..V..R+8.
+dc 76 27 ec fb b1 19 a2  f2 1b 7c 09 2f 1c 67 1a    .v'.......|./.g.
+2e b6 e4 9c f5 ed 57 9b  b8 3e 65 8d eb d3 ba 8a    ......W..>e.....
+3f e2 05 e8 c5 a7 a2 83  eb 81 ea e3 5d b0 c0 36    ?...........]..6
+a5 12 69 ba 48 da 1c 0d  c3 bd fa 5a d9 a0 4b 3a    ..i.H......Z..K:
+bb 59 3c 44 c0 0c e8 e8  08 bf 23 30 87 16 f0 db    .Y<D......#0....
+d5 4c 58 06 97 a6 4a 2c  e7 cc 76 0c cd 1a 71 b6    .LX...J,..v...q.
+22 97 fd c7 5f e1 d0 fb  20 bf 14 32 db 72 09 88    "..._... ..2.r..
+5b d1 7e d0 c0 64 40 7f  03 a3 53 2d bd a7 d8 93    [.~..d@...S-....
+b3 ce 0c 53 08 f6 a3 d8  5f 26 60 c5 6d b8 20 ad    ...S...._&`.m. .
+bc 8e 71 48 d7 4d 61 6b  05 e0 ee 87 a2 c1 db 7a    ..qH.Mak.......z
+44 21 c8 71 ef ad 5b 25  0d 7f ac ff 5f 30 cd 61    D!.q..[%...._0.a
+50 8c 07 4d 6f f3 71 82  a0 3d 7d b5 30 82 08 2f    P..Mo.q..=}.0../
+f9 d8 23 d8 57 7f 33 c5  7b a0 95 8f 9c 85 1f 90    ..#.W.3.{.......
+48 3f 33 2a a1 c9 8e 1f  0f 6b 85 b6 ec 31 e9 95    H?3*.....k...1..
+a0 60 a4 cb 75 e3 72 f9  40 5a 2f bf 9e cd 9e 9d    .`..u.r.@Z/.....
+1c c4 9b 01 8b 11 88 f0  6c 03 29 37 98 b8 1a 8f    ........l.)7....
+90 68 b3 f2 41 42 f7 6d  d5 ce 5d 95 42 fe 73 6d    .h..AB.m..].B.sm
+fc ee a0 31 b4 24 1a 18  7e 58 23 94 b7 bc 0c 8b    ...1.$..~X#.....
+b5 a5 7b 2d dd c4 48 91  32 84 dd d6 d6 d3 54 6e    ..{-..H.2.....Tn
+f7 a0 aa 5c ac 3a 50 09  58 ff 7e cb 13 4b 74 e8    ...\.:P.X.~..Kt.
+96 49 6b 5b f1 98 54 19  c3 2b 3c bb d8 04 d2 b9    .Ik[..T..+<.....
+b2 86 ba 70 c5 87 80 fe  83 d9 25 75 27 81 cd 36    ...p......%u'..6
+06 36 e8 a2 4d 0c 21 30  09 37 75 0b e8 a7 6c 65    .6..M.!0.7u...le
+1e 43 d4 f2 01 27 33 b6  b5 e7 e7 38 d6 ac f6 4c    .C...'3....8...L
+de 0c 98 bb 74 50 65 04  c2 6d 00 1e 12 a3 3a 35    ....tPe..m....:5
+a0 d5 92 c8 a9 2f 70 09  68 d4 c8 4f 3a 49 e7 eb    ...../p.h..O:I..
+59 49 82 40 2b ac 09 4f  95 d5 c1 b8 0c 89 99 e0    YI.@+..O........
+be 3c 4c 98 a7 29 d2 15  77 68 5c 3f d8 59 06 52    .<L..)..wh\?.Y.R
+e3 97 f9 ec 26 24 25 61  07 90 80 aa f4 9b 8f 97    ....&$%a........
+fa 89 df 16 e8 9f e5 d4  44 75 73 78 55 f4 60 a5    ........DusxU.`.
+76 9e 07 b9 89 b5 be 0a  35 b6 b7 50 41 2c d3 96    v.......5..PA,..
+1a da f0 9e 7c ad fe 30  d0 ea b5 b3 81 69 01 85    ....|..0.....i..
+3e 30                                               >0
+
+
+####################################################### ------ ###################################################
+
+Packet number 11:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 25125
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c7 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 00    ........ 1..Ry..
+44 d0 17 c3 1b bf 4b 26  45 4d 28 a6 a7 b0 84 c6    D.....K&EM(.....
+cd 8c 89 f6 74 9b e0 14  0c 5d 1e 07 ad f1 5b 25    ....t....]....[%
+24 3b d4 eb ce 03 36 0d  d0 1b fc 57 45 0f 01 0c    $;....6....WE...
+f2 a1 5a 0b 12 8b 87 74  2d 52 c2 d7 92 4a 34 17    ..Z....t-R...J4.
+1e d8 8d 07 98 a6 7c 8a  b7 99 c5 29 8e 7d d1 eb    ......|....).}..
+fa 37 aa 4a 6b 27 ff 0b  5b 39 7f 4f f2 5a 54 b3    .7.Jk'..[9.O.ZT.
+12 8e eb 2e f5 6e fe 2f  07 ee bc 81 64 3f 60 98    .....n./....d?`.
+83 12 95 8b e2 bb bb 33  f6 3c c5 cb 86 3e 0e 81    .......3.<...>..
+97 fe 7f e5 d9 e5 25 f1  dd e7 46 39 e3 de ee ab    ......%...F9....
+19 ab ce d8 35 f8 33 9b  93 9e 60 ae 5b 31 dc 83    ....5.3...`.[1..
+9d fc b1 19 a0 a0 59 92  42 d6 77 2d 05 23 c1 78    ......Y.B.w-.#.x
+8d 53 06 e6 b9 41 e4 ad  b1 d5 1d 3e f4 b7 11 44    .S...A.....>...D
+4f ca a7 ab 6d 45 05 c5  4c 2c 5e 98 ca 11 48 bf    O...mE..L,^...H.
+9d 55 d2 6c ef 62 42 e1  c1 51 2a 7c 44 9b 89 db    .U.l.bB..Q*|D...
+35 e8 73 f5 0f 1b 55 7b  96 e7 e1 82 d2 21 7d f3    5.s...U{.....!}.
+66 b8 f0 2c c2 3d 94 b7  a3 55 ce fc 1f 94 e2 44    f..,.=...U.....D
+3d 0f df ad 3c 57 14 e5  e3 06 06 50 4b 34 23 35    =...<W.....PK4#5
+d2 fa 10 cf b1 e4 51 c9  d8 d1 e8 a5 38 3d bf df    ......Q.....8=..
+40 02 b2 41 18 01 09 60  90 35 c3 ef db 85 ff 46    @..A...`.5.....F
+5b f3 5e 6c f9 95 03 a4  1b 6e 71 08 9a 74 05 d0    [.^l.....nq..t..
+9c 9e 6a 92 19 9a 58 ab  d7 fc e1 4c eb 57 ea a0    ..j...X....L.W..
+c9 44 42 ba ff ad 93 41  4c 90 04 57 e7 cd 0a 9b    .DB....AL..W....
+8a f1 7e b6 7c 4e 29 e4  26 ea 31 18 d8 5d 86 28    ..~.|N).&.1..].(
+44 f2 75 96 15 43 9f f7  52 c8 6c 66 0c a1 a1 60    D.u..C..R.lf...`
+17 c8 2a ac 47 d5 1c fd  fa 1e 22 95 cc 30 42 6b    ..*.G....."..0Bk
+b5 91 5e 91 fa 10 a0 bb  e8 e1 c1 94 24 20 96 80    ..^.........$ ..
+e7 b3 04 f4 5d 3a 71 2e  a2 81 10 66 35 4a 7c 21    ....]:q....f5J|!
+0e 46 1b de d6 46 2d f0  01 92 07 e1 cd 4d 2f b6    .F...F-......M/.
+0c 10 22 1e 65 0e a6 75  30 0d 1e c7 de b6 4d 8a    ..".e..u0.....M.
+f4 cf ad 5a 0e 42 c4 5a  b8 d5 be 15 f3 cc e5 62    ...Z.B.Z.......b
+c6 f5 2c 76 17 82 c3 70  96 4b 78 fc c8 8f 5b a2    ..,v...p.Kx...[.
+35 d8 a7 a0 c6 ce 6b 17  dd 72 16 79 7c 0b 3c 56    5.....k..r.y|.<V
+fc c5 51 09 ad 03 0a fa  26 0f 30 f1 c4 a2 98 32    ..Q.....&.0....2
+85 81 ad 23 bf 3d 5e b0  ee c4 48 c4 76 3b 83 97    ...#.=^...H.v;..
+b4 0b ee 61 e4 d8 d4 bd  5c 68 be 7a f9 d3 3c 35    ...a....\h.z..<5
+6f e9 06 fa 00 45 e7 ad  e7 82 74 e5 91 c6 a6 d0    o....E....t.....
+c0 8d e2 f1 0b 2d 6c aa  92 b5 97 bc ce a5 ec e4    .....-l.........
+21 e1 b3 8c 05 fc 9f a5  1e 6d e2 55 d8 26 25 3d    !........m.U.&%=
+55 4e c1 e8 ba d7 5f 3d  93 6c d6 d9 c9 0d 0f b6    UN...._=.l......
+43 23 17 46 02 7d 61 0e  0f 55 df 2c f5 52 86 eb    C#.F.}a..U.,.R..
+a7 98 ec 1b d0 bd ad b1  23 f7 92 09 ce 2f 65 b3    ........#..../e.
+04 56 5b 61 ca 63 e5 db  4f 3d 5c 4e 37 fc e9 f6    .V[a.c..O=\N7...
+94 53 4f b8 7e fd 5f c1  04 12 96 5f ff bb f9 99    .SO.~._...._....
+49 18 04 a8 fc 41 55 6a  da 90 58 32 09 1d d4 c3    I....AUj..X2....
+e9 e8 7c d5 9d 2d ff 71  33 77 d6 d4 d2 a7 09 de    ..|..-.q3w......
+4e bc ed f5 08 ac 4e c6  55 05 7e 56 3a 06 90 32    N.....N.U.~V:..2
+af 9e cb a0 e9 fa e2 93  6f 3b 50 99 98 f8 4b 81    ........o;P...K.
+bc 17 08 e3 c0 f8 2b c6  db ee 46 82 56 13 56 37    ......+...F.V.V7
+67 6a a7 1a c7 1b af d3  0c fe d0 c9 df c1 2e b3    gj..............
+d1 34 15 0d 36 e6 bf c3  c4 2b 0d d9 a0 aa 2b a3    .4..6....+....+.
+d5 6d 7e a2 c2 19 4b e2  bc b5 4a 51 9b 94 02 c8    .m~...K...JQ....
+c2 3a c5 f9 12 b8 2a 68  a7 b0 95 8d a5 ee 9d 7e    .:....*h.......~
+a3 e2 5b 5d 72 8f 84 48  92 fb ce 1a c5 bc 18 35    ..[]r..H.......5
+6b b1 f0 a1 b3 51 e8 7b  34 54 f8 db 9d f0 af 82    k....Q.{4T......
+c8 4b d0 e5 07 1c 48 27  8e e5 ac fe d2 f1 1b 01    .K....H'........
+41 23 bd 95 77 d4 90 cb  56 87 3b e7 66 bf e7 f5    A#..w...V.;.f...
+31 a6 a9 10 35 32 de 45  2d cd ff 99 c1 6e 87 5c    1...52.E-....n.\
+d8 f1 fc ee c6 b9 76 a9  40 69 c6 56 cd d0 fc fa    ......v.@i.V....
+3c 9d eb f3 c6 3f 06 bb  56 2e cf ac 46 90 5b 1b    <....?..V...F.[.
+56 28 55 22 05 ce aa 4c  5f bd b7 b0 1a c7 24 1c    V(U"...L_.....$.
+1e e4 b5 b1 af 68 d6 ed  7f 13 a6 0d 68 e6 36 5e    .....h......h.6^
+3c f1 cf 94 31 b7 af 53  45 61 a3 49 2e f0 53 1e    <...1..SEa.I..S.
+29 85 7b 32 13 1c 44 de  25 f0 81 35 e6 ef 34 7b    ).{2..D.%..5..4{
+62 da af 1f 01 a8 0c 4b  a4 27 75 cd e3 15 9e ab    b......K.'u.....
+89 95 34 47 a1 ec 58 a5  63 6a 82 a1 24 db 43 51    ..4G..X.cj..$.CQ
+bf c4 3f 75 dc de 95 dd  4b db 70 df 7e be 00 ed    ..?u....K.p.~...
+47 4b 19 7f 29 b7 f0 9f  2e 3d 2f a3 10 50 22 2e    GK..)....=/..P".
+80 de 37 64 af bc de d7  44 5a 9b 72 6b 4b 4e 27    ..7d....DZ.rkKN'
+d4 e1 f4 60 da f8 1f e2  da b9 4c b6 ef 73 ae 12    ...`......L..s..
+e7 da 9f 9d 79 dc d8 7a  42 cb ca 0c 30 11 e4 52    ....y..zB...0..R
+a4 df 87 6f 3a 50 e7 31  ab 47 18 d9 85 13 b9 03    ...o:P.1.G......
+36 4f 8d a8 57 26 f6 ad  4f 31 66 58 b9 29 fc ce    6O..W&..O1fX.)..
+17 d8 f4 56 a0 e0 57 1c  c8 df e6 1d c3 a8 78 8f    ...V..W.......x.
+cd 34 1b 72 8d 62 44 61  87 66 8d aa fd 68 15 2b    .4.r.bDa.f...h.+
+09 0f 76 74 32 fc 70 64  c9 32 c5 ac 94 03 89 f0    ..vt2.pd.2......
+40 50 14 58 e1 57 91 42  ca e2 2e 17 cf 4c 56 6f    @P.X.W.B.....LVo
+b4 45 7b b7 e0 2b f0 97  df 8f 34 18 67 d8 e5 e5    .E{..+....4.g...
+7d a3                                               }.
+
+
+####################################################### ------ ###################################################
+
+Packet number 12:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 50719
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c9 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 00    ........ 1..Ry..
+44 d0 ff a0 89 1f 67 48  1e 1c b8 57 f0 f0 3b 89    D.....gH...W..;.
+fc d4 37 5a 26 4f a0 84  ab 8b b6 1d 1b 01 bb 60    ..7Z&O.........`
+f9 90 6f 7e 8b 87 ff 1c  2d f4 4f dd 07 c0 d6 e6    ..o~....-.O.....
+52 ea 71 be cc 85 7a aa  98 41 19 24 db f5 35 05    R.q...z..A.$..5.
+0f a2 6e 66 75 f8 9e 14  7c db c3 1d 36 94 64 8f    ..nfu...|...6.d.
+a9 72 48 5a 56 78 a2 c7  94 67 ce 0c eb 56 67 e3    .rHZVx...g...Vg.
+4b e3 b3 7d c0 2e f8 4e  09 44 e0 9e a3 db 41 dd    K..}...N.D....A.
+0d 87 6f 87 47 c5 cb 65  53 dd 8a 9c 15 fc da cc    ..o.G..eS.......
+dc fd 7e be 69 ac 4f 47  8b 07 11 d3 d9 85 3e d1    ..~.i.OG......>.
+d6 e7 80 7f 0e 83 48 97  7e 2b 7c aa 54 b2 a8 b7    ......H.~+|.T...
+96 eb 08 f1 bd 2d c4 9e  f5 bd 12 12 c0 47 c3 00    .....-.......G..
+0c 1a ac ce ef 33 e0 be  93 23 ec 70 0d bc bd c6    .....3...#.p....
+f8 fa 6b 66 69 b5 27 64  cb 7c 8c 6b 8c 40 2d 6e    ..kfi.'d.|.k.@-n
+3d 9f fe cb 5c 1d 0c bc  46 d2 b6 9f 62 b5 e5 b6    =...\...F...b...
+93 dd 82 8d 4d 4f 1f f8  4c f4 e9 3b 4b ec bf 39    ....MO..L..;K..9
+ef d4 b5 14 0a 77 8c 74  0e 4e 3f 6c 54 ce a7 f2    .....w.t.N?lT...
+bb 8d ed 4f 3c 7a 64 41  3a 41 88 c8 fe f7 2f f1    ...O<zdA:A..../.
+70 af 51 8f 94 0f bb 54  ff 7d 35 f4 73 6b 73 e1    p.Q....T.}5.sks.
+e7 21 59 53 ae 2a 61 e4  c5 16 11 9f 16 7c 33 86    .!YS.*a......|3.
+9e 65 4e 92 a7 68 ef cd  01 e1 fd 61 43 11 2a e7    .eN..h.....aC.*.
+89 32 7e 2b 4b e9 47 3b  2f 7d 68 2e 49 8a 7d 1d    .2~+K.G;/}h.I.}.
+c3 e4 33 89 a2 ac f6 ea  80 59 58 80 b3 0d 55 06    ..3......YX...U.
+02 d5 41 8b 47 4e fb 75  ee b7 06 63 8a 02 a4 a1    ..A.GN.u...c....
+4a 71 88 a3 c7 88 03 52  60 20 33 fb 22 97 c2 0e    Jq.....R` 3."...
+f3 4b b2 9e b0 24 07 0e  e6 b8 39 c0 8b 22 8d b1    .K...$....9.."..
+36 34 04 83 aa 24 8d 40  40 f4 29 6a 9c df 13 59    64...$.@@.)j...Y
+9c e0 0c 89 04 e4 e1 76  b5 53 5e c5 71 14 ef 22    .......v.S^.q.."
+d7 d0 77 26 66 cb 11 95  05 8b 1d fa 94 08 c3 96    ..w&f...........
+da 62 24 6f 9d 0a 43 a6  e5 89 69 d4 41 5b bd 5a    .b$o..C...i.A[.Z
+17 07 ec 3f 0d 02 eb 3e  4f 56 d4 db 99 fb 5c 4a    ...?...>OV....\J
+d8 b5 64 9f a0 32 be 88  2b 23 56 30 19 dd a5 94    ..d..2..+#V0....
+a2 e3 76 a1 f6 cd 19 10  85 b9 3d 0b d7 c2 dd a9    ..v.......=.....
+bb 35 0e 5f f1 de 01 37  03 9c 58 02 e5 25 79 8d    .5._...7..X..%y.
+5c 4b d9 0f 76 03 58 e2  ca 09 6a 41 25 92 7b b1    \K..v.X...jA%.{.
+b5 df 5e f9 e3 1a 9f b5  6b cb 4c 37 d5 dd fd f5    ..^.....k.L7....
+04 b8 94 66 96 a7 e9 14  75 11 a2 ba 5a be ff 5a    ...f....u...Z..Z
+63 2a df 48 c5 54 f8 d3  51 66 17 18 cf 33 ea 27    c*.H.T..Qf...3.'
+3f 6d 3d 44 98 2f 46 22  66 57 70 11 0d cb d6 ae    ?m=D./F"fWp.....
+ec 41 6d 9f 8b fb 69 ee  60 c4 b4 49 d0 3a f7 cd    .Am...i.`..I.:..
+09 4b 42 20 66 ba f3 51  07 35 88 ec 8d 57 54 e1    .KB f..Q.5...WT.
+01 c0 aa 99 29 de cf 6e  c8 ce a3 24 f6 50 20 a6    ....)..n...$.P .
+c5 df a8 07 b1 00 32 48  7a 04 d0 ca 90 45 c5 d5    ......2Hz....E..
+33 1d 9b 1f ab 14 fc 11  96 d1 c1 46 f3 d2 a7 79    3..........F...y
+af 8e 94 61 6b 3b 04 80  2b dd 14 83 3a 86 36 c4    ...ak;..+...:.6.
+88 ae 26 34 dc d8 8e e2  f4 af dd 2d 01 72 6a 82    ..&4.......-.rj.
+22 8e 30 63 1a 8d a2 1d  9e dc 91 93 e5 eb d7 2a    ".0c...........*
+86 74 4d 97 29 93 04 de  7a 3a d0 0e 11 d8 e0 69    .tM.)...z:.....i
+17 37 ec 7f ff 4b a4 15  08 ab 78 9e e9 c0 85 f7    .7...K....x.....
+3c 4a af 50 f1 2b 0b a2  ef 2e 31 23 0f 5f 34 ef    <J.P.+....1#._4.
+24 04 58 1a 2b 6a e3 db  43 4e 92 fd 75 e6 25 8b    $.X.+j..CN..u.%.
+a6 0e 2f 4e 26 02 50 90  c8 2d f7 60 5e 2f 44 cf    ../N&.P..-.`^/D.
+07 a2 6f 68 cc c4 68 e7  a7 c8 6b 40 28 f6 00 ea    ..oh..h...k@(...
+45 ce 25 a8 5c b8 20 f2  2c 77 79 1c 48 23 ca 3e    E.%.\. .,wy.H#.>
+83 dd 71 73 58 7a 85 94  c1 7b a4 6f 0c 5b ac 6f    ..qsXz...{.o.[.o
+6e 3f d1 78 1b 3c b4 a4  7a c1 67 92 08 1c 59 fa    n?.x.<..z.g...Y.
+eb 0e b9 d9 79 23 20 8f  c0 31 ff b0 8d b4 af 98    ....y# ..1......
+4c b6 0d 30 66 aa da 6c  f5 57 77 57 65 a9 53 09    L..0f..l.WwWe.S.
+61 c8 e9 da f6 dd 55 c9  cc 91 18 26 07 83 ab da    a.....U....&....
+ae 83 47 af 13 23 18 92  df fa 25 a6 61 7d fc d2    ..G..#....%.a}..
+56 0d db ad 6e 3b ab 2c  f0 0b 6e 79 b1 25 e0 32    V...n;.,..ny.%.2
+f3 4c 36 db ea 45 a8 e7  d8 cd af 2a d4 2d d5 2c    .L6..E.....*.-.,
+a6 c9 d9 f3 bc 65 6a 74  61 6b a9 07 69 81 35 bc    .....ejtak..i.5.
+9b ed 87 9e 7e 08 ed e5  c1 26 8d 33 ae 7e 94 9b    ....~....&.3.~..
+60 de d1 d0 99 f8 d4 d4  16 03 f8 bd 36 ba 22 4d    `...........6."M
+34 b1 ef c3 f1 b3 a4 d3  c7 f4 f8 95 c1 62 23 e4    4............b#.
+c3 2a 08 90 a3 96 4d 24  ad 7d 03 c6 c6 12 57 fe    .*....M$.}....W.
+aa 9d 49 d2 f6 61 19 af  60 eb 68 91 4c 57 23 21    ..I..a..`.h.LW#!
+19 b9 a9 82 ea 8c 6e fe  13 c5 b4 16 5f 64 e6 d7    ......n....._d..
+e5 b9 7f ce ab 6e e6 bf  59 de d1 35 2f 47 49 85    .....n..Y..5/GI.
+1a 80 fd 70 19 2c 3a 5c  ab e6 77 a1 03 d1 e5 3b    ...p.,:\..w....;
+3d 2b 11 a2 ba 6a 76 b9  83 54 b8 e6 af 97 ee 94    =+...jv..T......
+95 e5 ed 4b a6 31 66 7f  e0 85 98 77 81 90 fa be    ...K.1f....w....
+15 98 67 dd 1c 8c f1 ab  39 26 6f 1d 4c eb d6 11    ..g.....9&o.L...
+d0 ef aa f3 91 85 85 45  0c c5 4e 09 d9 50 f9 d7    .......E..N..P..
+a1 81 07 62 d7 21 74 96  f9 22 6f 75 a0 13 cc f6    ...b.!t.."ou....
+66 7f ee 04 65 eb 85 97  e1 de 04 99 04 5b a7 1c    f...e........[..
+4d 6c ea 70 90 0d c9 6a  4c 2f fa c2 40 9f 86 72    Ml.p...jL/..@..r
+fb a9                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 13:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 59791
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c0 00 00 00 01 08 f8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 d8 66 ec b7 31 54 17    ...~.Z.Dy.f..1T.
+fc 5a 04 89 6b 27 59 60  05 fe 51 51 2b d5 07 a5    .Z..k'Y`..QQ+...
+31 f1 6d 19 b8 ca fd 2d  a4 68 da ad fb 57 b2 e5    1.m....-.h...W..
+38 3b 5e 4e 47 d8 14 c1  da 55 82 40 20 7f 3d 38    8;^NG....U.@ .=8
+a2 c6 cb 8b dc f4 bc bb  11 87 d9 7f 4b cc b6 eb    ............K...
+db 98 f8 d8 c0 77 f5 9f  e8 f8 03 5d dd f9 41 6b    .....w.....]..Ak
+bd 38 ce 55 a4 a6 56 bb  d1 ce 5c fb 2b 16 38 55    .8.U..V...\.+.8U
+b9 14 6c 9b d8 eb c8 3a  44 26 71 38 9b 59 c7 6b    ..l....:D&q8.Y.k
+55 cd 5a 2d 8d f8 6a 4e  b6 a6 e7 12 be 6c d8 c6    U.Z-..jN.....l..
+b0 ed df f5 7f d2 02 33  0a 0f 1c 9c 3f c0 94 28    .......3....?..(
+96 d6 6f eb bb c4 c1 5e  eb 38 a5 18 da 27 07 43    ..o....^.8...'.C
+9b 56 a9 1e 6a a5 3e 2b  91 92 d0 86 54 dc 9a c3    .V..j.>+....T...
+99 63 05 86 96 72 ed 3e  4e 0d 80 1f 7b e4 1f 9c    .c...r.>N...{...
+06 69 a5 52 ea 21 0d 12  9e 94 92 62 a0 4b 8a 10    .i.R.!.....b.K..
+bd 79 a7 0f 90 5f 1a 87  aa e5 3b ea cd e3 32 f8    .y..._....;...2.
+37 8e 99 4f 1d ce aa f4  bb 6d 75 44 c4 48 77 af    7..O.....muD.Hw.
+fa b2 43 01 39 5a 08 a3  b1 ab 36 39 b1 57 40 2e    ..C.9Z....69.W@.
+6d 38 4a 0f 76 fa e3 f7  1f 54 51 fd 45 b9 72 8d    m8J.v....TQ.E.r.
+15 d3 05 c8 29 48 7b 01  f2 8b 00 5f 60 71 f5 34    ....)H{...._`q.4
+a7 d6 ba 01 8f 2e 8d 43  2a f2 5a b3 a2 d1 1b c1    .......C*.Z.....
+e9 47 ef 05 b7 ac ee e6  a4 ba 75 22 ba 93 73 d2    .G........u"..s.
+57 a1 18 07 a3 33 bd 2a  be 2a e1 89 cf d2 da 38    W....3.*.*.....8
+7f f1 f2 19 98 e0 02 c5  71 aa e4 c7 c0 d8 99 16    ........q.......
+83 7e f9 39 91 dc 82 42  b9 b9 38 ab 8b d0 ce 56    .~.9...B..8....V
+97 13 e9 8d a5 30 ac 96  1a 9b 07 99 25 d1 5b dd    .....0......%.[.
+38 6a 50 3c 32 8d f8 dd  cb f1 f0 81 b7 34 f3 4d    8jP<2........4.M
+d6 5c e2 f0 c2 dc dd a8  3a f9 97 4f 49 0b 39 10    .\......:..OI.9.
+aa e0 a3 c7 e6 e0 87 42  76 f0 6c e5 3d 30 21 c3    .......Bv.l.=0!.
+73 42 f8 f6 ac fd 5b 4e  9e 79 ae 50 a3 31 95 4e    sB....[N.y.P.1.N
+7e 88 3d 84 45 7f b6 d1  12 63 3e a1 12 68 ed af    ~.=.E....c>..h..
+cc 1a f6 37 d8 98 c6 4c  bc 30 0c 6e d2 e1 45 6a    ...7...L.0.n..Ej
+91 d2 83 ad f4 8e d3 c7  f7 68 7b 60 aa ac 15 7a    .........h{`...z
+f7 42 ff 05 4b 2b fb 35  36 db 9f 6c d2 16 bb b5    .B..K+.56..l....
+97 02 e0 6c e7 31 83 01  c1 e7 08 4f ed 41 f5 2f    ...l.1.....O.A./
+59 ca 85 1b b3 66 c9 49  b3 a3 2c 6b 96 46 e6 ee    Y....f.I..,k.F..
+d0 58 45 de 49 f9 61 4d  b3 19 4a 92 63 85 ef b5    .XE.I.aM..J.c...
+60 07 f4 56 4f f3 7d 91  1c 4b ff 26 e5 10 2f be    `..VO.}..K.&../.
+55 15 32 a4 b3 a9 f5 1c  a8 6d 1c c9 91 c9 99 94    U.2......m......
+52 e3 a6 7b f5 21 54 6d  15 36 1a d9 a4 55 79 26    R..{.!Tm.6...Uy&
+b6 64 7c 1b 9b 15 53 dc  8e a1 02 53 a2 85 1a b5    .d|...S....S....
+d2 57 05 6f 0b 76 06 5e  02 74 ed ac 5d 34 d9 92    .W.o.v.^.t..]4..
+43 0d f2 41 fa 5f 16 31  46 2a 67 84 d1 81 7a 14    C..A._.1F*g...z.
+76 6a 15 33 ed 59 35 fb  ec a0 e8 9b 2e db e0 0b    vj.3.Y5.........
+89 ad e7 65 26 b4 9c 23  39 a7 23 0e b5 80 47 f8    ...e&..#9.#...G.
+9e f4 21 7e e2 d7 b0 8a  fb 94 b7 d0 1c a8 52 7a    ..!~..........Rz
+fb e5 89 e0 e9 15 29 24  39 73 7c 37 e1 55 80 31    ......)$9s|7.U.1
+6f 6b 97 04 3f 78 61 96  bf ce 06 a0 91 9b a2 7d    ok..?xa........}
+44 82 02 01 6e 88 c8 3b  36 20 2b 25 a2 fa 00 e9    D...n..;6 +%....
+2f 2f eb bc 4e d6 9a 5f  61 b9 28 6d ed 7e a1 d6    //..N.._a.(m.~..
+78 a7 eb a7 bc 80 8a bc  24 52 4d e3 66 fc 5f be    x.......$RM.f._.
+1e c4 40 bb e1 79 07 ca  b0 e9 20 ff a0 d7 12 9f    ..@..y.... .....
+00 c2 01 27 3b 65 9a 8f  68 6f 95 d9 12 4c df 89    ...';e..ho...L..
+0e 58 b7 6d e6 cb 1a 93  b9 b3 58 51 85 b4 bc 90    .X.m......XQ....
+dd e5 c7 ba d2 e4 69 ba  c5 57 da 35 1e 30 78 66    ......i..W.5.0xf
+a8 1f 53 56 e7 29 40 69  be ce 69 a8 1c 29 56 81    ..SV.)@i..i..)V.
+42 54 e2 98 37 04 db 82  9c e3 dc 92 d5 28 8b 0e    BT..7........(..
+d0 36 bc 75 39 47 03 47  a1 a4 5b 7a 9a 33 d7 14    .6.u9G.G..[z.3..
+41 7e 8a d7 ba 22 b4 c6  7b 50 95 b6 99 5b 64 e9    A~..."..{P...[d.
+9f 9f 89 60 19 1d 43 a0  4e 89 a2 6d 64 4b 8b a8    ...`..C.N..mdK..
+d1 0a 1f 65 36 96 cd b7  55 8f cb 81 17 bf 39 86    ...e6...U.....9.
+bf 82 f4 75 7d f0 20 13  00 66 3e d8 73 ed 43 b3    ...u}. ..f>.s.C.
+54 d6 9a 1a 5e 72 56 b5  67 52 ee f0 41 57 9c bb    T...^rV.gR..AW..
+73 88 88 1a e3 7e cc 45  c8 ec bf ad e1 21 e4 0e    s....~.E.....!..
+85 32 bf 01 62 f3 61 7f  26 a0 cb 8f 96 69 a7 c1    .2..b.a.&....i..
+52 4e df 42 f6 fa 76 3c  c2 f8 1c 12 cc ad ed 82    RN.B..v<........
+56 bb 41 43 2e 70 ee 44  41 b6 ba b4 e3 ef 04 c0    V.AC.p.DA.......
+92 c8 ad 03 e5 19 99 b5  9b 10 47 24 52 51 25 3b    ..........G$RQ%;
+81 14 ff 25 02 3b 69 06  86 c0 10 43 44 ad 62 4d    ...%.;i....CD.bM
+5f 0a 62 8c 14 af be ce  e9 85 22 ef 13 eb 37 63    _.b......."...7c
+68 46 8f 6c ff 5f 8e ef  91 bf 89 ca 9d f5 08 e6    hF.l._..........
+ad 60 15 6b 5f e7 62 fa  25 01 ba af 51 49 43 c3    .`.k_.b.%...QIC.
+b5 96 a4 b0 eb b0 58 7a  16 46 e7 bc c9 5f f5 6e    ......Xz.F..._.n
+72 d4                                               r.
+
+
+####################################################### ------ ###################################################
+
+Packet number 14:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 3172
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+ce 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 00    ........ 1..Ry..
+44 d0 b5 72 f5 fb 69 b4  e8 31 cd fe 71 dc 07 85    D..r..i..1..q...
+b9 4e e9 2c 6e 7b d4 69  21 39 b7 8e d7 c4 ae a1    .N.,n{.i!9......
+2f e6 58 58 f7 32 1e 82  18 77 c6 6a 5b 62 f2 6c    /.XX.2...w.j[b.l
+18 a0 26 51 12 c8 2d 7b  0f ce 25 3c d3 0d f2 f8    ..&Q..-{..%<....
+7c 01 44 a0 e7 0c 4e fc  93 b7 3d cb 6d 28 4e 6d    |.D...N...=.m(Nm
+96 59 2e 56 44 5b 29 7e  ed 2a 8c 94 82 6b 22 f1    .Y.VD[)~.*...k".
+ab 2d 7f 00 c9 af aa 79  65 09 08 22 3f 58 19 43    .-.....ye.."?X.C
+42 97 49 a5 23 53 68 7c  40 28 fb cd a5 40 52 44    B.I.#Sh|@(...@RD
+33 16 1c 16 79 a2 e7 0c  99 87 37 df c5 98 5c 38    3...y.....7...\8
+76 0a 44 01 08 14 3c 64  1a 37 00 01 03 d5 54 1f    v.D...<d.7....T.
+97 6b d7 77 b2 bc ab df  ac 40 cd b0 6c 82 4b c7    .k.w.....@..l.K.
+1f bf 14 7c a3 c2 a8 69  f7 e0 a2 e3 f3 2f 4d cb    ...|...i...../M.
+ac cd 7b 20 af 35 04 a1  40 14 74 fe 58 11 6a 25    ..{ .5..@.t.X.j%
+9b 71 ba 18 0c 5a f4 5b  d0 2d 67 69 9c 99 35 e4    .q...Z.[.-gi..5.
+7e 81 d7 c0 7e 78 fe 5f  c9 64 de b6 87 e1 88 c6    ~...~x._.d......
+28 e1 81 60 8f 8f 45 95  c2 ab 33 57 47 34 bd fc    (..`..E...3WG4..
+87 ae ba 83 fc c8 27 ca  13 b7 9a ee 55 59 41 63    ......'.....UYAc
+e2 0f 29 d2 2a e5 c8 41  a0 50 f7 75 9b 59 4c a1    ..).*..A.P.u.YL.
+01 9d 92 e5 86 c1 62 0a  3e 92 ec f5 f3 f2 3f e1    ......b.>.....?.
+00 a1 93 31 7b da b0 96  4f f3 f8 d5 1e a5 02 1c    ...1{...O.......
+9f 4f d4 ae cd da b9 a8  56 b5 f3 a2 34 ca d9 0c    .O......V...4...
+83 86 23 1e 38 1a c3 b3  26 5e 7d c6 95 d9 ef 8b    ..#.8...&^}.....
+fe 89 21 bd 93 d0 ce 45  32 0a ac 85 96 66 c6 4c    ..!....E2....f.L
+38 e9 fc dd bc 45 b3 6e  06 07 11 97 55 10 a8 32    8....E.n....U..2
+89 2a 9c ba c0 7e 43 d4  9c 43 e9 ce 78 50 15 f3    .*...~C..C..xP..
+d9 01 7a 1b 07 10 a8 59  6c 85 3d 05 44 6b 20 af    ..z....Yl.=.Dk .
+cf 65 c8 1b f1 3f b6 36  9c 2b 1b 89 ab 17 bb f0    .e...?.6.+......
+0b 3f 39 7d 6b 0a ba 1c  0a 62 34 27 10 1a df ee    .?9}k....b4'....
+3e 4d 1e 14 77 9a 9c f5  9e a3 9e d8 0b 2b 4a f8    >M..w........+J.
+d2 a9 96 fd 35 19 06 38  95 bc e6 52 92 7c 9f d9    ....5..8...R.|..
+90 8a 91 98 14 82 c8 55  e6 d9 a5 3b 24 9b 1c 45    .......U...;$..E
+6a 47 87 7c 3e 0e eb 92  3b 7b d9 c6 42 66 59 b5    jG.|>...;{..BfY.
+00 5b 0b 83 43 96 d8 78  6f eb ac a2 c0 93 3b e9    .[..C..xo.....;.
+87 d5 2c 7c 9e 8f a6 e6  78 94 d2 f6 f8 c9 ab 06    ..,|....x.......
+03 6e ad 43 87 15 8a 04  fd f3 1b 33 e4 aa 88 43    .n.C.......3...C
+31 d7 18 5c 69 99 6b 3d  76 b0 23 06 53 dd ed 1e    1..\i.k=v.#.S...
+04 04 f6 ab 75 5b eb 96  db 58 00 f8 88 d9 7e a3    ....u[...X....~.
+0f 22 e3 01 35 f2 4f 2d  8f fb 8f 91 07 66 c6 e8    ."..5.O-.....f..
+6e 0d 26 4a a7 33 b0 60  32 80 e8 b9 52 76 35 5a    n.&J.3.`2...Rv5Z
+56 56 4b 6a f8 bf 73 35  19 26 18 53 d4 48 58 e5    VVKj..s5.&.S.HX.
+38 1a 9f 2a 82 54 6c e9  2a 6f 92 3d b7 fd 49 fb    8..*.Tl.*o.=..I.
+5c 4e 10 ea 86 13 77 44  44 ac 2d 67 f4 1b d7 99    \N....wDD.-g....
+2f b7 1c b4 8c a3 9b e1  7b d5 f6 73 42 b1 ef 6b    /.......{..sB..k
+b4 b7 f9 45 8c af 82 1d  46 3d 0d a8 b0 28 5d d2    ...E....F=...(].
+b0 18 4c 7a f4 65 55 3b  c9 3c 21 fd 42 26 4f d6    ..Lz.eU;.<!.B&O.
+bd b0 da b4 d2 4a e8 eb  58 58 1a ef 8f db 8e 8a    .....J..XX......
+ff 35 3c 04 ed 5c 2c dc  13 df 70 83 7b ec 68 37    .5<..\,...p.{.h7
+dc 93 2e a1 2b b7 d1 81  1e 4d df 08 1a 52 1b 4d    ....+....M...R.M
+cf d9 e2 fe e6 82 5f 14  90 2b 20 23 90 5c 59 3d    ......_..+ #.\Y=
+d9 e6 0a ed 2d f5 f7 39  b8 19 93 1c 31 c7 94 65    ....-..9....1..e
+ec f8 a4 6a ac 8a 53 f9  cb 3b ce fc 42 02 71 26    ...j..S..;..B.q&
+be ce 35 de 2b cc 7c 67  ae 91 a9 27 0e a1 f1 a4    ..5.+.|g...'....
+46 01 96 be f8 51 b4 9f  69 d1 76 55 4a cd 38 a7    F....Q..i.vUJ.8.
+0f 9a ac 5f 8d 93 cd 74  95 25 62 ea 46 81 99 68    ..._...t.%b.F..h
+93 d3 e5 ad 6f a7 8d 63  4b d1 a7 a7 2c 4b 1a 43    ....o..cK...,K.C
+e5 13 fd 30 71 3b 2e 4e  0c 54 df d0 7f 1e 85 1f    ...0q;.N.T......
+83 1c 62 c4 20 9a 98 2c  5a 3f 5d 00 f6 6c 31 2e    ..b. ..,Z?]..l1.
+22 bb 31 ec 3e 4b 5b 4c  e0 78 8c 8f 86 cc 94 95    ".1.>K[L.x......
+1f 73 e0 07 bd ea d4 6f  31 bd 17 70 38 8f bd f4    .s.....o1..p8...
+77 7b dd b7 d2 41 6f e7  97 df ed d9 75 ee 59 af    w{...Ao.....u.Y.
+05 97 c4 8a bf 9b 5d 20  da 83 a4 6b 20 a1 2b dc    ......] ...k .+.
+b5 5d 4c 9e 33 d9 9d 28  89 91 6e 3b 3a e9 6a 3e    .]L.3..(..n;:.j>
+02 e4 d3 31 25 43 a2 17  0f a3 9d 81 9a 49 2f 4b    ...1%C.......I/K
+c6 c0 77 65 e9 4c 25 4b  3f 0b 53 c4 77 65 af b1    ..we.L%K?.S.we..
+7c 83 68 61 02 32 9b 28  9c c7 7f 9b ff 82 98 d7    |.ha.2.(........
+2c e4 48 8b 0b 5b 37 fb  08 1f be 9a ec 07 b0 95    ,.H..[7.........
+70 f3 e2 bc 3b f1 f9 ae  c0 fb 81 2d 74 82 79 13    p...;......-t.y.
+f7 be e0 a8 e8 8c aa 15  3c 8f fe 33 93 21 aa b8    ........<..3.!..
+5a 38 32 0f 04 b0 b2 79  ac 5b e6 fa a3 3f 5e 1e    Z82....y.[...?^.
+33 8f de 47 1d 30 62 4f  cd 84 26 5a c6 a1 98 e8    3..G.0bO..&Z....
+38 69 15 b7 45 11 84 c8  6b 31 54 c1 9f f4 6b 60    8i..E...k1T...k`
+4f 0e 14 99 90 e9 88 f8  36 8b cf df b2 52 62 c3    O.......6....Rb.
+d3 6a 2e 59 7c a3 b8 f6  34 cc f0 be 1d 41 3c 4f    .j.Y|...4....A<O
+78 9d f2 78 3c 82 25 01  a4 bd b1 d4 14 11 52 48    x..x<.%.......RH
+c2 6d 37 76 dc 5e 32 5a  50 af 01 7b 4a 4e 50 89    .m7v.^2ZP..{JNP.
+00 5c bc d2 a8 55 db 15  67 53 e9 34 fd 02 c0 81    .\...U..gS.4....
+b9 79 13 58 58 32 5c a6  af fe de 10 b1 47 73 fb    .y.XX2\......Gs.
+a8 df                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 15:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 60887
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+ce 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 00    ........ 1..Ry..
+44 d0 56 99 48 59 33 33  65 ac 72 1e de b7 13 3f    D.V.HY33e.r....?
+b2 28 ef 7f 07 6b f2 be  e6 a4 41 0a a5 53 f7 58    .(...k....A..S.X
+c2 9e 32 aa c8 1a 69 56  2e e6 69 97 b1 5c 7c 45    ..2...iV..i..\|E
+14 6f fa 51 f9 71 16 12  7e 11 90 8c 09 0b 85 7e    .o.Q.q..~......~
+59 e7 42 5a e0 3a 24 d5  4a 79 7e e4 40 35 e3 b7    Y.BZ.:$.Jy~.@5..
+af fc d7 3f 0f 49 d7 b5  07 9e 1f 25 27 50 f5 08    ...?.I.....%'P..
+a0 44 3c f9 b2 dc 72 e5  1f 05 66 80 d3 4e d9 83    .D<...r...f..N..
+61 46 20 25 57 a2 bb f3  5b 76 cc 05 13 de 3b 69    aF %W...[v....;i
+b1 60 5b a9 33 1c 37 bb  44 73 3f 04 23 d4 54 bc    .`[.3.7.Ds?.#.T.
+d5 d6 cc bc d7 87 1d f2  55 87 a7 12 ca 53 c4 81    ........U....S..
+b6 51 51 df f7 44 ac de  7d 62 4a c2 29 9c c7 30    .QQ..D..}bJ.)..0
+60 31 a4 a2 cd 77 38 d8  b3 f0 31 c8 60 74 ba da    `1...w8...1.`t..
+e2 57 cc 29 1f c5 2b 7b  24 6a 7b 23 1c 6e 7c ed    .W.)..+{$j{#.n|.
+67 35 df ea d4 1d 43 6f  55 02 70 c8 09 60 93 4a    g5....CoU.p..`.J
+a4 d8 93 62 cf 3b b6 9f  38 4a 73 a1 f1 bc a6 da    ...b.;..8Js.....
+f2 0b c2 bc 2c 5a db b9  f7 98 cd f7 85 24 d2 94    ....,Z.......$..
+e5 d9 22 a8 c0 dd cf af  c7 9f 74 ef a3 f6 31 51    ..".......t...1Q
+0a ac 65 3c 77 92 21 d6  93 94 ef d7 5a 0b 77 f0    ..e<w.!.....Z.w.
+9a 7b ee 6f e1 4a d7 1a  ac 42 dd fc 34 c3 c4 6a    .{.o.J...B..4..j
+e7 ec 06 da 92 14 48 05  9a 2d 71 bb b3 eb 79 f1    ......H..-q...y.
+57 9f 6a cd 0c 5d 78 28  cf 82 2c ad fe 0d 3d 34    W.j..]x(..,...=4
+12 67 26 99 03 1d 1c 87  59 c8 fc a3 15 8e 4a 2a    .g&.....Y.....J*
+98 2d 52 24 f7 ea cd 63  c9 b8 e4 ef 73 ab 1b 15    .-R$...c....s...
+aa f1 63 3a 89 9f 96 51  87 8b c1 af b7 72 c8 16    ..c:...Q.....r..
+82 ad c1 72 77 2f 34 f6  a0 d5 95 49 ae 7b 59 dc    ...rw/4....I.{Y.
+6d f7 19 46 f5 1f f2 0a  d5 64 4f c8 27 3e be 47    m..F.....dO.'>.G
+0e 59 32 56 17 96 89 22  ab 4d eb ce f6 14 93 a1    .Y2V...".M......
+40 fd 10 55 97 6e e4 1d  ea c7 d7 f8 00 5a 12 2d    @..U.n.......Z.-
+a4 f0 29 be c3 dc 39 38  2b 9e 90 5a 86 16 86 55    ..)...98+..Z...U
+20 d7 f0 6b 0d f1 58 60  7e 3f c3 db 1f 4c ad 5e     ..k..X`~?...L.^
+37 aa 89 e3 aa 62 1e 32  0e c0 ba 0e ec 73 7c b4    7....b.2.....s|.
+e3 a5 02 e0 f7 97 c4 95  d2 c6 11 60 17 2c 48 ec    ...........`.,H.
+f5 85 ed 78 99 54 62 25  1f 09 b7 41 48 15 e9 71    ...x.Tb%...AH..q
+77 50 3e 75 d8 d9 e3 3a  ca ab b6 93 45 f0 b3 9d    wP>u...:....E...
+99 c0 55 6d 41 00 9d df  01 c6 9c bf bb e8 d0 12    ..UmA...........
+8a 33 80 f6 28 1b 68 cd  d5 1c a7 9b fa f5 c4 df    .3..(.h.........
+db b6 79 78 20 de 87 04  90 2e c4 ba 9d 54 54 ff    ..yx ........TT.
+80 1e d2 bc 02 86 8e 5a  ee 76 50 9a a5 73 75 2b    .......Z.vP..su+
+41 03 5d 95 30 8f 20 a6  9e fc 80 0e 78 8c 95 0c    A.].0. .....x...
+7f 4b 15 c6 5a d5 e3 ec  ea 01 e5 0c d2 0a 67 68    .K..Z.........gh
+58 06 c4 12 68 5b 5d d4  14 06 2d 44 d8 cb 96 a4    X...h[]...-D....
+26 eb a9 40 69 5f b2 ca  c9 5e d5 6b e4 05 11 5a    &..@i_...^.k...Z
+91 46 36 c0 04 d8 6b a4  9b 95 9d 24 d0 50 8a fa    .F6...k....$.P..
+47 76 3d a4 a1 e6 0c a5  18 4b 7b 75 68 f9 c8 a4    Gv=......K{uh...
+3f 62 45 09 0e 87 fc b7  14 67 c3 11 c2 71 25 2e    ?bE......g...q%.
+82 2e cf 48 93 a8 32 0c  98 99 6f 21 1d 1f 87 0e    ...H..2...o!....
+99 e7 41 39 64 f9 0f 6a  c2 d7 c5 04 0b 7a a0 1a    ..A9d..j.....z..
+16 0d 58 29 00 63 b6 17  4c d4 39 60 80 97 10 96    ..X).c..L.9`....
+07 c4 cd 1a 92 48 b1 b4  b3 4a dd af 31 81 72 f0    .....H...J..1.r.
+d6 0e c1 f3 04 e3 c9 db  3c 7f c2 c4 66 3b c7 f0    ........<...f;..
+6c 85 62 6d b7 5b 10 73  c8 64 bc 71 da e4 e7 a6    l.bm.[.s.d.q....
+cf fa 06 8d 4e a6 90 1b  58 27 b5 c2 7b 7f bf ea    ....N...X'..{...
+5c a8 e1 a0 25 ee 30 2b  41 10 e9 ca 55 44 04 ed    \...%.0+A...UD..
+f8 97 34 fe 87 87 39 7c  8d 05 5e 1d b7 d8 e6 69    ..4...9|..^....i
+00 94 b1 d1 89 66 5e b9  98 e8 6d 75 2a ea 1b 7f    .....f^...mu*...
+d5 36 e2 af e5 bc e0 f8  a6 f9 15 6c ad 9d ec b6    .6.........l....
+5a d9 cb 4b 6a 34 74 0b  59 94 26 3a 1e f2 a1 7e    Z..Kj4t.Y.&:...~
+c4 0c 77 82 bf cf 73 ae  05 5b 5a cc ed 96 c7 cd    ..w...s..[Z.....
+bc b1 0b 25 5c eb 80 90  90 d3 1a d7 36 48 73 dd    ...%\.......6Hs.
+a0 18 c3 47 e2 55 80 2a  29 59 ea 89 63 21 03 28    ...G.U.*)Y..c!.(
+15 2c a8 19 ff 0e ee de  d5 2b 95 f1 ed f2 d6 3a    .,.......+.....:
+2a 51 99 1e c2 10 f3 9b  13 4e 4c 36 04 90 36 60    *Q.......NL6..6`
+0f e0 e8 cb c1 55 fb c3  d3 11 ff 1e 27 92 d0 41    .....U......'..A
+88 ba cf d6 e2 ff a5 4d  70 8f f5 2b 78 9d 36 0c    .......Mp..+x.6.
+16 3b 04 73 0b ac 63 93  27 9c c8 74 c3 f3 97 d1    .;.s..c.'..t....
+72 f2 fb 1c 00 dd 0f 5f  5f ee ab d5 84 57 46 db    r......__....WF.
+aa e3 d5 7d e9 94 f1 97  e2 36 7d 8f 76 82 a4 74    ...}.....6}.v..t
+85 ff 8f 2d da b4 fa 4f  64 da 5f 80 9a de 0e ad    ...-...Od._.....
+7d 63 6e 49 8f 5b f5 13  45 66 36 e6 40 1c 43 49    }cnI.[..Ef6.@.CI
+5c 13 b4 83 17 20 64 36  81 4a e4 5b 7e 74 c1 5a    \.... d6.J.[~t.Z
+07 ae 5b a5 c7 31 2e 2f  0b 0e 90 ab 9d 47 c4 a3    ..[..1./.....G..
+2a 37 a3 cb bf 6e 68 2f  e1 18 37 e6 bb 1d d6 46    *7...nh/..7....F
+b1 b2 96 ee 2d 9a 7d c5  e5 45 df b7 bc 45 03 dd    ....-.}..E...E..
+6f e8 cd 49 68 e1 b0 a2  f4 47 ce 4f e1 8f 13 3a    o..Ih....G.O...:
+10 33 d6 92 7c 88 3a ba  bd e6 1f 09 fd c3 01 49    .3..|.:........I
+26 7e ba 06 a6 53 01 47  da 44 d3 63 90 3f ba cc    &~...S.G.D.c.?..
+33 5c de 4d 6c 15 89 84  8f 26 f7 6d aa cd d3 fc    3\.Ml....&.m....
+a1 cb                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 16:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 50689
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+c7 00 00 00 01 08 f8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+56 00 19 ab 90 ac a2 73  89 01 38 0c b3 89 7a 6b    V......s..8...zk
+3b b6 3b 40 cc 2f e3 c0  14 db 23 17 ef b5 51 32    ;.;@./....#...Q2
+19 59 4d db fd d5 e7 08  38 df 31 69 db fb b4 c1    .YM.....8.1i....
+80 a3 aa f5 55 e7 2a ae  8b de d5 eb 25 d7 d9 4b    ....U.*.....%..K
+6b ca b4 40 d9 09 78 22  75 cd 36 ca 39 11 3e 27    k..@..x"u.6.9.>'
+06 10 a0 7e ee 5a 99 44  79 d8 12 18 72 99 0d b8    ...~.Z.Dy...r...
+55 77 c5 02 21 d2 66 a1  8e 2c de 1d 17 3e 06 a8    Uw..!.f..,...>..
+1a 5d 40 c5 11 54 ac a3  d8 c3 a6 c3 b8 39 ac 15    .]@..T.......9..
+3b 42 a8 04 e2 91 63 e6  6f 24 62 cb 13 02 30 01    ;B....c.o$b...0.
+6b 1d 16 10 78 8f 35 74  40 17 9a 5c 07 e5 a7 59    k...x.5t@..\...Y
+1a 51 25 f9 3e d6 01 44  f7 3e ec 42 63 ea 12 51    .Q%.>..D.>.Bc..Q
+fb 69 4b 65 14 6c 8a 66  6b e7 1b f3 fd 60 7c 8f    .iKe.l.fk....`|.
+39 32 0e 2b d1 48 6e 80  85 fb 89 76 41 e9 07 75    92.+.Hn....vA..u
+47 e0 ab 50 6e 72 85 6a  48 a9 f7 ee ac e8 e0 df    G..Pnr.jH.......
+10 99 d4 c4 fa 3a ea 7b  29 b0 9c 86 48 ca 06 fd    .....:.{)...H...
+f5 59 39 10 58 5a 9e 13  15 a4 30 fc ea 5e e7 aa    .Y9.XZ....0..^..
+03 21 57 4a 99 26 d9 7b  a0 aa 58 47 f1 82 c8 47    .!WJ.&.{..XG...G
+54 0c 49 96 42 84 2e da  22 45 70 ba e9 38 b2 28    T.I.B..."Ep..8.(
+05 45 1a 14 77 3a ff 70  49 b0 7a 57 16 02 86 37    .E..w:.pI.zW...7
+9b 45 bf 3e ae 28 d3 1b  9a 2f 74 4d 58 98 e7 99    .E.>.(.../tMX...
+41 34 4f 5a 6f 85 93 e4  47 6a 31 b5 3b fc 4e c3    A4OZo...Gj1.;.N.
+ee 14 05 e7 1b 4f 90 00  86 ae 45 2e 04 3c f9 f2    .....O....E..<..
+b0 e0 12 a3 c9 42 8c 68  a4 95 4a 0e 3a 8b 6f 93    .....B.h..J.:.o.
+b2 78 c7 b6 f2 a2 3d 2b  a4 66 ac e4 ac 4f de 6a    .x....=+.f...O.j
+6e 6f 32 ec d7 7c f9 96  38 8d 91 07 1b ab 3f 65    no2..|..8.....?e
+ab 38 e5 d0 75 20 93 df  7b 07 35 d1 03 39 8e 55    .8..u ..{.5..9.U
+2f e8 8e 94 24 2d c2 21  90 74 5b 63 b8 b8 7f 34    /...$-.!.t[c...4
+5e 3c fb 8a ce ca 95 0f  81 a9 81 e8 c5 8b 06 ec    ^<..............
+ee 8b 09 95 41 3f 61 29  06 7f 1a 31 bb cc b4 9e    ....A?a)...1....
+a5 ff b0 c0 15 c3 c3 58  33 f0 ad 21 92 f1 14 8d    .......X3..!....
+da 3b 2f 99 55 b1 65 6b  83 02 e3 ed d1 7d fe 7c    .;/.U.ek.....}.|
+e9 1f 65 38 c2 0f 90 dd  94 e4 a6 6d 03 7c 28 5a    ..e8.......m.|(Z
+4c bd 8b 1a 2f 8b ae 48  ec c1 0a 49 fe e8 66 94    L.../..H...I..f.
+6b d2 33 04 e1 08 db 9f  59 df 3d b9 fe b4 e9 81    k.3.....Y.=.....
+27 19 76 f8 28 ca 6f d8  c0 bb 98 28 bb 3d e8 80    '.v.(.o....(.=..
+cf f0 ba 5f 1c 6e d0 cf  2a 27 74 f7 c8 22 ad 25    ..._.n..*'t..".%
+68 97 dd 89 be e7 22 5a  75 f2 9e 44 19 2f d1 71    h....."Zu..D./.q
+18 dc 91 50 88 ae f3 fd  b4 bf a8 fe 21 cd 09 cd    ...P........!...
+dd e8 be 91 ae 54 94 39  7c 09 4c 7a 9c 98 39 0c    .....T.9|.Lz..9.
+ce 3b 25 a8 1f 87 0a 72  1a 93 f1 dc f5 fc f2 ef    .;%....r........
+07 b0 40 73 02 98 e6 0b  39 f1 dc 86 e8 e1 31 8c    ..@s....9.....1.
+96 ee 73 50 88 03 c5 31  cc 41 35 4e 0f 47 d1 8b    ..sP...1.A5N.G..
+5c d3 61 f8 c5 a9 27 69  3b f3 ab 6d c5 25 8e bb    \.a...'i;..m.%..
+7d ab f0 12 da 7c b0 5b  17 ee c1 35 ca 6a 1f df    }....|.[...5.j..
+65 21 f8 ef 18 0a a6 25  d5 82 43 8e ac 46 61 ad    e!.....%..C..Fa.
+d7 d8 fc 2f b9 c6 48 80  62 ca c9 40 83 e7 9e e7    .../..H.b..@....
+4c 6d 3d f6 de b4 fe d2  32 79 90 f0 eb 48 d6 de    Lm=.....2y...H..
+df 18 d3 23 34 d2 5f f6  ed 89 2e 84 32 ba e9 83    ...#4._.....2...
+a1 ae f7 16 08 be fb e1  b9 e1 ad 63 04 47 d7 ba    ...........c.G..
+4a 89 78 16 83 75 01 00  a9 d2 0b 70 e8 92 d2 05    J.x..u.....p....
+e8 20 45 63 57 8a 3d 2a  8c 75 1a 93 68 46 bd 5c    . EcW.=*.u..hF.\
+3a a4 20 32 76 5e 8d 7f  88 2e 58 62 44 dc ba 1b    :. 2v^....XbD...
+ae 0c 47 46 af 51 7c 71  3e d4 32 c3 57 6e 09 5c    ..GF.Q|q>.2.Wn.\
+2a e1 67 6f 64 5f 3c 4f  10 d1 5a e2 a6 94 4b a8    *.god_<O..Z...K.
+60 06 14 db b3 4c 79 ae  05 d9 07 21 b4 43 25 ba    `....Ly....!.C%.
+b4 f7 2b 86 99 e6 41 e7  08 36 62 65 c6 23 bc 85    ..+...A..6be.#..
+f9 59 53 ff 99 0d 56 8c  53 9e dd 22 7d 91 a1 e9    .YS...V.S.."}...
+3f bd 4e 1a e5 2a a9 34  4d f4 3e 68 ef d7 0c 3c    ?.N..*.4M.>h...<
+22 cc f8 f8 be 10 8d 54  81 4e b6 3c bf d9 6f 4f    "......T.N.<..oO
+ef 88 9f 98 69 e6 9f 5e  1a 03 c1 a8 9a 4e ce 3e    ....i..^.....N.>
+11 e4 15 d5 a0 2e 97 c6  94 9a 27 f4 7b 4e 7b 3b    ..........'.{N{;
+24 fc 4d 07 53 de 5d ce  7f 38 5d 28 f9 13 96 92    $.M.S.]..8](....
+16 21 49 f1 5f 33 8e d7  fb c2 c6 bd 97 2f 64 25    .!I._3......./d%
+93 c2 70 d1 86 f7 71 7c  f2 70 39 8b 95 74 35 ba    ..p...q|.p9..t5.
+d2 eb 8b a6 e9 21 7c f5  40 54 5f ef c1 03 70 3e    .....!|.@T_...p>
+db d6 b1 69 d6 07 7a 97  7e 04 f1 c6 9d 45 90 7b    ...i..z.~....E.{
+18 90 0c 2e 5d f8 32 d4  91 c5 24 49 10 3a 21 1d    ....].2...$I.:!.
+96 4d 66 f4 d5 b9 5b fd  18 66 6d b2 ac bf 4a e8    .Mf...[..fm...J.
+76 44 c6 71 77 68 d0 20  0e b9 a2 94 ec 08 9c ed    vD.qwh. ........
+43 81 fc 61 31 03 28 a1  72 dd 58 71 b5 38 a3 a9    C..a1.(.r.Xq.8..
+81 b2 fd 39 cc 24 b4 6a  54 0d f9 bc e1 a7 35 4f    ...9.$.jT.....5O
+7f bc e1 ba 96 48 2c 5f  a4 56 4f 55 75 ba e4 a4    .....H,_.VOUu...
+99 b7 30 ba 49 6b 25 7f  88 6d 1c 9f 17 c3 29 8e    ..0.Ik%..m....).
+63 b3 b1 47 6a 62 a5 8d  1c 0e fd de 94 4a 47 c6    c..Gjb.......JG.
+10 b6 60 f5 0b d4 b8 d3  09 75 8d 22 41 ad d5 b5    ..`......u."A...
+a9 de 28 90 59 67 0f 92  04 d8 f0 c9 22 88 48 0f    ..(.Yg......".H.
+64 02 d9 07 67 a1 fb 77  b7 5e 58 da 8a 91 62 0a    d...g..w.^X...b.
+6b 23                                               k#
+
+
+####################################################### ------ ###################################################
+
+Packet number 17:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 37246
+   |-length : 311
+
+                        DATA Dump                         
+ Payload (303 bytes):
+e7 00 00 00 01 00 08 f8  20 31 0e ea 52 79 cd 40    ........ 1..Ry.@
+dc e5 47 62 a3 7c 2d cb  7e ff ab 93 0e 31 ff f2    ..Gb.|-.~....1..
+e2 54 83 c4 22 16 fc 39  de 76 a2 d4 49 a7 e0 2c    .T.."..9.v..I..,
+33 3a bb 21 b7 13 d3 e1  95 e1 4a 5d a2 35 6e 93    3:.!......J].5n.
+62 1e 25 06 57 95 2e 4c  81 34 fc bb ea 9e ee 19    b.%.W..L.4......
+6f e6 49 5d 82 7f 3f 5f  8a d1 2e 9a 41 6d b0 b2    o.I]..?_....Am..
+84 b8 5f bd e5 63 56 35  61 20 ea 2e 16 cb f9 04    .._..cV5a ......
+59 e0 dd ba 3e b7 c5 4d  fb c2 2b 9a 63 28 f6 3d    Y...>..M..+.c(.=
+57 fd 65 10 d7 de ec e4  4c f2 f7 e4 5b fc 67 31    W.e.....L...[.g1
+84 ba 97 75 9f 87 ec 90  99 d4 80 eb a9 7e 66 00    ...u.........~f.
+e0 ea 32 99 e2 40 93 4f  e0 a7 db fe 22 1f 87 9a    ..2..@.O...."...
+90 90 30 7f ed 79 02 4d  f3 0c 82 41 62 52 32 66    ..0..y.M...AbR2f
+1d ea 5c 58 b1 76 97 3e  54 32 5c 7f d0 25 9c c8    ..\X.v.>T2\..%..
+00 5e 82 b1 6c 97 bf ae  ba 67 0d db ad e3 87 33    .^..l....g.....3
+69 63 81 09 32 33 e7 c7  2c 13 eb d5 30 5d ab 68    ic..23..,...0].h
+b1 0e 65 00 1b de f9 8c  36 b1 3e dc 6a b7 94 94    ..e.....6.>.j...
+42 fc 93 51 d7 b7 1f 9c  0f c8 05 dc 4a 4d 3c 78    B..Q........JM<x
+9c d8 75 13 70 d4 75 d2  06 1f c4 e5 5b d1 a5 17    ..u.p.u.....[...
+e2 2d e5 60 68 51 d4 14  75 ee 25 85 6f 8c 45       .-.`hQ..u.%.o.E
+
+
+####################################################### ------ ###################################################
+
+Packet number 18:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 2157
+   |-length : 950
+
+                        DATA Dump                         
+ Payload (942 bytes):
+58 9a 23 31 6c d9 c4 7d  73 6a 63 01 d3 f5 be ac    X.#1l..}sjc.....
+29 a5 13 ff 4f 1b 8f 59  d1 92 3f fb 4d 5a ab ff    )...O..Y..?.MZ..
+cf d9 5c 0b 2f ef 3a 11  47 f3 5e 29 a6 52 6c 78    ..\./.:.G.^).Rlx
+cb 13 69 d6 d0 e6 bb f1  9d 2a 97 42 c3 a1 f9 af    ..i......*.B....
+03 86 90 e7 84 f5 7c de  f7 0d 0f f6 c4 78 93 1f    ......|......x..
+d8 cc d0 a8 8e 0a 2c b0  b4 93 4b ba aa 23 2e a0    ......,...K..#..
+ed b1 32 20 92 1f d9 51  0f 67 85 d3 0c 09 00 51    ..2 ...Q.g.....Q
+ed 38 54 68 ea da 05 24  5b 87 10 2b 58 27 29 43    .8Th...$[..+X')C
+88 43 8b 3c 6d 07 6f 6e  62 5d 12 83 d4 bc 37 70    .C.<m.onb]....7p
+58 d1 32 ac 6e 15 77 21  ca cc 8b b6 91 12 55 3e    X.2.n.w!......U>
+e9 86 24 20 4b ed 8c d0  43 a3 6d bd 60 ac 12 86    ..$ K...C.m.`...
+e7 8c dc 44 ec e2 19 13  03 79 19 5b 48 b3 3f cf    ...D.....y.[H.?.
+4e ce 78 c0 f1 9c e3 fe  ea bd 23 5d 48 00 8c a2    N.x.......#]H...
+79 26 0b 35 6c 55 3c bd  c8 44 96 e6 f7 18 82 f6    y&.5lU<..D......
+32 f7 22 bf a1 d7 f3 61  4b cb 0c c3 bb c4 e2 b9    2."....aK.......
+2a 2d c6 87 ba 3a 2f 4b  fb 11 a7 e6 60 c5 77 6c    *-...:/K....`.wl
+fb 2d 27 25 00 34 cb bf  08 87 f6 93 6b 97 b1 a9    .-'%.4......k...
+89 d2 cf d5 4d 9e 7e 79  1d d9 18 bf b8 e0 6b ad    ....M.~y......k.
+70 43 4d 68 0a 98 da 4f  ff e6 06 94 15 a5 18 4f    pCMh...O.......O
+e9 40 6f 50 44 1c d3 94  ce ee 29 b4 25 96 7d 9f    .@oPD.....).%.}.
+89 03 76 de e8 1a 4b f8  38 99 61 d7 d5 1d f5 29    ..v...K.8.a....)
+fb 48 57 72 30 df 98 aa  cd 1c b9 f4 4a 19 94 35    .HWr0.......J..5
+7d 07 0f ee 88 6d b5 7b  3e d8 f8 cf 60 bb 23 c1    }....m.{>...`.#.
+b1 f2 4a cd 3a 39 25 a6  51 42 64 2c ac 0e 10 00    ..J.:9%.QBd,....
+61 4f db d7 a1 18 6c 58  93 53 cc 28 30 60 5e 17    aO....lX.S.(0`^.
+d7 1f 2c f5 0c b8 e1 a5  bb ed 37 b9 ce df f2 d4    ..,.......7.....
+5a 87 23 05 9c 08 d0 bf  78 2a af 71 2d 61 ea 1d    Z.#.....x*.q-a..
+29 29 1e 9b 8d 32 dc e1  58 26 97 de 3c 05 24 af    ))...2..X&..<.$.
+f6 5f ad 87 a2 d1 15 c3  dc bf b6 9f 20 3e 90 7c    ._.......... >.|
+e1 55 93 1e 4b a8 1a dc  d8 cb c6 22 2c 3c 59 79    .U..K......",<Yy
+9e 55 3f 66 fc 9c 5c 90  b7 d8 76 c0 80 e6 0b a2    .U?f..\...v.....
+54 9c 92 0a a8 57 fe df  f9 7f f3 39 f5 8a 3a de    T....W.....9..:.
+c2 56 b8 81 15 11 f2 78  bb cd 04 fb 7e c0 48 ec    .V.....x....~.H.
+e8 a2 09 1d 63 14 bb e6  30 18 9a fc 82 db af f1    ....c...0.......
+0a f7 c9 9e e4 2f 05 a4  a8 99 38 31 0e ea 16 dc    ...../....81....
+27 92 ba cf 56 ec 27 6e  9d 91 46 c9 12 22 5a c0    '...V.'n..F.."Z.
+4d f9 7a ef ae dd 51 2e  af e3 02 23 be e2 e2 d3    M.z...Q....#....
+62 0f a4 29 03 76 f7 08  9c 85 ef 29 39 64 e8 5e    b..).v.....)9d.^
+d3 fb 79 1d d9 5d b0 95  4a 41 40 84 ed f3 2a be    ..y..]..JA@...*.
+69 0b 92 2a 38 8c 8a 07  43 70 cc a8 2d 76 82 61    i..*8...Cp..-v.a
+f5 08 85 ed 7d 1a 6c 65  e0 d4 4f 12 51 45 93 d5    ....}.le..O.QE..
+e3 98 c3 50 55 1f 32 6a  96 ce e9 b8 43 91 cb 6a    ...PU.2j....C..j
+fc 72 44 68 73 74 40 77  7f 1a 58 44 2a cc f4 c2    .rDhst@w..XD*...
+4a 9d 1e 67 15 3f b3 08  b1 71 a5 db 11 c2 a6 b0    J..g.?...q......
+b0 7d 64 5c c7 83 54 57  50 58 0f 52 d8 30 5d cc    .}d\..TWPX.R.0].
+ad 59 76 32 90 ae 00 1e  94 60 d2 33 01 c2 de 52    .Yv2.....`.3...R
+de c4 4f 33 8d 70 a9 13  a6 c9 b0 77 f2 27 8f f3    ..O3.p.....w.'..
+a2 51 f5 16 7f 15 62 aa  4f 9d 06 fb 00 35 da b3    .Q....b.O....5..
+bb 70 df 96 e9 70 45 25  02 a9 70 90 d1 1d fe 2b    .p...pE%..p....+
+cb fb a3 64 62 7c 3a fb  e7 ce 53 55 ec af 1d 30    ...db|:...SU...0
+53 19 a8 17 8a 92 80 25  a1 61 cf 2e 70 19 f8 a9    S......%.a..p...
+24 9d 06 96 fe dc 65 76  12 ae 2b 7e 86 22 05 99    $.....ev..+~."..
+4d 4b 3d 76 5e 07 c8 e6  92 99 6e 9c ab 8f 02 90    MK=v^.....n.....
+ad 49 3d 13 12 fa ed 8e  01 5e 75 41 15 9c b7 e4    .I=......^uA....
+88 0c 10 bd ef d2 54 ab  d0 11 3b 43 51 cd ae 6a    ......T...;CQ..j
+f4 c4 1d 9d 0e e1 59 7d  ee 31 b4 b5 07 c4 27 5b    ......Y}.1....'[
+6e 6b df 75 f9 f1 53 ff  cf ab a7 71 f5 90 4e f5    nk.u..S....q..N.
+00 ba 2b 0b c1 47 27 7a  8d 55 19 1f dd e9 7d 3b    ..+..G'z.U....};
+b4 8a 58 03 4f d1 fc de  c0 1a c5 38 b7 49          ..X.O......8.I
+
+
+####################################################### ------ ###################################################
+
+Packet number 19:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 7403
+   |-length : 33
+
+                        DATA Dump                         
+ Payload (25 bytes):
+4e 6c 61 71 a8 19 b0 15  b5 2f c8 d2 54 46 fe 5b    Nlaq...../..TF.[
+4e 50 4f 1b e2 5c e6 10  b1                         NPO..\...
+
+
+####################################################### ------ ###################################################
+
+Packet number 20:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 39315
+   |-length : 86
+
+                        DATA Dump                         
+ Payload (78 bytes):
+e7 00 00 00 01 08 f8 20  31 0e ea 52 79 cd 00 40    ....... 1..Ry..@
+3d 4e 34 7f 82 4d e1 f1  34 d9 29 9b 48 1d 8c c1    =N4..M..4.).H...
+ba a1 9b 6a 92 35 ab 98  bb e3 da 4e 5c 62 48 44    ...j.5.....N\bHD
+d3 7d f4 1a fe c6 56 b8  26 0e b0 19 b2 4b b1 42    .}....V.&....K.B
+23 0a b0 29 dd d4 08 c1  fa c7 d5 a7 43 c5          #..)........C.
+
+
+####################################################### ------ ###################################################
+
+Packet number 21:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 12411
+   |-length : 39
+
+                        DATA Dump                         
+ Payload (31 bytes):
+49 f8 20 31 0e ea 52 79  cd a8 a5 ee 13 57 5f 21    I. 1..Ry.....W_!
+25 22 d1 c7 de 9e 3e 1e  f7 66 b5 d8 e6 6b 83       %"....>..f...k.
+
+
+####################################################### ------ ###################################################
+
+Packet number 22:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 19497
+   |-length : 1039
+
+                        DATA Dump                         
+ Payload (1031 bytes):
+5f f8 20 31 0e ea 52 79  cd 76 4b c4 ae 4e 8d 44    _. 1..Ry.vK..N.D
+9b af 67 1c 58 ac 52 53  40 19 d1 36 97 fe d8 06    ..g.X.RS@..6....
+71 09 34 0f ec 21 42 af  e8 1d 87 31 b0 9b e1 77    q.4..!B....1...w
+e7 38 d3 cc 1e 6f 16 25  f7 ee 26 50 6f 6e c8 55    .8...o.%..&Pon.U
+83 2f f7 4b 77 3b c6 36  f5 52 fa 89 17 60 f1 02    ./.Kw;.6.R...`..
+59 36 7f 99 3e b6 9e ca  12 04 b3 59 5b 82 32 45    Y6..>......Y[.2E
+ba 11 c2 86 57 c2 fc ea  20 8c 7e 96 35 60 38 5f    ....W... .~.5`8_
+0b d5 fd ab b4 74 06 61  82 de 33 8c 6d 1a 0f 9f    .....t.a..3.m...
+84 77 81 16 33 f7 6f bd  8f 01 fa 40 04 de d4 98    .w..3.o....@....
+12 3c e7 5c 29 a7 fd fc  12 c6 27 cc 9c 8e 6b 89    .<.\).....'...k.
+b8 eb e4 f3 38 b0 a0 02  fa 35 52 cd 7d cd e2 4b    ....8....5R.}..K
+79 29 31 0b 8b 37 17 e7  e6 5f 86 73 76 e5 39 94    y)1..7..._.sv.9.
+57 c5 31 55 b9 51 af bd  84 b0 c2 de b4 11 1a b3    W.1U.Q..........
+e0 1d 7e fd e1 79 e0 a4  72 70 c0 84 f3 15 3d e3    ..~..y..rp....=.
+e6 03 c0 b2 29 2d a7 73  df a0 8e 29 c2 87 0b e4    ....)-.s...)....
+53 e1 2b dc c2 5b 3a a3  17 1c 5c 7a 1c 9e 7d ed    S.+..[:...\z..}.
+dd 84 27 15 53 7f cc b4  9a 31 42 63 5a 3d 15 c6    ..'.S....1BcZ=..
+b4 83 10 90 7c 2e ba e0  b1 86 48 d5 a9 f3 e1 e5    ....|.....H.....
+cc f5 7f a9 07 ff 0a 09  5b 67 af 16 27 1e e8 53    ........[g..'..S
+90 0e 90 36 0a 3f f3 d5  f0 25 b3 a9 86 ce 09 b7    ...6.?...%......
+5f bc 18 eb 50 2c d1 2c  7e e5 89 27 29 61 6a d6    _...P,.,~..')aj.
+bb aa 3f 68 9f 0f bd 40  cc c3 a6 10 67 e1 ea 5e    ..?h...@....g..^
+db 74 63 4d 56 3d a5 32  33 79 75 ad 31 aa 29 7c    .tcMV=.23yu.1.)|
+7a 7f 83 b2 e0 c5 75 06  c9 11 e8 d1 34 c7 2f aa    z.....u.....4./.
+59 3b 58 5b 3b 8d 5a a8  8e 8d 1b b1 8e 3d 63 8c    Y;X[;.Z......=c.
+7f 11 fc d9 7b 0d 74 db  93 0d 32 50 f1 18 c2 72    ....{.t...2P...r
+9c f3 b7 88 6b 04 51 f6  dd d1 05 f2 0c f7 48 7e    ....k.Q.......H~
+a8 9c 64 29 ef 52 72 0a  e3 1e 9d 66 4c 3d 88 52    ..d).Rr....fL=.R
+d3 19 98 ca df d4 eb 03  24 ba f3 b8 8c b7 13 61    ........$......a
+02 d2 a9 84 77 95 aa fd  a6 f2 c8 f7 58 71 b1 f0    ....w.......Xq..
+cd 44 61 59 64 f3 45 ca  2c a6 c9 6b 0d f9 42 56    .DaYd.E.,..k..BV
+5d c4 bd 97 ad 74 8a a5  83 04 6a a8 32 29 f0 7b    ]....t....j.2).{
+0f 3b f1 2a cc 2f 5c b2  28 50 e3 66 93 d4 f6 18    .;.*./\.(P.f....
+db 60 ca e8 6d 5b 0b 4e  d6 d8 d9 5d 8e 2b dd 3b    .`..m[.N...].+.;
+56 74 e6 d1 f9 66 28 88  d8 37 e9 31 d5 3f e5 12    Vt...f(..7.1.?..
+4e 1f 83 7c 95 93 45 d9  32 18 aa 09 5f 4d e1 6a    N..|..E.2..._M.j
+ba 71 92 70 f4 b4 b5 3a  9e 0d 6e 2b 3f 25 67 cc    .q.p...:..n+?%g.
+86 83 56 d5 60 cc f7 f1  0d 35 e0 2b 98 0c 88 58    ..V.`....5.+...X
+c0 15 c2 14 99 12 d3 6c  68 83 15 79 ff 84 a4 f9    .......lh..y....
+9e c2 76 8d 65 dc b4 8a  42 73 ce 94 37 9b 69 67    ..v.e...Bs..7.ig
+b4 2f 7a a3 d4 cb 15 79  9d 20 72 2a 91 29 0b c3    ./z....y. r*.)..
+0a 62 76 0a af 58 4b 14  02 62 33 64 43 cd 2e 2e    .bv..XK..b3dC...
+9a 9e f3 75 31 0e 42 4d  5b ce 0c 68 c9 32 23 b3    ...u1.BM[..h.2#.
+83 68 22 a0 1b d8 98 84  c7 a9 61 22 2c a2 9c a1    .h".......a",...
+d5 7e 2a 42 25 7f 56 a5  ba a7 c3 8e 25 c7 43 7c    .~*B%.V.....%.C|
+05 e7 9b 30 f8 f1 fe c3  0f 65 17 62 8e 90 90 64    ...0.....e.b...d
+a2 e7 36 98 5f bf c3 82  a8 e9 ec 77 14 f1 51 b9    ..6._......w..Q.
+c3 31 f4 73 f0 07 36 6c  90 24 a7 aa 3a 0a 5a b5    .1.s..6l.$..:.Z.
+69 70 b0 7d 7f 5b 10 cc  8a fd 2e fa f7 3f 29 b2    ip.}.[.......?).
+67 7f 88 e1 83 60 39 64  e5 46 e0 9a 0d 0a 1b 01    g....`9d.F......
+bc d6 3f ec 41 5b cf d3  5a e8 14 63 1d 61 1e 2e    ..?.A[..Z..c.a..
+4a 77 ce 87 e5 96 0c 38  76 a1 b3 24 7c eb f4 63    Jw.....8v..$|..c
+91 dc 3e 65 e7 b2 26 e0  53 da 2b 57 74 ca fc 14    ..>e..&.S.+Wt...
+76 27 5c e6 49 16 af 2b  1d b4 9d f7 5e 5e 22 59    v'\.I..+....^^"Y
+7b 5b bc 13 5e 23 2e 14  f1 7d 85 cc 4d bb f3 98    {[..^#...}..M...
+0e c3 14 83 c5 fb f3 07  b5 33 8a 52 6a 2c fc fd    .........3.Rj,..
+f1 82 15 0d cc ec 4f 59  d0 69 1e 47 aa 56 64 89    ......OY.i.G.Vd.
+0e 2a 5a 5f cc e4 91 ba  de f2 60 d3 51 22 fa 07    .*Z_......`.Q"..
+90 66 a2 4c 06 b6 e5 07  c0 05 3c 2b ce dd 40 3f    .f.L......<+..@?
+c5 b6 ee b1 9a 7b e0 c5  91 9d 67 fa 9a 20 44 bc    .....{....g.. D.
+4c d9 33 60 bf 0b 04 7a  86 1e cf 44 e1 1e fa cc    L.3`...z...D....
+3c af 6c da 59 02 ee 62  92 82 b9 95 8e d1 8e 20    <.l.Y..b....... 
+28 6a 6e 28 1f eb fc 69  cb ee a0 f7 56 c4 27 d2    (jn(...i....V.'.
+eb 51 94 b0 d3 c4 53 71  48 24 7a 8d 2f fa 88 e5    .Q....SqH$z./...
+0c ce a8 84 7d 84 e6                                ....}..
+
+
+####################################################### ------ ###################################################
+
+Packet number 23:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 45276
+   |-length : 128
+
+                        DATA Dump                         
+ Payload (120 bytes):
+42 c9 68 60 0b 5a d9 ac  24 66 ce 3d 4f c5 1a f4    B.h`.Z..$f.=O...
+0e 88 bd 48 2b 42 93 05  0b 5d 1e 91 ee ba 58 81    ...H+B...]....X.
+47 1c a8 1a 7d d5 bb 2a  70 18 b7 41 37 cf 89 95    G...}..*p..A7...
+9c 6d 2c 2c 65 90 b2 0c  21 4d c0 12 b9 3a d8 ea    .m,,e...!M...:..
+b6 f8 4f bf d0 93 c2 72  8c 65 a2 9a 22 44 a5 8d    ..O....r.e.."D..
+3e b5 b9 ff c2 3d 51 51  dc 8c d6 95 66 10 e7 79    >....=QQ....f..y
+f1 59 96 83 1e 08 f5 67  8a 5c 2f fc 16 3d 09 3a    .Y.....g.\/..=.:
+5a a6 6c 24 b6 6b 7d 83                             Z.l$.k}.
+
+
+####################################################### ------ ###################################################
+
+Packet number 24:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 56762
+   |-length : 37
+
+                        DATA Dump                         
+ Payload (29 bytes):
+5f da fd 3e 2f 8c 8e c4  00 f0 66 df 5c 8a 66 64    _..>/.....f.\.fd
+ca d5 33 36 0f f8 df c0  f3 cd 62 f8 a4             ..36......b..
+
+
+####################################################### ------ ###################################################
+
+Packet number 25:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 34097
+   |-length : 40
+
+                        DATA Dump                         
+ Payload (32 bytes):
+45 f8 20 31 0e ea 52 79  cd 0b cb b1 53 78 9a 37    E. 1..Ry....Sx.7
+00 a1 d0 5c 8f 75 d4 73  9d 12 00 3a 8c 02 db 06    ...\.u.s...:....
+
+
+####################################################### ------ ###################################################
+
+Packet number 26:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 31493
+   |-length : 490
+
+                        DATA Dump                         
+ Payload (482 bytes):
+44 9f 3a be bb 03 9b 14  ff 27 41 ad 12 81 2e d7    D.:......'A.....
+db 2c a1 3d 06 3c ef 01  96 7e 46 9d ca 23 10 e3    .,.=.<...~F..#..
+96 80 c8 29 d8 20 a0 a2  20 4d 16 0c bf 95 ea b6    ...). .. M......
+0b 51 07 85 58 98 2f 68  1a f0 72 d7 f0 61 b9 da    .Q..X./h..r..a..
+00 40 fd 9a 76 a5 7e a4  e3 83 26 59 f5 87 b9 6b    .@..v.~...&Y...k
+c1 ea 5b e2 fc 42 d4 be  9f 91 4e 23 ef ff 64 4f    ..[..B....N#..dO
+b5 0b 35 60 56 3b 16 12  51 86 be b5 cf 5c 12 96    ..5`V;..Q....\..
+3f ed 5b b3 df b5 d7 3b  80 ce 40 cd 55 a0 72 52    ?.[....;..@.U.rR
+ea 1f 1b db 1b 7d f1 d3  31 0e ec 58 03 57 d4 03    .....}..1..X.W..
+d8 76 c0 50 99 00 9a a5  f4 34 6e 5a 3d 56 a4 1b    .v.P.....4nZ=V..
+ea 7f e3 f4 43 9b 3f 98  ed aa f2 5c 97 26 84 ce    ....C.?....\.&..
+18 6b ad a4 52 d5 30 4d  ee fb ba 39 21 98 a5 6b    .k..R.0M...9!..k
+fa d2 bc 1b 98 45 bf b5  5b 9e 17 15 66 ab 1b 3a    .....E..[...f..:
+31 44 5d 39 d1 5f 94 e5  ec 7b b8 6f 86 0e f5 9d    1D]9._...{.o....
+32 c8 1f fe c8 da 87 b7  ba 33 9e 94 94 ac 62 2f    2........3....b/
+32 43 e5 e2 d8 5b 9a 62  1d cc ea 03 cf 4f b3 08    2C...[.b.....O..
+81 16 a1 72 c4 bd c7 5c  71 4a 90 25 eb 32 35 05    ...r...\qJ.%.25.
+03 25 70 56 f6 f3 86 40  ac 1b 87 2c 56 b2 b7 e1    .%pV...@...,V...
+07 84 01 37 fc dd 89 51  6a 95 4b 11 6f d6 0d 64    ...7...Qj.K.o..d
+59 5f 82 39 0d d9 d3 fa  1c cb 07 e9 56 15 ed d1    Y_.9........V...
+59 7f 93 48 ff 7e 74 03  a5 7a 53 e1 14 1f bb fd    Y..H.~t..zS.....
+59 8d b4 4f 6e cb 63 a7  54 e6 d2 a6 4c a8 4b 89    Y..On.c.T...L.K.
+aa db b1 92 79 42 24 3a  97 2b 2b de 47 65 eb c1    ....yB$:.++.Ge..
+cd b9 b0 85 57 bd 09 7e  d9 ba 73 0c e3 d0 d6 45    ....W..~..s....E
+87 a4 55 e6 d4 89 d1 64  44 b2 70 ec e2 90 60 b0    ..U....dD.p...`.
+4d d0 a9 1c 7c 4d 59 48  06 f2 7d e1 d1 64 21 7b    M...|MYH..}..d!{
+c6 19 33 e3 c3 83 58 0e  da 7a eb 65 da db 3b ac    ..3...X..z.e..;.
+72 fa 39 6f b9 5d 1b d2  07 2c 4a 70 8c 78 59 98    r.9o.]...,Jp.xY.
+db bc 10 0d f4 08 00 4d  94 84 14 34 dc a0 6a 0a    .......M...4..j.
+a9 1b d0 11 3c ff ce 1d  3b 18 06 78 1a 53 d9 4f    ....<...;..x.S.O
+bf 77                                               .w
+
+
+####################################################### ------ ###################################################
+
+Packet number 27:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 59250
+   |-length : 43
+
+                        DATA Dump                         
+ Payload (35 bytes):
+58 f8 20 31 0e ea 52 79  cd 24 f9 f8 24 ae 00 03    X. 1..Ry.$..$...
+33 2b a7 43 d4 b8 f3 52  09 be cb 92 b6 8e 59 66    3+.C...R......Yf
+45 d3 91                                            E..
+
+
+####################################################### ------ ###################################################
+
+Packet number 28:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 3493
+   |-length : 29
+
+                        DATA Dump                         
+ Payload (21 bytes):
+5a 39 05 dc 55 19 42 2f  fb 73 e8 dd 84 be 17 4f    Z9..U.B/.s.....O
+69 a8 ee 73 2f                                      i..s/
+
+
+####################################################### ------ ###################################################
+
+Packet number 29:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 17232
+   |-length : 40
+
+                        DATA Dump                         
+ Payload (32 bytes):
+44 f8 20 31 0e ea 52 79  cd b9 49 66 d9 9d 46 eb    D. 1..Ry..If..F.
+38 33 5e 73 23 69 8e 12  74 dc ad 05 72 88 ee 55    83^s#i..t...r..U
+
+
+####################################################### ------ ###################################################
+
+Packet number 30:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 47255
+   |-length : 32
+
+                        DATA Dump                         
+ Payload (24 bytes):
+5e 5d f1 be 44 0c cf 98  0a ef 1f f8 5b 02 c6 7a    ^]..D.......[..z
+bb 92 2f ea 53 75 64 c9                             ../.Sud.
+
+
+####################################################### ------ ###################################################
+
+Packet number 31:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 60858
+   |-Destination Port : 53
+   |-Checksum       : 50421
+   |-length : 41
+
+                        DATA Dump                         
+ Payload (33 bytes):
+8a 6a 01 00 00 01 00 00  00 00 00 00 02 69 6e 09    .j...........in.
+61 70 70 63 65 6e 74 65  72 02 6d 73 00 00 41 00    appcenter.ms..A.
+01                                                  .
+
+
+####################################################### ------ ###################################################
+
+Packet number 32:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 52731
+   |-Destination Port : 53
+   |-Checksum       : 47714
+   |-length : 41
+
+                        DATA Dump                         
+ Payload (33 bytes):
+f4 bc 01 00 00 01 00 00  00 00 00 00 02 69 6e 09    .............in.
+61 70 70 63 65 6e 74 65  72 02 6d 73 00 00 01 00    appcenter.ms....
+01                                                  .
+
+
+####################################################### ------ ###################################################
+
+Packet number 33:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 60858
+   |-Checksum       : 34208
+   |-length : 242
+
+                        DATA Dump                         
+ Payload (234 bytes):
+8a 6a 81 80 00 01 00 02  00 01 00 00 02 69 6e 09    .j...........in.
+61 70 70 63 65 6e 74 65  72 02 6d 73 00 00 41 00    appcenter.ms..A.
+01 c0 0c 00 05 00 01 00  00 00 be 00 3b 26 69 6e    ............;&in
+2d 70 72 6f 64 2d 70 6d  65 2d 65 61 73 74 75 73    -prod-pme-eastus
+32 2d 69 6e 67 65 73 74  69 6f 6e 2d 36 36 64 64    2-ingestion-66dd
+62 35 36 61 0e 74 72 61  66 66 69 63 6d 61 6e 61    b56a.trafficmana
+67 65 72 03 6e 65 74 00  c0 2d 00 05 00 01 00 00    ger.net..-......
+00 12 00 30 13 69 6e 31  2d 67 77 32 2d 30 31 2d    ...0.in1-gw2-01-
+33 64 36 63 33 30 35 31  07 65 61 73 74 75 73 32    3d6c3051.eastus2
+08 63 6c 6f 75 64 61 70  70 05 61 7a 75 72 65 03    .cloudapp.azure.
+63 6f 6d 00 c0 88 00 06  00 01 00 00 00 3b 00 3a    com..........;.:
+06 6e 73 31 2d 30 36 09  61 7a 75 72 65 2d 64 6e    .ns1-06.azure-dn
+73 c0 9f 06 6d 73 6e 68  73 74 09 6d 69 63 72 6f    s...msnhst.micro
+73 6f 66 74 c0 9f 00 00  27 11 00 00 03 84 00 00    soft....'.......
+01 2c 00 09 3a 80 00 00  00 3c                      .,..:....<
+
+
+####################################################### ------ ###################################################
+
+Packet number 34:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 52731
+   |-Checksum       : 3914
+   |-length : 188
+
+                        DATA Dump                         
+ Payload (180 bytes):
+f4 bc 81 80 00 01 00 03  00 00 00 00 02 69 6e 09    .............in.
+61 70 70 63 65 6e 74 65  72 02 6d 73 00 00 01 00    appcenter.ms....
+01 c0 0c 00 05 00 01 00  00 00 be 00 3b 26 69 6e    ............;&in
+2d 70 72 6f 64 2d 70 6d  65 2d 65 61 73 74 75 73    -prod-pme-eastus
+32 2d 69 6e 67 65 73 74  69 6f 6e 2d 36 36 64 64    2-ingestion-66dd
+62 35 36 61 0e 74 72 61  66 66 69 63 6d 61 6e 61    b56a.trafficmana
+67 65 72 03 6e 65 74 00  c0 2d 00 05 00 01 00 00    ger.net..-......
+00 12 00 30 13 69 6e 31  2d 67 77 32 2d 30 31 2d    ...0.in1-gw2-01-
+33 64 36 63 33 30 35 31  07 65 61 73 74 75 73 32    3d6c3051.eastus2
+08 63 6c 6f 75 64 61 70  70 05 61 7a 75 72 65 03    .cloudapp.azure.
+63 6f 6d 00 c0 74 00 01  00 01 00 00 00 09 00 04    com..t..........
+04 98 2d db                                         ..-.
+
+
+####################################################### ------ ###################################################
+
+Packet number 35:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 53546
+   |-Destination Port : 53
+   |-Checksum       : 3560
+   |-length : 72
+
+                        DATA Dump                         
+ Payload (64 bytes):
+2b d1 01 00 00 01 00 00  00 00 00 00 13 69 6e 31    +............in1
+2d 67 77 32 2d 30 31 2d  33 64 36 63 33 30 35 31    -gw2-01-3d6c3051
+07 65 61 73 74 75 73 32  08 63 6c 6f 75 64 61 70    .eastus2.cloudap
+70 05 61 7a 75 72 65 03  63 6f 6d 00 00 41 00 01    p.azure.com..A..
+
+
+####################################################### ------ ###################################################
+
+Packet number 36:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 53546
+   |-Checksum       : 28388
+   |-length : 142
+
+                        DATA Dump                         
+ Payload (134 bytes):
+2b d1 81 80 00 01 00 00  00 01 00 00 13 69 6e 31    +............in1
+2d 67 77 32 2d 30 31 2d  33 64 36 63 33 30 35 31    -gw2-01-3d6c3051
+07 65 61 73 74 75 73 32  08 63 6c 6f 75 64 61 70    .eastus2.cloudap
+70 05 61 7a 75 72 65 03  63 6f 6d 00 00 41 00 01    p.azure.com..A..
+c0 20 00 06 00 01 00 00  00 3a 00 3a 06 6e 73 31    . .......:.:.ns1
+2d 30 36 09 61 7a 75 72  65 2d 64 6e 73 c0 37 06    -06.azure-dns.7.
+6d 73 6e 68 73 74 09 6d  69 63 72 6f 73 6f 66 74    msnhst.microsoft
+c0 37 00 00 27 11 00 00  03 84 00 00 01 2c 00 09    .7..'........,..
+3a 80 00 00 00 3c                                   :....<
+
+
+####################################################### ------ ###################################################
+
+Packet number 37:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 53993
+   |-Destination Port : 53
+   |-Checksum       : 34061
+   |-length : 74
+
+                        DATA Dump                         
+ Payload (66 bytes):
+e3 7f 01 00 00 01 00 00  00 00 00 00 13 6d 70 73    .............mps
+2d 6d 64 65 2d 70 72 64  2d 63 75 73 33 2d 31 34    -mde-prd-cus3-14
+09 63 65 6e 74 72 61 6c  75 73 08 63 6c 6f 75 64    .centralus.cloud
+61 70 70 05 61 7a 75 72  65 03 63 6f 6d 00 00 01    app.azure.com...
+00 01                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 38:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 53993
+   |-Checksum       : 41147
+   |-length : 90
+
+                        DATA Dump                         
+ Payload (82 bytes):
+e3 7f 81 80 00 01 00 01  00 00 00 00 13 6d 70 73    .............mps
+2d 6d 64 65 2d 70 72 64  2d 63 75 73 33 2d 31 34    -mde-prd-cus3-14
+09 63 65 6e 74 72 61 6c  75 73 08 63 6c 6f 75 64    .centralus.cloud
+61 70 70 05 61 7a 75 72  65 03 63 6f 6d 00 00 01    app.azure.com...
+00 01 c0 0c 00 01 00 01  00 00 00 00 00 04 14 25    ...............%
+8f 78                                               .x
+
+
+####################################################### ------ ###################################################
+
+Packet number 39:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 64033
+   |-length : 228
+
+                        DATA Dump                         
+ Payload (220 bytes):
+5c f8 20 31 0e ea 52 79  cd a4 d4 f4 ae a9 40 c9    \. 1..Ry......@.
+e9 3b 89 fa df 9c 9c a1  9b 6d 1f 49 0f 98 10 01    .;.......m.I....
+3f 77 f7 a7 ad e0 45 8d  87 69 50 68 ce ca d2 99    ?w....E..iPh....
+00 79 c1 92 bd 12 1e 9a  66 4a 71 b2 f8 ee b4 d7    .y......fJq.....
+4a 1e fc 1b 74 cb 47 5a  77 1d f0 0c e3 95 f7 b9    J...t.GZw.......
+21 6a 80 ab 7e 8c 6e da  19 97 97 e5 31 75 d0 02    !j..~.n.....1u..
+95 af d2 af 17 14 9b 1b  e4 3a 28 86 77 b0 e3 05    .........:(.w...
+e2 9c d0 ae f4 5d 56 61  e1 2e a1 68 96 f6 68 44    .....]Va...h..hD
+5f dd 81 a3 83 ce 97 1a  a2 81 19 ba af 3f 19 84    _............?..
+74 f0 f1 ab 51 5b 6c 6e  5f aa 0a 8d 00 43 38 f8    t...Q[ln_....C8.
+4b c7 11 cd 7f 22 c5 e9  05 47 f5 dd 72 4a ec 42    K...."...G..rJ.B
+c9 d0 67 01 97 c0 f4 fd  fe 0f 43 ae 4f 84 91 9f    ..g.......C.O...
+2b f8 4e ec b6 e5 dc 93  ea 51 16 76 a6 57 dc d8    +.N......Q.v.W..
+b8 6a 71 4e 1b 02 58 ce  9d 22 92 f6                .jqN..X.."..
+
+
+####################################################### ------ ###################################################
+
+Packet number 40:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 12240
+   |-length : 228
+
+                        DATA Dump                         
+ Payload (220 bytes):
+5c f8 20 31 0e ea 52 79  cd 8a 04 5b c4 3f e8 cf    \. 1..Ry...[.?..
+a6 06 c1 68 6c 44 fc 03  39 fa 30 f7 00 e8 2c eb    ...hlD..9.0...,.
+95 e8 df 68 eb 0b 7c 4d  61 1d 00 1b 9b bb db dc    ...h..|Ma.......
+ba 11 a6 6f 4f be 3b ce  34 85 57 5d 5f ba d3 ac    ...oO.;.4.W]_...
+b3 02 6d 4e 11 9f 12 83  ca 2e 8f 50 ec 13 f7 2d    ..mN.......P...-
+6b 10 4e 0a 18 5a d9 39  0a 18 20 14 0a 1b ba 7a    k.N..Z.9.. ....z
+9d c0 30 a6 23 1d a7 e9  e2 d3 5e 1b 26 d7 91 68    ..0.#.....^.&..h
+8b 6a 74 2b 7d 3a 5f 9b  32 97 40 f6 e8 93 69 c1    .jt+}:_.2.@...i.
+68 d0 34 5a 06 d5 b8 34  41 82 2e 22 c6 13 02 78    h.4Z...4A.."...x
+d5 08 5f 3c 7d 13 80 0a  5a a2 b2 c2 06 a9 0d a7    .._<}...Z.......
+ba 15 56 2c 3d 0b f0 ac  c1 c8 fe 8d 92 df cd 63    ..V,=..........c
+40 3b e8 dc cb 5e 68 2b  84 2c 8f 33 bd 74 d6 99    @;...^h+.,.3.t..
+ee 7b 31 7d 2b ef 67 6e  74 b6 52 59 a8 13 40 22    .{1}+.gnt.RY..@"
+70 42 53 7c ff 2b 36 d6  b9 5d 04 e1                pBS|.+6..]..
+
+
+####################################################### ------ ###################################################
+
+Packet number 41:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 36665
+   |-length : 228
+
+                        DATA Dump                         
+ Payload (220 bytes):
+47 f8 20 31 0e ea 52 79  cd 71 b1 7e 14 b0 f9 d4    G. 1..Ry.q.~....
+29 c5 a5 ae a6 42 bf ff  70 54 02 1b 85 d6 9e 5a    )....B..pT.....Z
+73 84 07 24 3a fc ad 2c  23 d7 73 cd 7d 48 5c fa    s..$:..,#.s.}H\.
+5a 61 89 5c ad 51 90 5c  4e aa a9 2d 0d 1b 1e 71    Za.\.Q.\N..-...q
+b8 16 bd 0c f5 da 57 6d  3b 10 06 c1 bf 04 87 94    ......Wm;.......
+97 54 e6 3e 03 45 c6 f2  52 ec 74 68 8d c3 95 de    .T.>.E..R.th....
+5a 43 3b 8d 95 2b 71 6e  78 2c bb eb f9 03 69 9d    ZC;..+qnx,....i.
+3d 1d 5d f0 c3 56 c4 e8  b2 9f 52 63 12 4c c8 0f    =.]..V....Rc.L..
+22 17 c6 b2 91 37 a2 96  58 a1 63 e7 fb df 88 e9    "....7..X.c.....
+59 14 81 bc 23 78 c7 29  cf 0f 42 f4 03 f6 64 a9    Y...#x.)..B...d.
+c2 83 e1 b2 51 76 52 47  40 f9 bb 4f 40 36 ab 14    ....QvRG@..O@6..
+d4 dc 75 21 d8 51 6f 6b  a9 36 34 2b 4a 14 23 99    ..u!.Qok.64+J.#.
+63 9b c0 be eb 75 a7 27  40 c4 98 03 95 f5 3c 32    c....u.'@.....<2
+0c 97 e8 33 23 a3 f6 c0  c0 8f af 72                ...3#......r
+
+
+####################################################### ------ ###################################################
+
+Packet number 42:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 51939
+   |-Destination Port : 443
+   |-Checksum       : 43998
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+42 f9 20 31 0e ea 52 79  cd ec 1d e9 91 dc 1a 4c    B. 1..Ry.......L
+59 4c ad c6 55 ae 97 48  da 74 50 4d 42 9e 1f 33    YL..U..H.tPMB..3
+5c 4a 07 7c 5e c2 c5 74  7b 0a ca b2 95 7e 7c d1    \J.|^..t{....~|.
+a4 e4 89 bd 1a 97 cf df  97 61 f7 3c ed e1 b3 4c    .........a.<...L
+04 cc a5 63 e6 98 ad b9  d3 08 76 67 69 0f bb 82    ...c......vgi...
+29 62 04 fc 1d 50 fc e2  ea 74 eb 5d a9 20 e6 8a    )b...P...t.]. ..
+db d6 c5 89 e6 4c 35 38  53 52 d6 42 bc 7d 3a 55    .....L58SR.B.}:U
+87 4e ef cc 16 33 78 68  47 d5 ae b9 b6 f8 74 20    .N...3xhG.....t 
+3c 17 d9 18 7b e3 d9 0c  94 c2 8b 7d 11 58 f0 06    <...{......}.X..
+d0 94 54 33 24 3b 54 46  bb 51 32 dc 32 5f 57 49    ..T3$;TF.Q2.2_WI
+f8 72 4d 3e f8 e3 85 af  45 6d d1 0e e0 90 b4 db    .rM>....Em......
+69 05 b4 96 51 b5 42 d7  8b e8 ce 39 99 2f b1 ba    i...Q.B....9./..
+3c 72 66 58 d2 d1 8e 10  83 5e dd a3 98 c0 76 d2    <rfX.....^....v.
+dc da f2 f9 95 29 e3 a5  bd 03 dd 28 ef c1 40 ad    .....).....(..@.
+e5 f2 d2 d9 d5 9c e2 20  38 f4 59 b7 3c 7f d9 c6    ....... 8.Y.<...
+5c d5 da 19 88 53 fe 2e  d3 57 f7 32 6e 21 fb 93    \....S...W.2n!..
+9b 87 ab b8 15 11 54 b1  7b ca ba b9 9e 83 38 f1    ......T.{.....8.
+86 ab 76 b1 6c 9f e0 e8  b8 ac 31 73 df 2a e9 40    ..v.l.....1s.*.@
+47 42 52 49 13 8f bf c7  16 b1 f5 78 9e c6 62 55    GBRI.......x..bU
+aa d3 ba 5e 2d 39 4f 15  1a fa 14 01 b8 5f f9 5b    ...^-9O......_.[
+c4 a9 54 54 8c c5 cb 4d  9f a0 72 8a d5 1a 96 48    ..TT...M..r....H
+03 25 2c f0 e0 5e e3 d6  e2 22 31 e3 de 56 7d 67    .%,..^..."1..V}g
+bd c9 19 7c 4a db 5f 00  75 29 b6 22 ea 83 4d 17    ...|J._.u)."..M.
+57 d2 fc 84 08 84 7c ef  fd d9 6a 10 a4 09 48 db    W.....|...j...H.
+b2 8a f7 c7 b3 d1 7d 02  f6 22 c9 b9 41 30 4f 20    ......}.."..A0O 
+27 9b 17 82 f4 5b 14 d6  42 ed 13 99 e8 9b be da    '....[..B.......
+a0 50 75 e5 c9 34 f9 6c  cb 1c c8 22 7b 58 a8 69    .Pu..4.l..."{X.i
+58 0c c7 3f 42 7b f7 07  1c 5a f7 57 d3 b4 ef 39    X..?B{...Z.W...9
+d4 da 21 de 2d 6f c9 7a  5e 1e 00 52 bd a4 9f f4    ..!.-o.z^..R....
+5d 6d c4 73 cd dd 7d 85  9e 05 4f 54 6c 37 71 f8    ]m.s..}...OTl7q.
+50 9d a8 74 7a c7 32 03  b5 88 17 ed e1 c7 cc 17    P..tz.2.........
+16 17 00 fb c0 9e 5c ef  bc 69 68 23 e1 6a ef f7    ......\..ih#.j..
+80 f3 24 58 1e e2 81 ab  ab 3f 9e 3d 58 f4 20 06    ..$X.....?.=X. .
+6a 2d 5c 5e b8 2a d0 2d  84 5c aa b7 ad 44 5a 11    j-\^.*.-.\...DZ.
+aa f7 2d 5d fe 55 2d 13  38 f9 b7 de d8 59 7d 31    ..-].U-.8....Y}1
+66 67 15 04 2f ee de 38  1a ad f4 4c 90 8c 53 0b    fg../..8...L..S.
+bb 75 c8 f2 d3 2a 1d d5  75 d9 6e ef 2a 0b f8 45    .u...*..u.n.*..E
+20 41 fd f4 e9 6e 7a 8d  f2 49 1a 47 66 a1 25 17     A...nz..I.Gf.%.
+cc b2 f8 a8 53 28 b0 ec  5c ff d4 59 29 85 91 c4    ....S(..\..Y)...
+df 98 ad aa d9 b7 8c 20  5b 0d de 97 5a 75 6b 70    ....... [...Zukp
+ea 6f aa d2 f2 46 64 4f  8f 54 00 a7 30 43 79 ea    .o...FdO.T..0Cy.
+66 e5 b4 50 d8 a1 af a5  59 7c 57 9a 4b 35 08 a0    f..P....Y|W.K5..
+70 b8 3b eb 8c 49 5d 51  e2 6a 8c 6b 59 61 ae 31    p.;..I]Q.j.kYa.1
+e4 17 41 76 06 0d 6c cc  92 5f 4b 80 16 a2 90 57    ..Av..l.._K....W
+b9 64 2d 01 72 04 fe d9  13 06 12 d4 ed b0 13 0b    .d-.r...........
+77 b3 21 a1 9a fc 3c d1  fc 7f 51 d2 51 8b 83 05    w.!...<...Q.Q...
+56 41 0b 09 fa 45 2a 1b  92 b6 a0 5a 0b a2 a3 13    VA...E*....Z....
+79 c0 4b 2a cd 9c af e4  ef ee 61 bf 8d 3b 0a de    y.K*......a..;..
+76 cc cb 2a ad ff c1 f0  b4 97 e7 ce 57 53 19 f6    v..*........WS..
+05 e0 83 2e 58 88 a4 ab  19 aa f0 b1 37 dc 87 35    ....X.......7..5
+9d 39 12 77 32 ad e5 60  00 13 ec 6a b4 31 1a ce    .9.w2..`...j.1..
+5c bd 78 f8 69 4f cd b0  ab 5a b0 85 e9 d6 34 07    \.x.iO...Z....4.
+a6 e9 5f 86 3f e2 77 9e  1e 9e d6 ab 8e bc 18 12    .._.?.w.........
+9b 67 5b 85 58 00 e1 9c  e6 37 1b d2 b7 73 13 e4    .g[.X....7...s..
+92 e9 49 5f 62 9f 2d cd  ef fb 1b 60 fc f0 b5 e7    ..I_b.-....`....
+07 f1 c3 22 fb 9b 13 0a  20 8d d4 9d 6c 5e 20 75    ...".... ...l^ u
+d8 13 1b 04 62 e5 f3 2e  6a f7 1e 9e f7 0b b7 aa    ....b...j.......
+e0 48 f4 44 bd ef 4b c0  ea b1 72 0e 22 14 f1 96    .H.D..K...r."...
+73 07 c9 a8 38 3f 13 df  5c 8c 09 af b0 5c 28 ee    s...8?..\....\(.
+8e 31 c1 2a ad 4c a1 41  5c 6b 98 8b e2 42 92 6b    .1.*.L.A\k...B.k
+5a 69 37 1a 5c 60 39 30  4b b1 ee df 03 96 38 53    Zi7.\`90K.....8S
+b0 6f c6 45 70 1b 4f c1  41 b1 42 99 57 88 5f 5d    .o.Ep.O.A.B.W._]
+93 ee da f1 eb 64 ff 6c  9d b2 61 1d 2d e7 cc d5    .....d.l..a.-...
+ba 28 c5 d3 c6 10 61 ed  25 91 a3 9d ff f8 89 3f    .(....a.%......?
+53 9a ef 90 a6 13 49 90  d9 e4 a0 0e a7 ff 6d d1    S.....I.......m.
+86 0f 4f 99 33 92 ba b1  01 c8 2f 8b f1 b5 4d 62    ..O.3...../...Mb
+7c 12 d8 44 5d 53 2a b2  40 9d 58 0c e0 88 a0 4a    |..D]S*.@.X....J
+2d ff 96 7d e9 a9 75 ce  35 bd ad 9a 5d 32 0a b8    -..}..u.5...]2..
+7d ca aa 18 74 0f 0e 4d  4f 25 3a 55 4e 71 bd b9    }...t..MO%:UNq..
+f9 64 28 38 4b 9a 92 23  d4 c7 9b 09 db 27 cc d3    .d(8K..#.....'..
+15 fb 05 18 e4 94 41 5c  90 79 58 6a ce 48 83 ca    ......A\.yXj.H..
+a3 b0 59 1d bb 9f 1e 4c  38 4c 6f 41 b8 fb 48 c5    ..Y....L8LoA..H.
+78 3b dd fc 9e f3 0b 70  ae 92 a4 9b 1f 25 21 53    x;.....p.....%!S
+45 e3 77 ba 35 89 68 dd  2d ce 66 5a d4 e9 9b c0    E.w.5.h.-.fZ....
+b6 3d 5c f6 07 7e fb 5f  56 a2 79 74 0b 5b 64 81    .=\..~._V.yt.[d.
+94 af 9c f8 e8 96 24 47  b9 42 ee 7d d0 b9 74 96    ......$G.B.}..t.
+3c 9c 82 80 e0 09 5a 12  bc 39 49 25 da 26 93 e2    <.....Z..9I%.&..
+38 2d d1 bc 6c cb aa a3  cf 9a 85 ec 2c b9 2a 05    8-..l.......,.*.
+ba 6c                                               .l
+
+
+####################################################### ------ ###################################################
+
+Packet number 43:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 48015
+   |-length : 36
+
+                        DATA Dump                         
+ Payload (28 bytes):
+45 e5 25 03 92 72 9d ec  6c e9 66 6e 5a 0d 34 9b    E.%..r..l.fnZ.4.
+83 0d 53 db 4e 0f ce 80  87 50 d8 cf                ..S.N....P..
+
+
+####################################################### ------ ###################################################
+
+Packet number 44:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 26061
+   |-length : 40
+
+                        DATA Dump                         
+ Payload (32 bytes):
+4a f8 20 31 0e ea 52 79  cd 2b 63 90 84 8e ab e7    J. 1..Ry.+c.....
+37 3b 7b 38 8c 8d 4b a6  3a 63 e0 7b fc 00 d7 54    7;{8..K.:c.{...T
+
+
+####################################################### ------ ###################################################
+
+Packet number 45:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 62892
+   |-length : 33
+
+                        DATA Dump                         
+ Payload (25 bytes):
+5a 1a 0b ce 26 4d b4 2d  ba e8 15 10 76 eb 96 a0    Z...&M.-....v...
+40 d6 ec cd aa 82 d2 ba  4e                         @.......N
+
+
+####################################################### ------ ###################################################
+
+Packet number 46:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 5006
+   |-length : 35
+
+                        DATA Dump                         
+ Payload (27 bytes):
+55 9e 00 b7 19 ce a2 37  d7 c8 74 32 f8 80 44 2b    U......7..t2..D+
+64 18 ff 5b ea 4e 69 76  0c a8 9a                   d..[.Niv...
+
+
+####################################################### ------ ###################################################
+
+Packet number 47:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 61069
+   |-length : 234
+
+                        DATA Dump                         
+ Payload (226 bytes):
+57 12 02 8d 1a 60 2c 17  9a 1c f7 82 a3 af 9a f5    W....`,.........
+00 19 f6 ed ee 36 e2 9a  36 ed 23 5d fe 73 22 5c    .....6..6.#].s"\
+e3 71 59 a4 27 43 a3 cc  30 a3 47 8b 09 b6 86 9e    .qY.'C..0.G.....
+b1 95 ef 20 59 b0 80 14  a6 91 69 ef e5 99 94 54    ... Y.....i....T
+e2 cd 8d c3 67 62 1b 43  da 32 99 b3 7c 4e da 39    ....gb.C.2..|N.9
+d5 96 06 2c 37 da db d6  a4 54 b8 50 e6 b4 9c cb    ...,7....T.P....
+74 63 22 c9 a3 8d 43 4d  99 d9 77 b3 13 8b 37 4e    tc"...CM..w...7N
+a6 09 6e 00 17 d3 78 ab  79 b7 e9 a6 98 5d 2d 81    ..n...x.y....]-.
+24 f9 b2 10 14 5e 60 f0  23 20 1c f3 6f 35 12 bc    $....^`.# ..o5..
+53 2e 13 a8 2f 77 f2 1b  26 18 8f b6 aa 9e aa 17    S.../w..&.......
+d7 ba a7 fc 39 0f 11 f0  88 22 9d a9 59 e3 95 eb    ....9...."..Y...
+09 01 7e c3 07 3d 50 8a  a7 bf 21 ec bf 04 be 84    ..~..=P...!.....
+b1 f5 c4 62 0b de bd bc  d7 ee 41 5c 7d 0d 99 22    ...b......A\}.."
+f8 3f 1b 45 a0 4f ce 25  43 40 e4 c1 fe ab 83 2e    .?.E.O.%C@......
+da 5c                                               .\
+
+
+####################################################### ------ ###################################################
+
+Packet number 48:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 54528
+   |-length : 29
+
+                        DATA Dump                         
+ Payload (21 bytes):
+59 0c 43 bb b6 81 5c ca  14 3e e9 3f 66 74 cc e1    Y.C...\..>.?ft..
+1d 5e f6 37 43                                      .^.7C
+
+
+####################################################### ------ ###################################################
+
+Packet number 49:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 56770
+   |-length : 43
+
+                        DATA Dump                         
+ Payload (35 bytes):
+59 f8 20 31 0e ea 52 79  cd 89 c3 ef cb 79 fc ab    Y. 1..Ry.....y..
+ac 88 a5 ca 2d f2 33 45  6b 23 0b f2 e6 1d 43 a7    ....-.3Ek#....C.
+4b 0e 5a                                            K.Z
+
+
+####################################################### ------ ###################################################
+
+Packet number 50:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 52728
+   |-length : 35
+
+                        DATA Dump                         
+ Payload (27 bytes):
+54 66 ae ae 12 3d f9 c3  35 4b 26 ec 1b ab 0a ed    Tf...=..5K&.....
+77 dd 11 95 b4 cb d7 31  16 24 81                   w......1.$.
+
+
+####################################################### ------ ###################################################
+
+Packet number 51:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 36302
+   |-length : 37
+
+                        DATA Dump                         
+ Payload (29 bytes):
+4b 32 9c 2d b9 e2 84 50  22 12 7e b7 4b c7 db d5    K2.-...P".~.K...
+d8 d0 9f 42 5f 9b f3 73  f8 46 f8 3b d5             ...B_..s.F.;.
+
+
+####################################################### ------ ###################################################
+
+Packet number 52:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 51939
+   |-Checksum       : 53293
+   |-length : 1258
+
+                        DATA Dump                         
+ Payload (1250 bytes):
+4c 99 a2 8e 1c 09 ed bc  bd 73 d3 d3 09 05 32 30    L........s....20
+03 f9 41 ca 70 5c 1b 0c  82 54 37 36 bf 38 2a e7    ..A.p\...T76.8*.
+a5 96 6a 70 7a f5 87 d8  73 8e e8 b6 d4 91 d0 3b    ..jpz...s......;
+be 14 9c 87 96 a3 27 3a  9f dc 15 d4 10 11 8f fc    ......':........
+00 3f 28 a4 63 be e9 e4  83 75 df f5 c0 b1 f2 db    .?(.c....u......
+a1 0d b3 6d a0 8c ea cb  ab db f0 ee 40 81 60 47    ...m........@.`G
+df 44 42 f5 e0 6c 02 cd  af 8c 9c ab 27 1e c8 a2    .DB..l......'...
+95 31 cf 08 ea cc 63 b5  ca 0a 5c 07 e1 ed 14 1e    .1....c...\.....
+a2 3e e4 64 59 02 1f 89  79 57 a3 74 1f 3c 76 7c    .>.dY...yW.t.<v|
+d9 d0 b9 f5 3c cd ff 09  6d 67 92 03 0f 0f e6 d7    ....<...mg......
+0d 1a eb 05 88 e0 5b 92  e9 8d 94 19 8d 6b b6 1a    ......[......k..
+8c 22 ff f6 8a 40 9d 0c  52 a8 c8 04 eb b8 75 fd    ."...@..R.....u.
+4a 86 6c 01 1c 52 99 b4  b5 a4 a6 eb 61 4b 69 41    J.l..R......aKiA
+05 fd 44 f5 b2 06 ec 69  05 c8 8b 87 a0 0c 48 24    ..D....i......H$
+9f df 0a ad 8d c2 b4 30  31 91 39 3d ae 42 86 b4    .......01.9=.B..
+e3 1e 5c b9 ab e0 bd ac  a6 ee 65 59 0d 8b a7 60    ..\.......eY...`
+ab 08 2e 57 4e 25 c9 40  df 4a cf 99 23 0e 7e 89    ...WN%.@.J..#.~.
+f7 c3 90 62 40 75 a2 a1  0e 5e 63 de 63 fc 3e ba    ...b@u...^c.c.>.
+78 10 f9 34 4b c8 16 7b  4b 53 e9 c4 e1 99 77 50    x..4K..{KS....wP
+63 97 8a 5c f8 29 2f 09  67 0f 03 ab b9 e5 49 98    c..\.)/.g.....I.
+10 bd 9d 1f 5f c2 db 7a  8b da c0 38 bd c2 b0 0e    ...._..z...8....
+b2 f6 70 46 38 13 0c 95  31 11 1d 0b 65 e7 f0 c9    ..pF8...1...e...
+7f c8 1a 39 3a 50 42 58  fe cf 54 31 af e3 1f 2c    ...9:PBX..T1...,
+97 a6 99 4c 0d ad f2 25  f4 f0 7e 99 7c e6 e2 a3    ...L...%..~.|...
+05 25 f3 90 0c 5c c7 ea  93 84 0a bb 0d c6 ef 2d    .%...\.........-
+92 5f 14 e0 49 21 fa ac  20 77 94 4e ea dc 76 6c    ._..I!.. w.N..vl
+26 fc 3b 3d 3a 5b 9e 24  ed 37 b3 45 88 79 03 19    &.;=:[.$.7.E.y..
+ea 68 13 b0 06 58 c7 7f  91 67 4d ec da d9 13 ef    .h...X...gM.....
+df 66 93 f6 fc 6d 1b 7c  60 a4 80 01 84 3e ed d9    .f...m.|`....>..
+63 26 1f e1 2c 17 fc 4b  52 1b 75 c7 5b f9 3e a4    c&..,..KR.u.[.>.
+7a 14 af 20 2c 8a b1 70  c0 ad f6 a4 22 94 92 66    z.. ,..p...."..f
+fe 39 19 dd 15 c6 3b 7c  ed b6 64 0c 3f f4 63 b6    .9....;|..d.?.c.
+9f 6b 44 00 81 f8 aa 62  9f 7e da 99 bd 60 d2 74    .kD....b.~...`.t
+33 d5 e8 28 2c dc af 3e  78 41 0a 7a 10 95 c6 56    3..(,..>xA.z...V
+56 70 60 88 8f 1c 77 2b  e5 4e 59 12 14 b0 ad 81    Vp`...w+.NY.....
+ed c8 cd ae 5f f3 86 d2  b4 8b fa 34 ae 60 ed a9    ...._......4.`..
+67 8a fb 18 da c4 67 88  46 b8 82 05 c9 5a 28 96    g.....g.F....Z(.
+85 f3 7c af 28 40 4e f9  40 ba 1b 8d 94 ab de 70    ..|.(@N.@......p
+57 cc 20 27 d4 55 14 b1  fb a2 b6 71 f4 03 03 5a    W. '.U.....q...Z
+94 46 2b bf 46 0a 70 8b  48 1f 80 56 8a 6b e2 58    .F+.F.p.H..V.k.X
+bb 1c ca 47 6f a1 f0 b7  7e 3e 4d 5d 1a 1f 2a ea    ...Go...~>M]..*.
+d9 98 1a 51 b5 82 97 ad  f7 16 30 d1 2a c7 10 b6    ...Q......0.*...
+89 06 92 60 f8 2f 9a ec  f4 1d a1 08 0c 36 90 cd    ...`./.......6..
+95 14 6e d7 c8 19 0c e9  7e 49 dd a8 8b b6 81 89    ..n.....~I......
+05 89 2a b3 16 5e 5c 14  a3 e5 ae fe a3 8b 8c 9d    ..*..^\.........
+3f 21 7b f6 32 60 b0 b8  ab a7 67 a5 ef 9f 6d 14    ?!{.2`....g...m.
+5c a8 d9 b4 ed b4 18 08  bc 51 11 c0 f3 13 e3 17    \........Q......
+52 27 f5 90 c0 90 e3 e8  98 44 6a e2 bd e2 a9 ee    R'.......Dj.....
+66 dd 8b 60 79 21 2b 17  1b 66 85 58 ee 0d 4a cc    f..`y!+..f.X..J.
+87 f8 43 cd 45 82 f4 b2  84 34 79 6f 30 3a 83 a0    ..C.E....4yo0:..
+4f c0 fe 64 16 43 fe 7a  e7 c0 c0 b6 d5 5c 0d 82    O..d.C.z.....\..
+07 9f 23 24 1f 70 55 12  65 5b 97 17 1b 56 b6 b2    ..#$.pU.e[...V..
+f9 8b b6 83 93 bb a3 24  de f5 21 95 95 cc f5 23    .......$..!....#
+86 8a c0 cc fb 81 75 bb  94 40 76 b2 73 ee 90 81    ......u..@v.s...
+12 41 49 f2 26 e7 ac dc  14 43 ae 69 6d 42 55 8b    .AI.&....C.imBU.
+2e e9 8d 6c bb 89 e3 16  14 d9 1b b9 b2 13 2d 40    ...l..........-@
+3b 8e 6a da 34 2e cc cf  9f c9 df ef 97 cf d2 bf    ;.j.4...........
+d5 02 09 3c e4 d4 3c 9a  a8 08 d5 7c 83 cc 56 e7    ...<..<....|..V.
+cf 59 44 85 45 14 0e ca  c5 cf b1 bb c6 11 6c ab    .YD.E.........l.
+ac 71 f7 8f be 88 da 19  a3 77 28 ca 36 0e 94 45    .q.......w(.6..E
+3e f0 93 10 e4 8b 75 97  12 4d 9e d5 38 91 ad 8e    >.....u..M..8...
+1c 14 82 b0 e0 76 7b 0d  be 6c 4c b1 ee 56 d0 c0    .....v{..lL..V..
+ab cf 0a 61 fc 1b 7b 3d  13 90 67 16 31 b1 3b 89    ...a..{=..g.1.;.
+f1 bf b2 a0 dd 2c 8b 24  1e 67 af 5d 9f 5b 06 46    .....,.$.g.].[.F
+d7 33 1c 38 b4 e0 f8 8e  07 df 33 63 aa 9c 6b b9    .3.8......3c..k.
+b3 a0 fc 0c d7 d4 5d 89  da fb d1 f4 24 ee c8 13    ......].....$...
+10 c3 be 87 f5 a6 28 ae  be 65 55 d4 08 ab 6e 51    ......(..eU...nQ
+29 53 56 53 ed 51 89 3b  f4 92 be e7 26 fc 13 79    )SVS.Q.;....&..y
+f7 12 15 76 58 d0 00 8f  8f 14 93 e0 e6 ed c4 e0    ...vX...........
+c9 0c a7 cc a4 58 e7 b3  c8 d3 dc d7 0f 3b ea 05    .....X.......;..
+32 46 eb 72 3f a2 4a a8  cf 69 e6 ff f9 de ce 1b    2F.r?.J..i......
+5d fd 55 40 e1 b0 54 67  5f 95 9d 97 c0 76 f3 03    ].U@..Tg_....v..
+04 7f e3 c3 a3 dc ed c5  32 02 06 a8 93 ea e1 6a    ........2......j
+4e 1f da a9 8a 74 ea 8e  4b a0 b8 7b fe 69 7e 08    N....t..K..{.i~.
+8b 21 49 64 67 aa 9f 15  04 ba 85 50 2d 6d 38 5b    .!Idg......P-m8[
+f5 27 0e 79 8b e9 c4 3f  93 47 63 f9 35 13 ef b5    .'.y...?.Gc.5...
+5c b7 95 32 5b d6 04 32  ef 96 1b 09 ab fa 5a 56    \..2[..2......ZV
+a6 88 eb 45 77 4a 41 b1  7a 75 66 28 3f 90 22 9c    ...EwJA.zuf(?.".
+9b 8d                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 53:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 142.250.206.132
+
+UDP Header
+   |-Source Port      : 53737
+   |-Destination Port : 443
+   |-Checksum       : 46055
+   |-length : 56
+
+                        DATA Dump                         
+ Payload (48 bytes):
+5b f8 20 31 0e ea 52 79  cd 49 9c 9c 39 fd a7 82    [. 1..Ry.I..9...
+d7 37 7c 2d 39 23 d2 12  86 e7 3c 08 3d c1 7b 97    .7|-9#....<.=.{.
+0f dd 8c be 88 82 7a 16  77 58 8b 32 df 14 d3 b5    ......z.wX.2....
+
+
+####################################################### ------ ###################################################
+
+Packet number 54:
+
+
+IP address  From: 142.250.206.132
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 443
+   |-Destination Port : 53737
+   |-Checksum       : 64904
+   |-length : 33
+
+                        DATA Dump                         
+ Payload (25 bytes):
+5c dd b8 18 41 52 dd c5  d6 d4 bb 27 19 50 6c 9e    \...AR.....'.Pl.
+1f 6c ba c4 4d 08 a7 ba  f4                         .l..M....
+
+
+####################################################### ------ ###################################################
+
+Packet number 55:
+
+
+IP address  From: 192.168.1.113
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 24505
+   |-length : 230
+
+                        DATA Dump                         
+ Payload (222 bytes):
+00 00 84 00 00 00 00 03  00 00 00 00 04 5f 73 73    ............._ss
+68 04 5f 74 63 70 05 6c  6f 63 61 6c 00 00 0c 00    h._tcp.local....
+01 00 00 00 00 00 1d 1a  73 70 61 72 73 68 2e 6d    ........sparsh.m
+69 74 74 61 6c 2d 43 30  32 5a 51 30 38 31 4d 44    ittal-C02ZQ081MD
+36 50 c0 0c 1a 73 70 61  72 73 68 2e 6d 69 74 74    6P...sparsh.mitt
+61 6c 2d 43 30 32 5a 51  30 38 31 4d 44 36 50 0c    al-C02ZQ081MD6P.
+5f 64 65 76 69 63 65 2d  69 6e 66 6f c0 11 00 10    _device-info....
+00 01 00 00 00 00 00 33  14 6d 6f 64 65 6c 3d 4d    .......3.model=M
+61 63 42 6f 6f 6b 50 72  6f 31 36 2c 31 0a 6f 73    acBookPro16,1.os
+78 76 65 72 73 3d 32 33  12 65 63 6f 6c 6f 72 3d    xvers=23.ecolor=
+32 32 35 2c 32 32 35 2c  32 32 33 09 5f 73 66 74    225,225,223._sft
+70 2d 73 73 68 c0 11 00  0c 00 01 00 00 00 00 00    p-ssh...........
+1d 1a 73 70 61 72 73 68  2e 6d 69 74 74 61 6c 2d    ..sparsh.mittal-
+43 30 32 5a 51 30 38 31  4d 44 36 50 c0 ab          C02ZQ081MD6P..
+
+
+####################################################### ------ ###################################################
+
+Packet number 56:
+
+
+IP address  From: 192.168.1.113
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 24505
+   |-length : 230
+
+                        DATA Dump                         
+ Payload (222 bytes):
+00 00 84 00 00 00 00 03  00 00 00 00 04 5f 73 73    ............._ss
+68 04 5f 74 63 70 05 6c  6f 63 61 6c 00 00 0c 00    h._tcp.local....
+01 00 00 00 00 00 1d 1a  73 70 61 72 73 68 2e 6d    ........sparsh.m
+69 74 74 61 6c 2d 43 30  32 5a 51 30 38 31 4d 44    ittal-C02ZQ081MD
+36 50 c0 0c 1a 73 70 61  72 73 68 2e 6d 69 74 74    6P...sparsh.mitt
+61 6c 2d 43 30 32 5a 51  30 38 31 4d 44 36 50 0c    al-C02ZQ081MD6P.
+5f 64 65 76 69 63 65 2d  69 6e 66 6f c0 11 00 10    _device-info....
+00 01 00 00 00 00 00 33  14 6d 6f 64 65 6c 3d 4d    .......3.model=M
+61 63 42 6f 6f 6b 50 72  6f 31 36 2c 31 0a 6f 73    acBookPro16,1.os
+78 76 65 72 73 3d 32 33  12 65 63 6f 6c 6f 72 3d    xvers=23.ecolor=
+32 32 35 2c 32 32 35 2c  32 32 33 09 5f 73 66 74    225,225,223._sft
+70 2d 73 73 68 c0 11 00  0c 00 01 00 00 00 00 00    p-ssh...........
+1d 1a 73 70 61 72 73 68  2e 6d 69 74 74 61 6c 2d    ..sparsh.mittal-
+43 30 32 5a 51 30 38 31  4d 44 36 50 c0 ab          C02ZQ081MD6P..
+
+
+####################################################### ------ ###################################################
+
+Packet number 57:
+Packet number 58:
+Packet number 59:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 57963
+   |-Destination Port : 53
+   |-Checksum       : 10453
+   |-length : 93
+
+                        DATA Dump                         
+ Payload (85 bytes):
+03 93 01 00 00 01 00 00  00 00 00 00 27 75 73 65    ............'use
+32 2d 67 61 6c 6c 61 6e  74 2d 77 69 6c 6c 69 61    2-gallant-willia
+6d 73 6f 6e 32 34 30 32  30 32 2d 31 36 37 30 30    mson240202-16700
+33 33 33 37 09 75 73 2d  65 61 73 74 2d 32 03 65    3337.us-east-2.e
+6c 62 09 61 6d 61 7a 6f  6e 61 77 73 03 63 6f 6d    lb.amazonaws.com
+00 00 01 00 01                                      .....
+
+
+####################################################### ------ ###################################################
+
+Packet number 60:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 64393
+   |-Destination Port : 53
+   |-Checksum       : 24208
+   |-length : 44
+
+                        DATA Dump                         
+ Payload (36 bytes):
+b4 e4 01 00 00 01 00 00  00 00 00 00 04 5f 64 6e    ............._dn
+73 08 72 65 73 6f 6c 76  65 72 04 61 72 70 61 00    s.resolver.arpa.
+00 40 00 01                                         .@..
+
+
+####################################################### ------ ###################################################
+
+Packet number 61:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 57963
+   |-Checksum       : 42712
+   |-length : 141
+
+                        DATA Dump                         
+ Payload (133 bytes):
+03 93 81 80 00 01 00 03  00 00 00 00 27 75 73 65    ............'use
+32 2d 67 61 6c 6c 61 6e  74 2d 77 69 6c 6c 69 61    2-gallant-willia
+6d 73 6f 6e 32 34 30 32  30 32 2d 31 36 37 30 30    mson240202-16700
+33 33 33 37 09 75 73 2d  65 61 73 74 2d 32 03 65    3337.us-east-2.e
+6c 62 09 61 6d 61 7a 6f  6e 61 77 73 03 63 6f 6d    lb.amazonaws.com
+00 00 01 00 01 c0 0c 00  01 00 01 00 00 00 20 00    .............. .
+04 03 84 bc d0 c0 0c 00  01 00 01 00 00 00 20 00    .............. .
+04 34 0f e4 e9 c0 0c 00  01 00 01 00 00 00 20 00    .4............ .
+04 03 87 fb 93                                      .....
+
+
+####################################################### ------ ###################################################
+
+Packet number 62:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 64393
+   |-Checksum       : 38644
+   |-length : 120
+
+                        DATA Dump                         
+ Payload (112 bytes):
+b4 e4 81 83 00 01 00 00  00 01 00 00 04 5f 64 6e    ............._dn
+73 08 72 65 73 6f 6c 76  65 72 04 61 72 70 61 00    s.resolver.arpa.
+00 40 00 01 c0 1a 00 06  00 01 00 00 0a 89 00 40    .@.............@
+01 61 0c 72 6f 6f 74 2d  73 65 72 76 65 72 73 03    .a.root-servers.
+6e 65 74 00 05 6e 73 74  6c 64 0c 76 65 72 69 73    net..nstld.veris
+69 67 6e 2d 67 72 73 03  63 6f 6d 00 78 a4 97 14    ign-grs.com.x...
+00 00 07 08 00 00 03 84  00 09 3a 80 00 01 51 80    ..........:...Q.
+
+
+####################################################### ------ ###################################################
+
+Packet number 63:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 30495
+   |-length : 360
+
+                        DATA Dump                         
+ Payload (352 bytes):
+00 00 00 00 00 14 00 00  00 00 00 00 02 6c 62 07    .............lb.
+5f 64 6e 73 2d 73 64 04  5f 75 64 70 05 6c 6f 63    _dns-sd._udp.loc
+61 6c 00 00 0c 00 01 08  5f 61 69 72 70 6f 72 74    al......_airport
+04 5f 74 63 70 c0 1c 00  0c 00 01 07 5f 72 64 6c    ._tcp......._rdl
+69 6e 6b c0 30 00 0c 00  01 04 5f 70 74 70 c0 30    ink.0....._ptp.0
+00 0c 00 01 07 5f 69 70  70 75 73 62 c0 30 00 0c    ....._ippusb.0..
+00 01 0f 5f 70 64 6c 2d  64 61 74 61 73 74 72 65    ..._pdl-datastre
+61 6d c0 30 00 0c 00 01  08 5f 70 72 69 6e 74 65    am.0....._printe
+72 c0 30 00 0c 00 01 06  5f 75 73 63 61 6e c0 30    r.0....._uscan.0
+00 0c 00 01 04 5f 69 70  70 c0 30 00 0c 00 01 07    ....._ipp.0.....
+5f 75 73 63 61 6e 73 c0  30 00 0c 00 01 08 5f 73    _uscans.0....._s
+63 61 6e 6e 65 72 c0 30  00 0c 00 01 05 5f 69 70    canner.0....._ip
+70 73 c0 30 00 0c 00 01  0b 5f 61 66 70 6f 76 65    ps.0....._afpove
+72 74 63 70 c0 30 00 0c  00 01 04 5f 73 6d 62 c0    rtcp.0....._smb.
+30 00 0c 00 01 04 5f 72  66 62 c0 30 00 0c 00 01    0....._rfb.0....
+06 5f 61 64 69 73 6b c0  30 00 0c 00 01 0f 5f 63    ._adisk.0....._c
+6f 6d 70 61 6e 69 6f 6e  2d 6c 69 6e 6b c0 30 00    ompanion-link.0.
+0c 00 01 0d 5f 61 70 70  6c 65 2d 6d 6f 62 64 65    ...._apple-mobde
+76 c0 30 00 0c 00 01 08  39 30 38 65 30 37 65 66    v.0.....908e07ef
+04 5f 73 75 62 0e 5f 61  70 70 6c 65 2d 6d 6f 62    ._sub._apple-mob
+64 65 76 32 c0 30 00 0c  00 01 0f 5f 61 70 70 6c    dev2.0....._appl
+65 2d 70 61 69 72 61 62  6c 65 c0 30 00 0c 00 01    e-pairable.0....
+
+
+####################################################### ------ ###################################################
+
+Packet number 64:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 56055
+   |-length : 182
+
+                        DATA Dump                         
+ Payload (174 bytes):
+00 00 00 00 00 08 00 00  00 00 00 00 0b 5f 61 66    ............._af
+70 6f 76 65 72 74 63 70  04 5f 74 63 70 05 6c 6f    povertcp._tcp.lo
+63 61 6c 00 00 0c 00 01  04 5f 73 6d 62 c0 18 00    cal......_smb...
+0c 00 01 04 5f 72 66 62  c0 18 00 0c 00 01 06 5f    ...._rfb......._
+61 64 69 73 6b c0 18 00  0c 00 01 0f 5f 63 6f 6d    adisk......._com
+70 61 6e 69 6f 6e 2d 6c  69 6e 6b c0 18 00 0c 00    panion-link.....
+01 0d 5f 61 70 70 6c 65  2d 6d 6f 62 64 65 76 c0    .._apple-mobdev.
+18 00 0c 00 01 08 39 30  38 65 30 37 65 66 04 5f    ......908e07ef._
+73 75 62 0e 5f 61 70 70  6c 65 2d 6d 6f 62 64 65    sub._apple-mobde
+76 32 c0 18 00 0c 00 01  0f 5f 61 70 70 6c 65 2d    v2......._apple-
+70 61 69 72 61 62 6c 65  c0 18 00 0c 00 01          pairable......
+
+
+####################################################### ------ ###################################################
+
+Packet number 65:
+Packet number 66:
+Packet number 67:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 53774
+   |-Destination Port : 53
+   |-Checksum       : 58684
+   |-length : 74
+
+                        DATA Dump                         
+ Payload (66 bytes):
+84 2b 01 00 00 01 00 00  00 00 00 00 13 6d 70 73    .+...........mps
+2d 6d 64 65 2d 70 72 64  2d 63 75 73 33 2d 31 34    -mde-prd-cus3-14
+09 63 65 6e 74 72 61 6c  75 73 08 63 6c 6f 75 64    .centralus.cloud
+61 70 70 05 61 7a 75 72  65 03 63 6f 6d 00 00 01    app.azure.com...
+00 01                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 68:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 53774
+   |-Checksum       : 233
+   |-length : 90
+
+                        DATA Dump                         
+ Payload (82 bytes):
+84 2b 81 80 00 01 00 01  00 00 00 00 13 6d 70 73    .+...........mps
+2d 6d 64 65 2d 70 72 64  2d 63 75 73 33 2d 31 34    -mde-prd-cus3-14
+09 63 65 6e 74 72 61 6c  75 73 08 63 6c 6f 75 64    .centralus.cloud
+61 70 70 05 61 7a 75 72  65 03 63 6f 6d 00 00 01    app.azure.com...
+00 01 c0 0c 00 01 00 01  00 00 00 02 00 04 14 25    ...............%
+8f 78                                               .x
+
+
+####################################################### ------ ###################################################
+
+Packet number 69:
+
+
+IP address  From: 192.168.1.115
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 59865
+   |-length : 45
+
+                        DATA Dump                         
+ Payload (37 bytes):
+00 00 00 00 00 01 00 00  00 00 00 00 0d 4e 61 6e    .............Nan
+6f 2d 44 79 6e 61 6d 69  74 65 05 6c 6f 63 61 6c    o-Dynamite.local
+00 00 ff 00 01                                      .....
+
+
+####################################################### ------ ###################################################
+
+Packet number 70:
+Packet number 71:
+
+
+IP address  From: 192.168.1.115
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 34052
+   |-length : 83
+
+                        DATA Dump                         
+ Payload (75 bytes):
+00 00 84 00 00 00 00 02  00 00 00 00 0d 4e 61 6e    .............Nan
+6f 2d 44 79 6e 61 6d 69  74 65 05 6c 6f 63 61 6c    o-Dynamite.local
+00 00 1c 00 01 00 00 00  3c 00 10 fe 80 00 00 00    ........<.......
+00 00 00 45 07 38 43 e8  78 a1 c8 c0 0c 00 01 00    ...E.8C.x.......
+01 00 00 00 3c 00 04 c0  a8 01 73                   ....<.....s
+
+
+####################################################### ------ ###################################################
+
+Packet number 72:
+
+
+IP address  From: 192.168.1.115
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 59865
+   |-length : 45
+
+                        DATA Dump                         
+ Payload (37 bytes):
+00 00 00 00 00 01 00 00  00 00 00 00 0d 4e 61 6e    .............Nan
+6f 2d 44 79 6e 61 6d 69  74 65 05 6c 6f 63 61 6c    o-Dynamite.local
+00 00 ff 00 01                                      .....
+
+
+####################################################### ------ ###################################################
+
+Packet number 73:
+Packet number 74:
+Packet number 75:
+
+
+IP address  From: 192.168.1.115
+IP address  To: 224.0.0.251
+
+UDP Header
+   |-Source Port      : 5353
+   |-Destination Port : 5353
+   |-Checksum       : 34052
+   |-length : 83
+
+                        DATA Dump                         
+ Payload (75 bytes):
+00 00 84 00 00 00 00 02  00 00 00 00 0d 4e 61 6e    .............Nan
+6f 2d 44 79 6e 61 6d 69  74 65 05 6c 6f 63 61 6c    o-Dynamite.local
+00 00 1c 00 01 00 00 00  3c 00 10 fe 80 00 00 00    ........<.......
+00 00 00 45 07 38 43 e8  78 a1 c8 c0 0c 00 01 00    ...E.8C.x.......
+01 00 00 00 3c 00 04 c0  a8 01 73                   ....<.....s
+
+
+####################################################### ------ ###################################################
+
+Packet number 76:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 62380
+   |-Destination Port : 53
+   |-Checksum       : 15805
+   |-length : 58
+
+                        DATA Dump                         
+ Payload (50 bytes):
+2e df 01 00 00 01 00 00  00 00 00 00 06 75 73 2d    .............us-
+76 32 30 06 65 76 65 6e  74 73 04 64 61 74 61 09    v20.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 01    microsoft.com...
+00 01                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 77:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 62380
+   |-Checksum       : 13377
+   |-length : 177
+
+                        DATA Dump                         
+ Payload (169 bytes):
+2e df 81 80 00 01 00 03  00 00 00 00 06 75 73 2d    .............us-
+76 32 30 06 65 76 65 6e  74 73 04 64 61 74 61 09    v20.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 01    microsoft.com...
+00 01 c0 0c 00 05 00 01  00 00 00 52 00 23 02 75    ...........R.#.u
+73 06 65 76 65 6e 74 73  04 64 61 74 61 0e 74 72    s.events.data.tr
+61 66 66 69 63 6d 61 6e  61 67 65 72 03 6e 65 74    afficmanager.net
+00 c0 3e 00 05 00 01 00  00 00 2d 00 2c 10 6f 6e    ..>.......-.,.on
+65 64 73 63 6f 6c 70 72  64 63 75 73 30 31 09 63    edscolprdcus01.c
+65 6e 74 72 61 6c 75 73  08 63 6c 6f 75 64 61 70    entralus.cloudap
+70 05 61 7a 75 72 65 c0  29 c0 6d 00 01 00 01 00    p.azure.).m.....
+00 00 06 00 04 34 b6 8d  3f                         .....4..?
+
+
+####################################################### ------ ###################################################
+
+Packet number 78:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 24993
+   |-Destination Port : 53
+   |-Checksum       : 29328
+   |-length : 58
+
+                        DATA Dump                         
+ Payload (50 bytes):
+67 b0 01 00 00 01 00 00  00 00 00 00 06 6d 6f 62    g............mob
+69 6c 65 06 65 76 65 6e  74 73 04 64 61 74 61 09    ile.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 01    microsoft.com...
+00 01                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 79:
+
+
+IP address  From: 192.168.1.105
+IP address  To: 192.168.1.1
+
+UDP Header
+   |-Source Port      : 28846
+   |-Destination Port : 53
+   |-Checksum       : 59309
+   |-length : 58
+
+                        DATA Dump                         
+ Payload (50 bytes):
+e3 45 01 00 00 01 00 00  00 00 00 00 06 6d 6f 62    .E...........mob
+69 6c 65 06 65 76 65 6e  74 73 04 64 61 74 61 09    ile.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 41    microsoft.com..A
+00 01                                               ..
+
+
+####################################################### ------ ###################################################
+
+Packet number 80:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 24993
+   |-Checksum       : 53869
+   |-length : 178
+
+                        DATA Dump                         
+ Payload (170 bytes):
+67 b0 81 80 00 01 00 03  00 00 00 00 06 6d 6f 62    g............mob
+69 6c 65 06 65 76 65 6e  74 73 04 64 61 74 61 09    ile.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 01    microsoft.com...
+00 01 c0 0c 00 05 00 01  00 00 00 4f 00 27 06 6d    ...........O.'.m
+6f 62 69 6c 65 06 65 76  65 6e 74 73 04 64 61 74    obile.events.dat
+61 0e 74 72 61 66 66 69  63 6d 61 6e 61 67 65 72    a.trafficmanager
+03 6e 65 74 00 c0 3e 00  05 00 01 00 00 00 13 00    .net..>.........
+29 10 6f 6e 65 64 73 63  6f 6c 70 72 64 77 75 73    ).onedscolprdwus
+30 38 06 77 65 73 74 75  73 08 63 6c 6f 75 64 61    08.westus.clouda
+70 70 05 61 7a 75 72 65  c0 29 c0 71 00 01 00 01    pp.azure.).q....
+00 00 00 02 00 04 14 bd  ad 09                      ..........
+
+
+####################################################### ------ ###################################################
+
+Packet number 81:
+
+
+IP address  From: 192.168.1.1
+IP address  To: 192.168.1.105
+
+UDP Header
+   |-Source Port      : 53
+   |-Destination Port : 28846
+   |-Checksum       : 59200
+   |-length : 234
+
+                        DATA Dump                         
+ Payload (226 bytes):
+e3 45 81 80 00 01 00 02  00 01 00 00 06 6d 6f 62    .E...........mob
+69 6c 65 06 65 76 65 6e  74 73 04 64 61 74 61 09    ile.events.data.
+6d 69 63 72 6f 73 6f 66  74 03 63 6f 6d 00 00 41    microsoft.com..A
+00 01 c0 0c 00 05 00 01  00 00 00 4f 00 27 06 6d    ...........O.'.m
+6f 62 69 6c 65 06 65 76  65 6e 74 73 04 64 61 74    obile.events.dat
+61 0e 74 72 61 66 66 69  63 6d 61 6e 61 67 65 72    a.trafficmanager
+03 6e 65 74 00 c0 3e 00  05 00 01 00 00 00 13 00    .net..>.........
+29 10 6f 6e 65 64 73 63  6f 6c 70 72 64 77 75 73    ).onedscolprdwus
+30 38 06 77 65 73 74 75  73 08 63 6c 6f 75 64 61    08.westus.clouda
+70 70 05 61 7a 75 72 65  c0 29 0a 77 65 73 74 65    pp.azure.).weste
+75 72 6f 70 65 c0 89 00  06 00 01 00 00 00 3c 00    urope.........<.
+31 07 6e 73 31 2d 32 30  31 09 61 7a 75 72 65

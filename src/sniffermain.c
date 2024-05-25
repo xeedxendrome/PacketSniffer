@@ -25,7 +25,7 @@ int main() {
         pcap_loop(handle, 1000, process_packet_udp, (u_char*)FileLog);
     }
     else
-    pcap_loop(handle, 1000, process_packet_tcp, (u_char*)FileLog);
+    pcap_loop(handle, 50, process_packet_tcp, (u_char*)FileLog);
     pcap_close(handle);
     return(0);
 }

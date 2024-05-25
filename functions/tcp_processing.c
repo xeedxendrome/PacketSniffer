@@ -59,6 +59,7 @@ void process_packet_tcp(u_char *args, const struct pcap_pkthdr *header, const u_
     int size_tcp;
     int size_payload;
     printf("\nPacket number %d:\n", count);
+    fprintf(FileLog, "Packet number %d:\n", count);
     count++;
     ethernet = (struct sniff_ethernet*)(packet);
     ip = (struct sniff_ip*)(packet + SIZE_ETHERNET);
@@ -68,9 +69,6 @@ void process_packet_tcp(u_char *args, const struct pcap_pkthdr *header, const u_
     }
     // writing tcp header to the logfile
     fprintf(FileLog,"\n\n");
-    fprintf(FileLog, "\n");
-    fprintf(FileLog, "####################################################### New Packet ###################################################\n");
-   
     fprintf(FileLog, "IP address  From: %s\n", inet_ntoa(ip->ip_src));
     fprintf(FileLog, "IP address  To: %s\n", inet_ntoa(ip->ip_dst));
 
@@ -101,6 +99,10 @@ void process_packet_tcp(u_char *args, const struct pcap_pkthdr *header, const u_
         fprintf(FileLog,"Payload (%d bytes):\n", size_payload);
         fprintf(FileLog, "\n");
         print_payload(payload, size_payload, FileLog);
+        fprintf(FileLog, "\n\n");
     }
+    
+    fprintf(FileLog, "####################################################### ------ ###################################################\n\n");
+
     return;
 }
