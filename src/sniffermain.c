@@ -5,27 +5,22 @@
 #include "../headers/tcp_processing.h"
 #include <string.h>
 
-
-
-
-int main() {
+int main(int argc, char *argv[])
+{
     char *devname;
     pcap_t *handle;
     FILE *FileLog;
-    
-    char filter_exp[] = "tcp port 80";
-    int filtervalue=get_filter();
+    char filter_exp[10000];
+    strcpy(filter_exp, argv[1]);
+    devname = argv[2];
     FileLog = fopen("log.txt", "w");
-    devname = get_device_name();
-    if(filtervalue){
-        strcpy(filter_exp, "udp");
-    }
     handle = session_create(devname, filter_exp);
-    if (filtervalue) {
-        pcap_loop(handle, 1000, process_packet_udp, (u_char*)FileLog);
+    if (strcmp(argv[1], "udp") == 0)
+    {
+        pcap_loop(handle, 1000, process_packet_udp, (u_char *)FileLog);
     }
     else
-    pcap_loop(handle, 50, process_packet_tcp, (u_char*)FileLog);
+        pcap_loop(handle, 10, process_packet_tcp, (u_char *)FileLog);
     pcap_close(handle);
-    return(0);
+    return (0);
 }
